@@ -1,0 +1,27 @@
+---
+---
+@import
+	"color"
+;
+
+.home {
+}
+
+.lago {
+	position: absolute;
+	width: 100%;
+	margin-top: 50vh;
+	left:0;
+	height: 50vh;
+	background-color: $areia;
+}
+
+.menino {	
+	position: absolute;
+	height: auto;
+	top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+	margin: auto;
+}
