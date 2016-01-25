@@ -5,9 +5,29 @@ layout: default
 <link rel="stylesheet" href="{{ "/css/home.css" | prepend: site.baseurl }}">
 
 <div class="home">
+	
+	<div class="fundo">
+		<div class="lago"></div>
+	  	<img class="col_1_2_2_3 menino" src="img/menino.png">
+	</div>
 
-  <div class="lago">
-  </div>
-  <img class="col_1_2_2_3 menino" src="img/menino.png">
+  	<div class="conteudo">
+	  	<div class="container_ass">
+			<img class="col_1_1_1_2 assinatura" src="img/assinatura.png">
+		</div>
+		<div class="container_tipo">
+			<div class="col_2_1_1_2 tipo">
+				<p>em breve novidades!</p>
+				<div class="links">
+					<a>
+						{% include facebook.html %}
+					</a>
+					<a>
+						{% include instagram.html %}
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
 
 </div>

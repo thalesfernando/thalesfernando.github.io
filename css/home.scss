@@ -1,27 +1,99 @@
 ---
 ---
+
 @import
-	"color"
+	"color",
+	"responsive-parameters"
 ;
 
 .home {
-}
 
-.lago {
-	position: absolute;
-	width: 100%;
-	margin-top: 50vh;
-	left:0;
-	height: 50vh;
-	background-color: $areia;
-}
+	.fundo {
 
-.menino {	
-	position: absolute;
-	height: auto;
-	top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-	margin: auto;
+	}
+
+		.lago {
+			position: absolute;
+			width: 100%;
+			margin-top: 50vh;
+			left:0;
+			height: 50vh;
+			background-color: $areia;
+		}
+
+		.menino {	
+			position: absolute;
+			height: auto;
+			top:0;
+		    bottom: 0;
+		    left: 0;
+		    right: 0;
+			margin: auto;
+		}
+
+	.conteudo {
+
+	}
+
+		.container_ass {	
+			position: absolute;
+			width: 100%;
+			height: 50vh;
+			top:0;
+		    left: 0;
+		}
+
+			.assinatura {
+				position: absolute;
+				z-index: -1;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				height: auto;
+				margin: auto;
+			}
+
+		.container_tipo {
+			position: absolute;
+			width: 100%;
+			height: 50vh;
+			top:50vh;
+		    left: 0;
+		    text-align: center;
+		}
+
+			.tipo {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				height: auto;
+				margin: auto;
+
+				p {
+					margin-bottom: $leading;
+					font-style: italic;
+					color: $marrom;
+				}
+
+				.links {
+
+				}
+
+				a {
+					display: inline-block;
+					width: 1.2rem;
+					&:first-child {
+						margin-right: $leading/2;
+					}
+				}
+
+				.facebook {
+					fill: $marrom;
+				}
+
+				.instagram {
+					fill: $marrom;
+				}
+			}
 }

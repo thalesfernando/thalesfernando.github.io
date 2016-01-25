@@ -14,3 +14,13 @@ section {
 	margin-left: auto;
 	margin-right: auto;
 }
+
+p {
+	font-size: 1.2rem;
+	line-height: $leading;
+	font-family: 'Alegreya Sans';
+	font-weight: 300;
+	@media screen and (min-width: nth($breakpoints, 3)) {
+		font-weight: 100;
+	}
+}
