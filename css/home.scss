@@ -28,7 +28,10 @@
 			margin-top: 50vh;
 			left:0;
 			height: 50vh;
-			background-color: $areia;
+			background-image: url("../img/lago.png");
+			background-position: top;
+			background-size: cover;
+			background-repeat: no-repeat;
 		}
 
 		.menino {	
@@ -36,7 +39,11 @@
 			height: auto;
 			top: 50vh;
 			left: 50%;
-			transform: translate(-50%, -50%);
+			-ms-transform: translate(calc(-50% - #{$leading/2}), -50%);
+			-webkit-transform: translate(calc(-50% - #{$leading/2}), -50%);
+			-moz-transform: translate(calc(-50% - #{$leading/2}), -50%);
+			-o-transform: translate(calc(-50% - #{$leading/2}), -50%);
+			transform: translate(calc(-50% - #{$leading/2}), -50%);
 		}
 
 	.conteudo-container {
@@ -52,7 +59,11 @@
 				@include flex-wrap (wrap);
 				@include align-items (flex-end);
 				@include align-content (center);
-				transform: translateY(50%);
+				-ms-transform: translateY(calc(50% + #{2*$leading}));
+				-webkit-transform: translateY(calc(50% + #{2*$leading}));
+				-moz-transform: translateY(calc(50% + #{2*$leading}));
+				-o-transform: translateY(calc(50% + #{2*$leading}));
+				transform: translateY(calc(50% + #{2*$leading}));
 			}
 		}
 	}
