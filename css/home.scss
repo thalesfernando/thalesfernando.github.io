@@ -3,7 +3,8 @@
 
 @import
 	"color",
-	"responsive-parameters"
+	"responsive-parameters",
+	"flex-mixins"
 ;
 
 .wrapper {
@@ -40,17 +41,17 @@
 
 	.conteudo-container {
 		@media screen and (min-width: nth($breakpoints, 1)) {
-			display: flex;
+			@include display-flex;
+			@include flex-wrap (wrap);
+			@include align-items (center);
 			height: 100vh;
-			flex-wrap: wrap;
-			align-items: center;
 
 			.conteudo {
 				width: 100%;
-				display: flex;
-				flex-wrap: wrap;
-				align-items: flex-end;
-				align-content: center;
+				@include display-flex;
+				@include flex-wrap (wrap);
+				@include align-items (flex-end);
+				@include align-content (center);
 				transform: translateY(calc(50% + #{2*$leading}));
 			}
 		}
