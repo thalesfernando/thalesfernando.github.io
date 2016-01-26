@@ -52,6 +52,10 @@
 				@include flex-wrap (wrap);
 				@include align-items (flex-end);
 				@include align-content (center);
+				-ms-transform: translateY(50%);
+				-webkit-transform: translateY(50%);
+				-moz-transform: translateY(50%);
+				-o-transform: translateY(50%);
 				transform: translateY(50%);
 			}
 		}
