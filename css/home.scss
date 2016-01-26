@@ -36,7 +36,7 @@
 			height: auto;
 			top: 50vh;
 			left: 50%;
-			transform: translate(calc(-50% - #{$leading/2}), -50%);
+			transform: translate(-50%, -50%);
 		}
 
 	.conteudo-container {
@@ -52,7 +52,7 @@
 				@include flex-wrap (wrap);
 				@include align-items (flex-end);
 				@include align-content (center);
-				transform: translateY(calc(50% + #{2*$leading}));
+				transform: translateY(50%);
 			}
 		}
 	}
