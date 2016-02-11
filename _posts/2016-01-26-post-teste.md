@@ -1,9 +1,10 @@
 ---
 layout: post
-published: false
+published: true
 ---
 
 
-# Título teste
+
+## Título teste
 
 Corpo de texto teste
