@@ -1,0 +1,19 @@
+h1 {
+  font-style: normal; }
+
+h5 {
+  margin-bottom: 3rem; }
+  @media screen and (min-width: 900px) {
+    h5 {
+      margin-bottom: 0; } }
+
+main section:first-child {
+  padding-top: 6rem; }
+  @media screen and (min-width: 580px) {
+    main section:first-child {
+      padding-top: 7.5rem; } }
+main .gallery {
+  margin-top: 1.5rem; }
+  @media screen and (min-width: 900px) {
+    main .gallery {
+      margin-top: 3rem; } }
