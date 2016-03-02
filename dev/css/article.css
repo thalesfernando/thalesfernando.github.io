@@ -1,0 +1,16 @@
+@media screen and (max-width: 579px) {
+  main section {
+    padding-left: calc(8.3335% - 0.75rem);
+    padding-right: calc(8.3335% - 0.75rem); } }
+@media screen and (min-width: 580px) {
+  main section {
+    padding-left: calc(36.11117% - 1.25rem);
+    padding-right: calc(8.3335% - 0.75rem); } }
+@media screen and (min-width: 900px) {
+  main section {
+    padding-left: calc(36.11117% - 1.25rem);
+    padding-right: calc(8.3335% - 0.75rem); } }
+@media screen and (min-width: 1200px) {
+  main section {
+    padding-left: calc(22.22233% - 1rem);
+    padding-right: calc(22.22233% - 1rem); } }
