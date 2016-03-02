@@ -1,0 +1,35 @@
+---
+---
+
+@import
+    "color-mixins",
+    "type-mixins",
+    "responsive-variables"
+;
+
+h1 {
+	@include normal;
+}
+
+h5 {
+	margin-bottom: 2*$leading;
+	@media screen and (min-width: nth($breakpoints, 2)) {
+		margin-bottom: 0;
+	}
+}
+main {
+	section {
+		&:first-child {
+			padding-top: 4*$leading;
+			@media screen and (min-width: nth($breakpoints, 1)) {
+				padding-top: 5*$leading;
+			}
+		}
+	}
+	.gallery {
+		margin-top: $leading;
+		@media screen and (min-width: nth($breakpoints, 2)) {
+			margin-top: 2*$leading;
+		}
+	}
+}

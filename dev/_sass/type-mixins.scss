@@ -1,0 +1,39 @@
+@import 'responsive-variables';
+
+@mixin hairline {
+	font-weight: 100;
+}
+
+@mixin extra-light {
+	font-weight: 200;
+}
+
+@mixin regular {
+	font-weight: 400;
+}
+
+@mixin bold {
+	font-weight: 700;
+}
+
+@mixin black {
+	font-weight: 900;
+}
+
+@mixin italic {
+	font-style: italic;
+}
+
+@mixin normal {
+	font-style: normal;
+}
+
+@mixin versalete {
+	font-family: 'Alegreya Sans SC', sans-serif;
+
+}
+
+@mixin text-size {
+	font-size: 0.9rem;
+	line-height: $leading;
+}

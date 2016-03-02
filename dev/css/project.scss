@@ -1,0 +1,77 @@
+---
+---
+
+@import
+    "type-mixins",
+    "responsive-variables"
+;
+
+@mixin side-columns {
+	padding-left: calc(#{((100% - $area)/2) + (nth($left-side, $b)*$area/nth($col, $b))} - #{($gutter/2) + (nth($left-side, $b)*$gutter/nth($col, $b))});
+	padding-right: calc(#{((100% - $area)/2) + (nth($right-side, $b)*$area/nth($col, $b))} - #{($gutter/2) + (nth($right-side, $b)*$gutter/nth($col, $b))});
+}
+
+main {
+	section {
+		&.project-cover {
+			background-position: top center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-color: #4a4a4a;
+			background-blend-mode: multiply;
+			padding-top: 25vh;
+			border-bottom: none;
+			margin-top: 0;
+			margin-bottom: 0;
+			min-height: 50vh;
+			z-index: -1;
+			h2 {
+				height: 100%;
+				margin-top: 0;
+				margin-bottom: 0;
+				transform: translateY(-50%);
+				@include versalete;
+				@include hairline;
+
+				span {
+					white-space: nowrap;
+					background-color: rgba(255, 255, 255, 0.95);
+					background-blend-mode: screen;
+				}
+			}
+			&::after {
+				content:"";
+				background: -webkit-gradient(linear, 0% -300%, 0% 100%, from(#4a4a4a), to(transparent));
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 9rem;
+			}
+		}
+	}
+	section:not(.project-cover) {
+		$grid_variety: length($col);
+		$b: 1 !global;
+		@media screen and (max-width: nth($breakpoints, 1) - 1px) {
+			@include side-columns;
+		}
+		@if $grid_variety > 2 {
+			@for $k from 2 through ($grid_variety - 1) {
+				$b: $k !global;
+				@media screen and (min-width: nth($breakpoints, ($b - 1))) {
+					@include side-columns;
+				}
+			}
+		}
+		@if $grid_variety > 1 {
+			$b: $grid_variety !global;
+			@media screen and (min-width: nth($breakpoints, ($grid_variety - 1))) {
+				@include side-columns;
+			}
+		}
+	}
+	.project-cover + section {
+		padding-top: 1.5*$leading;
+	}
+}

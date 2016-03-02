@@ -1,0 +1,44 @@
+//alignment of a row of child elements
+@mixin v-align-top {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+}
+
+@mixin v-align-bottom {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+}
+
+@mixin v-align-center {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+
+//distribution of a row of child elements
+@mixin h-distribute-justify {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+@mixin h-distribute-left {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+@mixin h-distribute-right {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+@mixin h-distribute-center {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}

@@ -1,0 +1,16 @@
+html, body, header, main, footer, section, nav, div, article, figure, img, ol, ul, li, h1, h2, h3, h4, h5, h6, p, a, span, b, u, i
+{
+	border: 0;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	box-sizing: border-box;
+	transition: margin 0.5s linear;
+	transition: padding 0.5s linear;
+	&:visited {
+		color: #4a4a4a;
+	}
+}
+
+// html, body, div, section, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp,
+// small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td

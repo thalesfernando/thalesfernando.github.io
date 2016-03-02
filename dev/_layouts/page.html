@@ -1,0 +1,8 @@
+{% assign file_min = page.url | remove: '.html' | remove: '/work' | remove: '/' | split: '_' | last %}
+{% include head.html %}
+{% include header.html %}
+		<main>
+			{{ content }}
+		</main>
+{% include footer.html %}
+{% include foot.html %}

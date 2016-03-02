@@ -1,0 +1,170 @@
+@import
+	"responsive-variables",
+	"type-mixins"
+;
+
+h1,h2,h3,h4,h5 {
+	font-family: 'Alegreya Sans', sans-serif;
+	font-stretch: normal;
+	transition: font 0.5s ease;
+}
+
+p, a {
+	font-family: 'Lato', sans-serif;
+}
+
+h1 {
+	@include black;
+	color: #4a4a4a;
+}
+
+h2 {
+	font-weight: 100;
+	color: #4a4a4a;
+}
+
+h5 {
+	color: #4a4a4a;
+	@include italic;
+	@include hairline;
+	@media screen and (max-width: nth($breakpoints, 1) - 1px) {
+		font-weight: 200;
+	}
+}
+
+p, a {
+	@include normal;
+	font-weight: 300;
+	@include text-size;
+}
+
+.footnote {
+	@include italic;
+	display: block;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.sub, .sub-left {
+	@include italic;
+	color: #4a4a4a;
+}
+
+//responsive typography
+
+p {
+	line-height: $leading;
+}
+
+a {
+	line-height: $leading;
+}
+
+@media screen and (max-width: nth($breakpoints, 1) - 1px) {
+	h1 {
+		font-size: 3.5rem;
+		line-height: 3*$leading;
+	}
+	h2 {
+		font-size: 2.5rem;
+		line-height: 2*$leading;
+	}
+	h3 {
+		font-size: 2rem;
+		line-height: 2*$leading;
+	}
+	h4 {
+		font-size: 1.5rem;
+		line-height: $leading;
+	}
+	h5 {
+		font-size: 1.25rem;
+		line-height: $leading;
+	}
+	.sub {
+		padding-right: 0;
+	}
+	.sub-left {
+		text-align: left;
+	}
+	.sub, .sub-left {
+		@media screen and (max-width: nth($breakpoints, 1) - 1px) {
+			text-align: center;
+		}
+	}
+}
+
+@media screen and (min-width: nth($breakpoints, 1)) {
+	h1 {
+		font-size: 4rem;
+		line-height: 3*$leading;
+	}
+	h2 {
+		font-size: 3.5rem;
+		line-height: 3*$leading;
+	}
+	h3 {
+		font-size: 3rem;
+		line-height: 3*$leading;
+	}
+	h4 {
+		font-size: 2.5rem;
+		line-height: 2*$leading;
+	}
+	h5 {
+		font-size: 1.75rem;
+		line-height: 2*$leading;
+	}
+	.sub {
+		padding-right: $gutter;
+	}
+	.sub-left {
+		text-align: right;
+	}
+}
+
+@media screen and (min-width: nth($breakpoints, 2)) {
+	h1 {
+		font-size: 5rem;
+		line-height: 4*$leading;
+	}
+	h2 {
+		font-size: 4rem;
+		line-height: 4*$leading;
+	}
+	h3 {
+		font-size: 3.5rem;
+		line-height: 3*$leading;
+	}
+	h4 {
+		font-size: 2.5rem;
+		line-height: 2*$leading;
+	}
+	h5 {
+		font-size: 2rem;
+		line-height: 2*$leading;
+	}
+}
+
+@media screen and (min-width: nth($breakpoints, 3)) {
+	h1 {
+		font-size: 6rem;
+		line-height: 5*$leading;
+	}
+	h2 {
+		font-size: 5rem;
+		line-height: 4*$leading;
+	}
+	h3 {
+		font-size: 4rem;
+		line-height: 4*$leading;
+	}
+	h4 {
+		font-size: 3rem;
+		line-height: 3*$leading;
+	}
+	h5 {
+		font-size: 2.5rem;
+		line-height: 2*$leading;
+	}
+}
