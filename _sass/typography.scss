@@ -28,19 +28,12 @@ h2 {
 
 h5 {
 	color: #4a4a4a;
+	margin-bottom: 2*$leading;
+	margin-top: 0.6*$leading;
 	@include medium;
 	@media screen and (max-width: nth($breakpoints, 1) - 1px) {
 		font-weight: 200;
 	}
-}
-
-h6 {
-	color: #4a4a4a;
-	@include medium;
-	font-size: 1.25rem;
-	line-height: $leading;
-	margin-bottom: 2*$leading;
-	margin-top: 0.6*$leading;
 }
 
 .footnote {
@@ -64,6 +57,13 @@ p {
 
 a {
 	line-height: $leading;
+}
+
+p>a {
+	@include italic;
+	&:hover{
+		color: orange;
+	}
 }
 
 @media screen and (max-width: nth($breakpoints, 1) - 1px) {
@@ -109,6 +109,7 @@ a {
 	h2 {
 		font-size: 3.5rem;
 		line-height: 3*$leading;
+		@include medium;
 	}
 	h3 {
 		font-size: 3rem;
@@ -138,6 +139,7 @@ a {
 	h2 {
 		font-size: 4rem;
 		line-height: 4*$leading;
+		@include medium;
 	}
 	h3 {
 		font-size: 3.5rem;
@@ -155,23 +157,27 @@ a {
 
 @media screen and (min-width: nth($breakpoints, 3)) {
 	h1 {
-		font-size: 6rem;
+		font-size: 4rem;
 		line-height: 5*$leading;
 	}
 	h2 {
-		font-size: 5rem;
+		font-size: 3rem;
 		line-height: 4*$leading;
 	}
 	h3 {
-		font-size: 4rem;
+		font-size: 3.5rem;
 		line-height: 4*$leading;
 	}
 	h4 {
-		font-size: 3rem;
+		font-size: 2rem;
 		line-height: 3*$leading;
 	}
 	h5 {
-		font-size: 2.5rem;
+		font-size: 1.25rem;
+		line-height: 2*$leading;
+	}
+	h6 {
+		font-size: 1.05rem;
 		line-height: 2*$leading;
 	}
 }

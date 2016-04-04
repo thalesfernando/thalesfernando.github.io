@@ -5,7 +5,9 @@ permalink: sobre/
 ---
 
 <section>
-	<h2>{{ page.title }}</h2>
+	<article>
+		<h2>{{ page.title }}</h2>
+	</article>
 	<article class="s1_2 s2_3 s3_3 s4_6">
 		<img src="/img/about.jpg">
 		<article class="minhoca">
@@ -21,48 +23,52 @@ permalink: sobre/
 		<p>
 			Além do muralismo e gravuras, seu atual estudo envolve colagens em larga escala, utilizando­se de peças de madeira para a construção de totens e máscaras. Seu trabalho possui cores e personagens vibrantes, derivados de seu imaginário e de tudo que o rodeia.
 		</p>
+		<p>
+			<a href="http://pomb.com.br/portfolio_pomb.pdf" target="_blank">Portfolio (pdf)</a>
+		</p>
+		<p>
+			<a href="http://pomb.com.br/curriculo_pomb.pdf" target="_blank">Currículo (pdf)</a>
+		</p>
 	</article>
 </section>
 <section>
-	<article class="s1_0 s2_1 s3_1 s4_1">
+	<article class="s1_0 s2_1 s3_1 s4_3">
+		<h4>
+			Exposições
+		</h4>
 	</article>
+	<article class="s1_0 s2_1 s3_1 s4_1"></article>
 	<article class="s1_0 s2_1 s3_1 s4_3">
 		<h5>
-			Exposições
-		</h5>
-	</article>
-	<article class="s1_0 s2_1 s3_1 s4_3">
-		<h6>
 			­Individuais
-		</h6>
+		</h5>
 		<p>
-			­<b><i>2015</i></b>
+			­<b>2015</b>
 		</p>
 		<p>
 			­Sobre o Infinito e outras coisas ­ SESC 504 Sul ­ Brasília, DF<br/><br/>
 		</p>
 		<p>
-			­<b><i>2014</i></b>
+			­<b>2014</b>
 		</p>
 		<p>
 			­Apoteose ­ Tigers Saloon ­ Brasília, DF<br/><br/>
 			Hilo de la Vida ­ Collage Barcelona ­ Barcelona, Espanha<br/><br/>
 		</p>
 	</article>
-	<article class="s1_0 s2_1 s3_1 s4_1">
-	</article>
+	<article class="s1_0 s2_1 s3_1 s4_1"></article>
 	<article class="s1_0 s2_1 s3_1 s4_3">
-		<h6>
+		<h5>
 			­Coletivas
-		</h6>
+		</h5>
 		<p>
-			­<b><i>2016</i></b>
+			­<b>2016</b>
 		</p>
 		<p>
 			­2ª Mostra de Arte Urbana Complexo Cultural Cora Coralina Goiânia, GO<br/><br/>
 		</p>
 		<p>
-			­<b><i>2015</i></b>
+			­<b>2015</b>
 		</p>
 		<p>
 			­We are Art Bar Centro Barcelona, Espanha<br/><br/>
@@ -73,13 +79,13 @@ permalink: sobre/
 			Brasília Urbana ParkShopping Brasília, DF<br/><br/>
 		</p>
 		<p>
-			­<b><i>2014</i></b>
+			­<b>2014</b>
 		</p>
 		<p>
 			­Urban Arts Brasília, DF<br/><br/>
 		</p>
 		<p>
-			­<b><i>2012</i></b>
+			­<b>2012</b>
 		</p>
 		<p>
 			­Voices Elect Miami Art Basel ­ Miami, Flórida (EUA)<br/><br/>

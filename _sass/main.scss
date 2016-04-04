@@ -19,6 +19,11 @@ main {
 		padding-bottom: 1.5*$leading;
 		@include h-distribute-left;
 	}
+
+	section>article {
+		margin-left: $gutter/2;
+		margin-right: $gutter/2;
+	}
 	.wrapper {
 		width: nth($col, 4) - $l-blank - $r-blank;
 		margin-left: $l-blank * $column;

@@ -7,6 +7,13 @@
 ;
 
 main {
+	article {
+		&>img {
+			margin-top: 0;
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
 	section {
 		@media screen and (min-width: nth($breakpoints, 1)) {
 			&:first-child {
