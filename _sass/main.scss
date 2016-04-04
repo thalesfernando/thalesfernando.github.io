@@ -24,6 +24,12 @@ main {
 		margin-left: $gutter/2;
 		margin-right: $gutter/2;
 	}
+
+	.gallery{
+		margin-right: 0;
+		margin-left: 0;
+	}
+
 	.wrapper {
 		width: nth($col, 4) - $l-blank - $r-blank;
 		margin-left: $l-blank * $column;
@@ -134,7 +140,7 @@ main {
 			@extend .s2_2;
 			@extend .s3_2;
 			@extend .s4_4;
-			margin-bottom: $leading;
+			margin-bottom: 2*$leading;
 		}
 		.exhibition {
 			@extend .s1_1;
@@ -177,9 +183,8 @@ main {
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
-			background-color: #4a4a4a;
-			background-blend-mode: screen;
-			background-size: 101%;
+			background-color: white;
+			background-size: 80%;
 			&:hover {
 				background-color: transparent;
 				h5 {

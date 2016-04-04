@@ -6,7 +6,9 @@ published: true
 ---
 
 <section>
-	<h2>{{ page.title }}</h2>
+	<article>
+		<h2>{{ page.title }}</h2>
+	</article>
 	<article>
 		<p></p>
 	</article>

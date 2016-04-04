@@ -5,7 +5,9 @@ permalink: exposicoes/
 ---
 
 <section>
-	<h2> {{ page.title }} </h2>
+	<article>
+		<h2> {{ page.title }} </h2>
+	</article>
 	<article>
 		{% include exhibition-gallery.html %}
 	</article>

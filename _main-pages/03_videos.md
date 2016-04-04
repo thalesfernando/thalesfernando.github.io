@@ -15,6 +15,8 @@ video-gallery:
 ---
 
 <section>
-	<h2>{{ page.title }}</h2>
+	<article>
+		<h2>{{ page.title }}</h2>
+	</article>
 		{% include video-gallery.html %}
 </section>
