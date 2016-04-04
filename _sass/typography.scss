@@ -10,7 +10,7 @@ h1,h2,h3,h4,h5,h6 {
 	color: #4a4a4a;
 }
 
-p, a, figcaption {
+p, figcaption {
 	font-family: 'Lato', sans-serif;
 	@include normal;
 	font-weight: 300;
@@ -31,9 +31,7 @@ h5 {
 	color: #4a4a4a;
 	margin-bottom: 2*$leading;
 	margin-top: 0.6*$leading;
-	@include medium;
 	@media screen and (max-width: nth($breakpoints, 1) - 1px) {
-		font-weight: 200;
 	}
 }
 
@@ -175,7 +173,7 @@ p>a {
 	}
 	h5 {
 		font-size: 1.25rem;
-		line-height: 2*$leading;
+		line-height: 1.5*$leading;
 	}
 	h6 {
 		font-size: 1.05rem;
