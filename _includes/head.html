@@ -14,7 +14,16 @@
 
     	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/global.css">
         <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/{{ page.layout }}.css">
-    	{% if page.layout == 'project' %}<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/work/{{ file_min }}.css">{% else %}{% if page.permalink == '/' %}<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/index.css">{% else %}<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css{{ page.url | remove: '.html' | append: '/.css' | remove_first: "//"}}">{% endif %}{% endif %}
+        
+    	{% if page.layout == 'project' %}
+            <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/trabalhos/{{ file_min }}.css">
+        {% elsif page.layout == 'exhibition' %}
+            <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/exposicoes/{{ file_min }}.css">
+        {% elsif page.permalink == '/' %}
+            <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/index.css">
+        {% else %}
+            <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css{{ page.url | remove: '.html' | append: '/.css' | remove_first: "//"}}">
+        {% endif %}
 
         <link rel="apple-touch-icon" sizes="57x57" href="{{ site.baseurl }}/apple-touch-icon-57x57.png?v=oLL0eg7qwO">
         <link rel="apple-touch-icon" sizes="60x60" href="{{ site.baseurl }}/apple-touch-icon-60x60.png?v=oLL0eg7qwO">

@@ -1,4 +1,4 @@
-{% assign file_min = page.url | remove: '.html' | remove: '/work' | remove: '/' | split: '_' | last %}
+{% assign file_min = page.url | remove: '.html' | remove: 'trabalhos' | remove: 'exposicoes' | remove: '/' | split: '_' | last %}
 {% include head.html %}
 {% include header.html %}
 		<main>

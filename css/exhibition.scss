@@ -10,18 +10,20 @@
 
 main {
 	section {
+		&:nth-last-child(2){
+			margin-bottom: 3*$leading;
+		}
 		@include v-align-bottom;
-		margin-top: 2*$leading;
 		article {
+			>* {
+				margin-bottom: 3*$leading;
+			}
 			margin-bottom: 0;
 			h3 {
 				font-family: 'Alegreya Sans SC', sans-serif;
 				text-transform: lowercase;
 				line-height: 2*$leading;
 				@include bold;
-			}
-			p:last-child{
-				margin-bottom: 0;
 			}
 			&.minhoca {
 				position: absolute;

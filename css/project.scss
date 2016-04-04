@@ -6,13 +6,13 @@
     "responsive-variables"
 ;
 
-@mixin side-columns {
-	padding-left: calc(#{((100% - $area)/2) + (nth($left-side, $b)*$area/nth($col, $b))} - #{($gutter/2) + (nth($left-side, $b)*$gutter/nth($col, $b))});
-	padding-right: calc(#{((100% - $area)/2) + (nth($right-side, $b)*$area/nth($col, $b))} - #{($gutter/2) + (nth($right-side, $b)*$gutter/nth($col, $b))});
-}
-
 main {
 	section {
+		article {
+			img {
+				margin-bottom: $leading;
+			}
+		}
 		&.project-cover {
 			background-position: top center;
 			background-size: cover;
