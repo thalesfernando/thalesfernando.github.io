@@ -1,0 +1,94 @@
+---
+---
+
+@import
+	"responsive-variables",
+    "diagram-mixins",
+    "normalize",
+    "grid",
+    "typography"
+;
+
+html {
+	height: 100%;
+}
+
+body {
+	position: relative;
+	min-height: 100%;
+	background-color: white;
+}
+
+article, figure {
+	position: relative;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+}
+
+.minhoca {
+	width: 3*$gutter;
+	position: absolute;
+	right: -1.5*$gutter;
+	top: 3*$leading;
+}
+
+#minhoca {
+	fill: orange;
+}
+
+.grid {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	padding-left: calc(#{(100% - $area)/2} - #{$gutter/2});
+	padding-right: calc(#{(100% - $area)/2} - #{$gutter/2});
+	opacity: 0;
+	opacity: 1;
+	transition: opacity .3s;
+	z-index: 1;
+	.area {
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 255, 255, 0.2);
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+	}
+	.module {
+		height: 100%;
+		background-color: rgba(255, 0, 255, 0.2);
+		transition: width .5s;
+	}
+}
+
+.processing-canvas {
+	zoom: 50%;
+	&:focus {
+		outline: none;
+	}
+}
+
+.container {
+	flex-wrap: wrap;
+	@include h-distribute-left;
+}
+
+.horizontal-rule {
+	content: "";
+	height: 1px;
+	width: calc(100% - #{$gutter});
+	background-color: blue;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+@import "header";
+
+@import "main";
+
+@import "footer";

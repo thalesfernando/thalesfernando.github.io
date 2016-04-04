@@ -1,0 +1,6 @@
+	{% for work in site.work %}
+		{% if page.title == work.title %}
+		{% else %}
+			{% include related-thumb.html %}
+		{% endif %}
+	{% endfor %}

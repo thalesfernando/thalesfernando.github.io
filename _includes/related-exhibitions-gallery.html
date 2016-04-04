@@ -1,0 +1,6 @@
+	{% for exhibition in site.exhibition %}
+		{% if page.title == exhibition.title %}
+		{% else %}
+			{% include related-exhibitions-thumb.html %}
+		{% endif %}
+	{% endfor %}

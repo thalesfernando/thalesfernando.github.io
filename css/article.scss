@@ -1,0 +1,36 @@
+---
+---
+
+@import
+    "type-mixins",
+    "responsive-variables"
+;
+
+@mixin side-columns {
+	padding-left: calc(#{((100% - $area)/2) + (nth($left-side, $b)*$area/nth($col, $b))} - #{($gutter/2) + (nth($left-side, $b)*$gutter/nth($col, $b))});
+	padding-right: calc(#{((100% - $area)/2) + (nth($right-side, $b)*$area/nth($col, $b))} - #{($gutter/2) + (nth($right-side, $b)*$gutter/nth($col, $b))});
+}
+
+main {
+	section {
+		$grid_variety: length($col);
+		$b: 1 !global;
+		@media screen and (max-width: nth($breakpoints, 1) - 1px) {
+			@include side-columns;
+		}
+		@if $grid_variety > 2 {
+			@for $k from 2 through ($grid_variety - 1) {
+				$b: $k !global;
+				@media screen and (min-width: nth($breakpoints, ($b - 1))) {
+					@include side-columns;
+				}
+			}
+		}
+		@if $grid_variety > 1 {
+			$b: $grid_variety !global;
+			@media screen and (min-width: nth($breakpoints, ($grid_variety - 1))) {
+				@include side-columns;
+			}
+		}
+	}
+}

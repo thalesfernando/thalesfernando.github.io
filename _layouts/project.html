@@ -1,0 +1,11 @@
+---
+layout: page
+---
+{% assign file_min = page.url | remove: '.html' | remove: '/work' | remove: '/' | split: '_' | last %}
+{{ content }}
+<section>
+	<h2> Outros trabalhos </h2>
+	<article>
+		{% include related-works-gallery.html %}
+	</article>
+</section>

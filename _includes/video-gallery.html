@@ -1,0 +1,25 @@
+{% assign split-videos = page.video-gallery | split: ';' %}
+{% for split-video in split-videos %}
+	<article class="s1_0 s2_0 s3_0 s4_1">
+	</article>
+	<article class="s1_2 s2_6 s3_6 s4_10">
+	{% assign split-data = split-video | split: '|' %}
+	{% assign video-url = split-data[0]  | remove: ' ' %}
+	{% assign video-title = split-data[1] | remove: ' ' %}
+	{% if video-url contains "vimeo.com"%}
+		{% assign video-id = split-data[0] | remove: "https://vimeo.com/"  | remove: ' ' %}
+		<div class="full-video">
+			<iframe src="https://player.vimeo.com/video/{{ video-id }}?color=ff9933&title=0&byline=0&portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			<!-- <p>{{ video-title }}</p> -->
+		</div>
+	{% elsif video-url contains "youtube.com"%}
+		{% assign video-id = split-data[0] | remove: "https://www.youtube.com/watch?v="  | remove: ' ' %}
+		<div class="full-video">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/{{ video-id }}?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+			<!-- <p>{{ video-title }}</p> -->
+		</div>
+	{% endif %}
+	</article>
+	<article class="s1_0 s2_0 s3_0 s4_1">
+	</article>
+{% endfor %}

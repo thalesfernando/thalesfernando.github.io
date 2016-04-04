@@ -1,0 +1,32 @@
+---
+---
+
+@import
+    "color-mixins",
+    "responsive-variables"
+;
+
+main {
+	section {
+		@media screen and (min-width: nth($breakpoints, 1)) {
+			&:first-child {
+				padding-top: 5.5*$leading;
+				.left-side {
+					top: 4.5*$leading;
+					padding-top: 1.5*$leading;
+				}
+			}
+		}
+		.left-side {
+			p {
+				text-align: left;
+			}
+		}
+	}
+	.wufoo {
+		font-family: "Greta Sans";
+	}
+	.about-text {
+		padding-top: 3*$leading;
+	}
+}

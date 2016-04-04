@@ -1,9 +1,15 @@
 title: POMB
 email: hello@pomb.com.br
-description: 
-baseurl: ""
-url: "http://pomb.com.br"
-twitter_username:
-github_username:
+# baseurl: "http://pomb.com.br/dev"
 
 markdown: kramdown
+
+collections:
+  main-pages:
+    output: true
+  work:
+    output: true
+  exhibition:
+    output: true
+  work-soon:
+    output: false
