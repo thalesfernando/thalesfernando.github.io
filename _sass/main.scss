@@ -25,9 +25,15 @@ main {
 		margin-right: $gutter/2;
 	}
 
+	.related {
+		border-top: solid orange 1px;
+		padding-top: 2*$leading
+	}
+
 	.gallery{
 		margin-right: 0;
 		margin-left: 0;
+		@include h-distribute-center;
 	}
 
 	.wrapper {
@@ -146,16 +152,17 @@ main {
 			@extend .s1_1;
 			@extend .s2_2;
 			@extend .s3_2;
-			@extend .s4_3;
+			@extend .s4_4;
 			margin-bottom: $leading;
 		}
-		.related {
+		.work {
 			@extend .s1_1;
 			@extend .s2_2;
 			@extend .s3_1;
 			@extend .s4_3;
 			margin-bottom: $leading;
 		}
+			
 		.related-exhibition {
 			@extend .s1_1;
 			@extend .s2_2;
@@ -183,10 +190,11 @@ main {
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
-			background-color: white;
+			background-color: transparent;
+			background-blend-mode: screen;
 			background-size: 80%;
 			&:hover {
-				background-color: transparent;
+				background-color: rgba(255, 255, 255, 0.2);
 				h5 {
 					opacity: 1;
 				}
