@@ -134,11 +134,6 @@ main {
 		position: relative;
 		width: 100%;
 		@include h-distribute-left;
-		&>img {
-			margin-top: 3*$leading;
-			padding-left: $gutter;
-			padding-right: $gutter;
-		}
 	}
 
 		figure {
@@ -214,7 +209,7 @@ main {
 				@include black;
 				&.soon-text {
 					margin-top: 0;
-					@include extra-light;
+					@include light;
 				}
 			}
 		}

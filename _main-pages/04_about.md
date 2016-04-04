@@ -23,10 +23,8 @@ permalink: sobre/
 		<p>
 			Além do muralismo e gravuras, seu atual estudo envolve colagens em larga escala, utilizando­se de peças de madeira para a construção de totens e máscaras. Seu trabalho possui cores e personagens vibrantes, derivados de seu imaginário e de tudo que o rodeia.
 		</p>
-		<p>
-			<a href="http://pomb.com.br/portfolio_pomb.pdf" target="_blank">Portfolio (pdf)</a>
-		</p>
-		<p>
+		<p class="destaque">
+			<a href="http://pomb.com.br/portfolio_pomb.pdf" target="_blank">Portfolio (pdf)</a><br/>
 			<a href="http://pomb.com.br/curriculo_pomb.pdf" target="_blank">Currículo (pdf)</a>
 		</p>
 	</article>

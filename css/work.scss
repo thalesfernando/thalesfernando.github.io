@@ -5,3 +5,13 @@
     "color-mixins",
     "responsive-variables"
 ;
+
+main {
+	article {
+		&>img {
+			margin-top: 3*$leading;
+			padding-left: $gutter;
+			padding-right: $gutter;
+		}
+	}
+}

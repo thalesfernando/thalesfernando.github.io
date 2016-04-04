@@ -1,0 +1,38 @@
+---
+---
+
+@import
+    "color-mixins",
+    "responsive-variables",
+	"type-mixins",
+	"diagram-mixins"
+;
+
+main {
+	section {
+		@include v-align-bottom;
+		margin-top: 2*$leading;
+		article {
+			margin-bottom: 0;
+			h3 {
+				font-family: 'Alegreya Sans SC', sans-serif;
+				text-transform: lowercase;
+				line-height: 2*$leading;
+				@include bold;
+			}
+			p:last-child{
+				margin-bottom: 0;
+			}
+			&.minhoca {
+				position: absolute;
+				top:0;
+				&.esquerda {
+					left: calc(#{(100% - $area)/2} - #{$gutter/2});
+				}
+				&.direita {
+					right: calc(#{(100% - $area)/2} - #{$gutter/2});
+				}
+			}
+		}
+	}
+}

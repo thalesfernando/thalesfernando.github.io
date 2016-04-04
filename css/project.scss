@@ -31,7 +31,7 @@ main {
 				margin-bottom: 0;
 				transform: translateY(-50%);
 				@include versalete;
-				@include hairline;
+				@include thin;
 
 				span {
 					white-space: nowrap;
