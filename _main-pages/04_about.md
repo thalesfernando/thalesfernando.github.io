@@ -8,15 +8,16 @@ permalink: sobre/
 	<article>
 		<h2>{{ page.title }}</h2>
 	</article>
-	<article class="s1_2 s2_3 s3_3 s4_6">
+	<article class="s1_2 s2_5 s3_5 s4_6">
 		<img src="/img/about.jpg">
 		<article class="minhoca">
 		{% include minhoca.html %}
 		</article>
 	</article>
-	<article class="s1_0 s2_1 s3_1 s4_2">
+	<article class="s1_0 s2_1 s3_1 s4_1"></article>
+	<article class="s1_0 s2_1 s3_1 s4_1"></article>
 	</article>
-	<article class="s1_2 s2_2 s3_2 s4_3 about-text">
+	<article class="s1_2 s2_4 s3_4 s4_3 about-text">
 		<p>
 			Thales Fernando – POMB – é designer de formação, mas artista urbano e ilustrador por vocação.
 		</p>
