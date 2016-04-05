@@ -134,6 +134,11 @@ main {
 		position: relative;
 		width: 100%;
 		@include h-distribute-left;
+		.thumb-link:hover {
+			.expo-thumb-titulo {
+				color: orange;
+			}
+		}
 	}
 
 		figure {
@@ -170,16 +175,13 @@ main {
 			margin-top: 0;
 		}
 		.expo-thumb-titulo {
-			top: calc(100% + #{$leading/2});
-			left: 0;
-			padding: 0 $gutter;
 			position: relative;
 			font-family: "Alegreya Sans SC";
 			text-transform: lowercase;
 			@include thin;
-			text-align: left;
+			text-align: right;
 			line-height: 1.5*$leading;
-			border-left: solid orange 1px;
+			padding-left: 2*$gutter;
 		}
 
 		.exhibition-thumb {
@@ -191,10 +193,10 @@ main {
 				display: block;
 				padding-bottom: 100%;
 			}
-			a:hover {
-				h5 {
-					color: orange;
-				}
+			.expo-thumb-titulo {
+				border-left: solid transparent 1px;
+				transition: border 0.1s linear;
+				transition: color 0.1s linear;
 			}
 		}
 		.thumb-exhibition {
