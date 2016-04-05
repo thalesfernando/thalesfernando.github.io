@@ -30,13 +30,13 @@ permalink: sobre/
 	</article>
 </section>
 <section>
-	<article class="s1_0 s2_1 s3_1 s4_3">
+	<article class="s1_0 s2_0 s3_0 s4_2"></article>
+	<article class="s1_2 s2_2 s3_2 s4_3">
 		<h4>
 			Exposições
 		</h4>
 	</article>
-	<article class="s1_0 s2_1 s3_1 s4_1"></article>
-	<article class="s1_0 s2_1 s3_1 s4_3">
+	<article class="s1_2 s2_2 s3_2 s4_3">
 		<h5>
 			­Individuais
 		</h5>
@@ -54,8 +54,7 @@ permalink: sobre/
 			Hilo de la Vida ­ Collage Barcelona ­ Barcelona, Espanha<br/><br/>
 		</p>
 	</article>
-	<article class="s1_0 s2_1 s3_1 s4_1"></article>
-	<article class="s1_0 s2_1 s3_1 s4_3">
+	<article class="s1_2 s2_2 s3_2 s4_3">
 		<h5>
 			­Coletivas
 		</h5>
