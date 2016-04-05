@@ -147,7 +147,7 @@ main {
 			@extend .s1_1;
 			@extend .s2_2;
 			@extend .s3_2;
-			@extend .s4_4;
+			@extend .s4_3;
 			margin-bottom: $leading;
 		}
 		.work {
@@ -169,7 +169,41 @@ main {
 			padding-bottom: 100%;
 			margin-top: 0;
 		}
+		.expo-thumb-titulo {
+			top: calc(100% + #{$leading/2});
+			left: 0;
+			padding: 0 $gutter;
+			position: relative;
+			font-family: "Alegreya Sans SC";
+			text-transform: lowercase;
+			@include thin;
+			text-align: left;
+			line-height: 1.5*$leading;
+			border-left: solid orange 1px;
+		}
 
+		.exhibition-thumb {
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			&:after {
+				content: "";
+				display: block;
+				padding-bottom: 100%;
+			}
+			a:hover {
+				h5 {
+					color: orange;
+				}
+			}
+		}
+		.thumb-exhibition {
+			padding-bottom: 100%;
+			margin-top: 0;
+		}
+		.thumb-exhibition-content {
+			
+		}
 		.thumb-half {
 			padding-bottom: 50%;
 			margin-top: 0;

@@ -1,6 +1,6 @@
 ---
 layout: exhibition
-title: Sobre o Infinito e Outras Coisas
+title: Sobre o Infinito & Outras Coisas
 permalink: /exposicoes/sobre-o-infinito
 ---
 
