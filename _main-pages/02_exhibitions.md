@@ -4,7 +4,7 @@ title: Exposições
 permalink: exposicoes/
 ---
 
-<section>
+<section class="gambi">
 	{% for exhibition in site.exhibition %}
 		<article class="s1_0 s2_0 s3_0 s4_1"></article>
 		<article class="s1_1 s2_2 s3_2 s4_3">

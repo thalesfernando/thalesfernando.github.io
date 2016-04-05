@@ -5,7 +5,5 @@ permalink: trabalhos/
 ---
 
 <section>
-	<article class="gallery">
-		{% include work-gallery.html %}
-	</article>
+	{% include work-gallery.html %}
 </section>

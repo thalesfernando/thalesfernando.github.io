@@ -36,6 +36,10 @@ main {
 		@include h-distribute-center;
 	}
 
+	.gambi {
+		@include h-distribute-right;
+	}
+
 	.wrapper {
 		width: nth($col, 4) - $l-blank - $r-blank;
 		margin-left: $l-blank * $column;
@@ -179,9 +183,9 @@ main {
 			font-family: "Alegreya Sans SC";
 			text-transform: lowercase;
 			@include thin;
-			text-align: right;
+			text-align: left;
 			line-height: 1.5*$leading;
-			padding-left: 2*$gutter;
+			padding-right: 2*$gutter;
 		}
 
 		.exhibition-thumb {
