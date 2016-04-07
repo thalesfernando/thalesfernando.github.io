@@ -1,4 +1,11 @@
-@import "responsive-variables";
+---
+---
+
+@import
+	"layout-system-variables",
+    "normalize",
+    "layout-system-grid"
+;
 
 header {
 	position: fixed;
@@ -14,8 +21,10 @@ header {
 	box-shadow: 0 5px 30px rgba(0,0,0,0.02), 0 5px 20px rgba(0,0,0,0.04);
 
 	nav {
-		@include v-align-center;
-		@include h-distribute-justify;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: flex-start;
 		>* {
 			margin-left: $gutter / 2;
 			margin-right: $gutter / 2;
@@ -62,7 +71,7 @@ header {
 				}
 			}
 			.current-page {
-				@include bold;
+				font-weight: 700;
 			}
 			.link {
 				&:hover {
@@ -70,5 +79,15 @@ header {
 				}				
 			}
 		}
+	}
+}
+
+main {
+	width: 100%;
+	min-height: 100vh;
+	background-color: yellow;
+	padding: 75px 0 0;
+	&>img {
+		margin-left: calc(#{$respiro} - #{$gutter/2})
 	}
 }
