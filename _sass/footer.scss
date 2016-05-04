@@ -6,21 +6,20 @@ footer {
 	padding-right: calc(#{(100% - $area)/2} - #{$gutter/2});
 	position: absolute;
 	bottom: 0;
-	//revisar
-	background-color: #4a4a4a;
-	//
-	section {
-		flex-wrap: wrap;
+	height: 120px;
+	background-color: white;
+	box-shadow: 0 0 3*$leading 0 rgba(0,0,0,0.05);
+	p {
+		text-align: center;
 		width: 100%;
-		@include h-distribute-center;
 	}
 	.footnote {
 		//revisar
-		margin-top: 2 * $leading;
-		margin-bottom: 2 * $leading;
+		margin-top: 48px;
+		margin-bottom: 48px;
 		//
 		//revisar (criar estilo e colocar em typography.sass?)
-		color: white;
+		color: #4a4a4a;
 		//
 	}
 }

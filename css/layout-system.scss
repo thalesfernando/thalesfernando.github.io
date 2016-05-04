@@ -16,7 +16,6 @@ header {
 	padding-right: calc(#{(100% - $area)/2} - #{$gutter/2});
 	//revisar
 	background-color: white;
-	z-index: 3;
 	transition: background-color 0.2s ease;
 	box-shadow: 0 5px 30px rgba(0,0,0,0.02), 0 5px 20px rgba(0,0,0,0.04);
 

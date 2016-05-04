@@ -15,8 +15,6 @@ main {
 		width: 100%;
 		padding-left: calc(#{(100% - $area)/2} - #{$gutter/2});
 		padding-right: calc(#{(100% - $area)/2} - #{$gutter/2});
-//revisar
-		padding-bottom: 1.5*$leading;
 		@include h-distribute-left;
 	}
 
@@ -92,20 +90,13 @@ main {
 				}
 			}
 		}
-		&:last-child {
-			padding-bottom: 2*$leading;
-//
-		}
 		&>* {
 			width: calc(100% - #{$gutter});
-			z-index: 2;
-//revisar
-			margin-top: $leading/2;
-			margin-bottom: $leading/2;
+			z-index: 1;
 		}
 		.full-video {
 			width: 100%;
-			margin: 0;
+			margin-bottom: 3*$leading;;
 			margin-right: auto;
 			margin-left: auto;
 		}

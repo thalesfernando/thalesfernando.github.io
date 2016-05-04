@@ -17,6 +17,15 @@ body {
 	position: relative;
 	min-height: 100%;
 	background-color: white;
+	@media screen and (max-width: nth($breakpoints, 2) - 1px) {
+		&.fixed {
+			overflow: hidden;
+		}
+	}
+}
+
+.blurred {
+	-webkit-filter: blur(20px);
 }
 
 article, figure {

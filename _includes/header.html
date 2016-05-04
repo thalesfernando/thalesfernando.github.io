@@ -23,8 +23,20 @@
 					</span>
 				</a>
 			{% endfor %}
+			<a>
+				<span>
+					loja
+				</span>
+			</a>
 		</div>
 	</nav>
 </header>
+<div id="nav-icon">
+	<span></span>
+	<span></span>
+	<span></span>
+</div>
+<nav id="menu-mobile">
+</nav>
 {% if page.layout == 'project' %}<script type="text/javascript" src="{{ site.baseurl }}/scripts/header-project.js"></script>{% endif %}
 {% if page.permalink == '/' or page.permalink == 'about/'%}<script type="text/javascript" src="{{ site.baseurl }}/scripts/header-shrink.js"></script>{% endif %}

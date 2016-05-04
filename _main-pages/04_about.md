@@ -18,6 +18,7 @@ permalink: sobre/
 	<article class="s1_0 s2_1 s3_1 s4_1"></article>
 	</article>
 	<article class="s1_2 s2_4 s3_4 s4_3 about-text">
+		<script>src="//widget.crowdynews.com/CorreioBraziliense_politica-vert.js</script>
 		<p>
 			Thales Fernando – POMB – é designer de formação, mas artista urbano e ilustrador por vocação.
 		</p>

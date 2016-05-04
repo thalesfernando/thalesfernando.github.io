@@ -18,40 +18,42 @@ h5 {
 	}
 }
 main {
-	section {
+	.capa-home {
 		&:first-child {
-			padding-top: 4*$leading;
-			@media screen and (min-width: nth($breakpoints, 1)) {
-				padding-top: 5*$leading;
+			height: 100vh;
+			@media screen and (max-width: nth($breakpoints, 2) - 1px) {
+				padding-top: $logo-m-height + 2*$logo-m-margin;
+				padding-bottom: 2*($logo-m-height + 2*$logo-m-margin);
+			}
+			padding-top: $logo-d-height + 2*$logo-d-margin;
+			padding-bottom: 2*($logo-d-height + 2*$logo-d-margin);
+			padding-right: 0;
+			padding-left: 0;
+			article {
+				margin: 0;
+				background-image: url(/img/home.jpg);
+				background-repeat: no-repeat;
+				background-position: center top;
+				background-size: auto 100%;
 			}
 		}
 	}
-	.gallery {
-		margin-top: $leading;
-		@media screen and (min-width: nth($breakpoints, 2)) {
-			margin-top: 2*$leading;
+	.video-home{
+		@media screen and (max-width: nth($breakpoints, 2) - 1px) {
+			transform: translateY(-($logo-m-height + 2*$logo-m-margin));
+			margin-bottom: -($logo-m-height + 2*$logo-m-margin);
+			padding-top: $logo-m-height + 2*$logo-m-margin;
 		}
+		transform: translateY(-($logo-d-height + 2*$logo-d-margin));
+		margin-bottom: -($logo-d-height + 2*$logo-d-margin);
+		padding-top: ($logo-d-height + 2*$logo-d-margin);
+		box-shadow: 0 0 ($logo-d-height + 2*$logo-d-margin) 0 rgba(0,0,0,0.05);
+		article{
+			margin-top: 0;
+		}
+		-webkit-transition-property: all;
+		transition-property: all;
+		-webkit-transition-duration: 0.5s;
+		transition-duration: 0.5s;
 	}
-}
-
-.home-cover {
-	height: 100vh;
-	max-height: 66vw;
-	margin-top: 60px;
-	background-image: url(/img/home.jpg);
-	@media screen and (max-width: nth($breakpoints, 1) - 1px) {
-		background-size: 95%, auto;
-	}
-	@media screen and (min-width: nth($breakpoints, 1)) {
-		background-size: 90%, auto;
-	}
-	@media screen and (min-width: nth($breakpoints, 2)) {
-		background-size: 80%, auto;
-		margin-top: 70px;
-	}
-	@media screen and (min-width: nth($breakpoints, 3)) {
-		background-size: 70%, auto;
-	}
-	background-repeat: no-repeat;
-	background-position: center top;
 }
