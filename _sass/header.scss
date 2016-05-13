@@ -155,7 +155,11 @@ header {
 		left:0;
 		top:0;
 		position: fixed;
+		.current-page {
+			@include bold;
+		}
 		ul {
+			margin-top: 3*$leading;
 			opacity: 0;
 			-webkit-transition: opacity .1s linear;
 			-moz-transition: opacity .1s linear;
@@ -163,6 +167,7 @@ header {
 			transition: opacity .1s linear;
 			@include t4;
 			@include light;
+			@include h-align-center;
 			@include versalete;
 		}
 		&.open {

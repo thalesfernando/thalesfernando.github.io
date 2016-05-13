@@ -1,3 +1,22 @@
+//alignment of a column of child elements
+@mixin h-align-left {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+@mixin h-align-right {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+@mixin h-align-center {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 //alignment of a row of child elements
 @mixin v-align-top {
 	display: flex;
