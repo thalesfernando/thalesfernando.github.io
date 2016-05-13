@@ -5,12 +5,18 @@ html, body, header, main, footer, section, nav, div, article, figure, figcaption
 	padding: 0;
 	text-decoration: none;
 	box-sizing: border-box;
-	transition: margin 0.5s linear;
-	transition: padding 0.5s linear;
+	-webkit-transition: margin .25s ease, padding .25s ease;
+	-moz-transition: margin .25s ease, padding .25s ease;
+	-o-transition: margin .25s ease, padding .25s ease;
+	transition: margin .25s ease, padding .25s ease;
 	&:visited {
 		color: #4a4a4a;
 	}
 }
 a[href^="mailto:"] {
 	color: #4a4a4a;
+}
+
+article {
+	line-height:0;
 }

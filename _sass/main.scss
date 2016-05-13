@@ -1,6 +1,7 @@
-@import 
-	"responsive-variables",
-	"type-mixins"
+@import
+	"variaveis-responsividade",
+	"mixins-tipografia",
+	"mixins-diagrama"
 ;
 
 $footnote-padding: 2 * $leading;
@@ -8,6 +9,20 @@ $footer-height: $leading + 2 * $footnote-padding;
 
 main {
 	padding-bottom: $footer-height;
+	padding-top: 2*$leading;;
+	width: 100%;
+
+	img, p, ul, .full-video {
+		margin-bottom: 2 * $leading;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		margin-bottom: 2 * $leading;
+	}
+
+	h1 + ul, h2 + ul, h3 + ul, h4 + ul, h5 + ul, h6 + ul, p + p, h3 + p {
+		margin-top: - $leading;
+	}
 
 	section {
 		position: relative;
@@ -18,110 +33,20 @@ main {
 		@include h-distribute-left;
 	}
 
-	section>article {
+	section > article {
 		margin-left: $gutter/2;
 		margin-right: $gutter/2;
 	}
-
-	.related {
-		border-top: solid orange 1px;
-		padding-top: 2*$leading
-	}
-
-	.gallery{
-		margin-right: 0;
-		margin-left: 0;
-		@include h-distribute-center;
-	}
-
-	.gambi {
-		@include h-distribute-right;
-	}
-
-	.wrapper {
-		width: nth($col, 4) - $l-blank - $r-blank;
-		margin-left: $l-blank * $column;
-		margin-right: $r-blank * $column;
-		padding-left: $l-side * $column;
-		padding-right: $r-side * $column;
-		$column: (1/(nth($col, 4) - $l-blank - $r-blank - $l-side - $r-side))*100%;
-		// background-color: cyan;
-		p,h1,h2,h3,h4,h5,h6,figure {
-			position: relative;
-			width: 6 * $column;
-			max-width: $main-column * $column;
-			padding-left: $gutter/2;
-			padding-right: $gutter/2;
-			float: left;
-			&.full {
-				width: nth($col, 4) * $column;
-				max-width: nth($col, 4) * $column;
-			}
-		}
-
-		figcaption {
-			position: absolute;
-			left: -160px;
-			width: 160px;
-			bottom: 0;
-			padding-left: $gutter/2;
-			padding-right: $gutter/2;
-			text-align: right;
-		}
-	}
 	section {
-		&:first-child {
-			@media screen and (max-width: nth($breakpoints, 1) - 1px) {
-				padding-top: 4*$leading;
-			}
-			@media screen and (min-width: nth($breakpoints, 1)) {
-				padding-top: 4.5*$leading;
-			}
-			@media screen and (min-width: nth($breakpoints, 2)) {
-				padding-top: 5*$leading;
-			}
-			.left-side {
-				@media screen and (min-width: nth($breakpoints, 1)) {
-					top:4*$leading;
-					padding-top: $gutter/2;
-				}
-				@media screen and (min-width: nth($breakpoints, 2)) {
-					top: 4.5*$leading;
-				}
-			}
-		}
 		&>* {
 			width: calc(100% - #{$gutter});
 			z-index: 1;
 		}
 		.full-video {
 			width: 100%;
-			margin-bottom: 3*$leading;;
 			margin-right: auto;
 			margin-left: auto;
 		}
-	}
-	.bleeding + section {
-		padding-top: 1.5*$leading;
-	}
-
-	.bleeding-light + section {
-		padding-top: 1.5*$leading;
-	}
-
-	.bleeding {
-		padding-top: 1.5*$leading;
-		padding-bottom: 1.5*$leading;
-		background-color: #4a4a4a;
-//
-		h1, h2, h3, h4, h5, h6, p, a {
-			color: white;
-		}
-	}
-	.bleeding-light {
-		padding-top: 1.5*$leading;
-		padding-bottom: 1.5*$leading;
-		background-color: whitesmoke;
 	}
 	
 	article {
@@ -135,36 +60,6 @@ main {
 			}
 		}
 	}
-
-		figure {
-			@extend .s1_1;
-			@extend .s2_2;
-			@extend .s3_2;
-			@extend .s4_4;
-			margin-bottom: 2*$leading;
-		}
-		.exhibition {
-			@extend .s1_1;
-			@extend .s2_2;
-			@extend .s3_2;
-			@extend .s4_3;
-			margin-bottom: $leading;
-		}
-		.work {
-			@extend .s1_1;
-			@extend .s2_2;
-			@extend .s3_1;
-			@extend .s4_3;
-			margin-bottom: $leading;
-		}
-			
-		.related-exhibition {
-			@extend .s1_1;
-			@extend .s2_2;
-			@extend .s3_1;
-			@extend .s4_6;
-			margin-bottom: $leading;
-		}
 		.thumb {
 			padding-bottom: 100%;
 			margin-top: 0;
@@ -190,8 +85,10 @@ main {
 			}
 			.expo-thumb-titulo {
 				border-left: solid transparent 1px;
-				transition: border 0.1s linear;
-				transition: color 0.1s linear;
+				-webkit-transition: border 0.1s linear, color 0.1s linear;
+				-moz-transition: border 0.1s linear, color 0.1s linear;
+				-o-transition: border 0.1s linear, color 0.1s linear;
+				transition: border 0.1s linear, color 0.1s linear;
 			}
 		}
 		.thumb-exhibition {
@@ -228,86 +125,5 @@ main {
 			span {
 				background-color: rgba(255, 255, 255, 0.9);
 			}
-			h5 {
-				opacity: 0;
-				color: #4a4a4a;
-				margin-bottom: 0;
-				margin-top: 0;
-				white-space: nowrap;
-				line-height: normal;
-				@include normal;
-				@include versalete;
-				@include black;
-				&.soon-text {
-					margin-top: 0;
-					@include light;
-				}
-			}
 		}
-		.soon {
-			.thumb-content {
-				background-blend-mode: multiply;
-				background-color: #4a4a4a;
-			}
-			&:hover {
-				.thumb-content {
-					background-color: #4a4a4a;
-				}
-			}
-
-			span {
-				background-color: #4a4a4a;
-				color: white;
-			}
-		}
-
-	.left-side {
-		@extend .s1_2;
-		@extend .s2_2;
-		@extend .s3_2;
-		@extend .s4_3;
-		position: relative;
-		margin: 0;
-		display: flex;
-		flex-wrap: wrap;
-		flex-direction: row;
-		@media screen and (max-width: nth($breakpoints, 1) - 1px) {
-			width: 100%;
-		}
-
-		@media screen and (min-width: nth($breakpoints, 1)) {
-			position:absolute;
-			flex-direction: column;
-			padding-right: 3*$gutter;
-			padding-top: 2*$leading;
-			left: calc(#{(100% - $area)/2} - #{$gutter/2});
-			top:0;
-			p {
-				text-align: right;
-			}
-		}
-		@media screen and (min-width: nth($breakpoints, 2)) {
-		}
-		&>* {
-			@media screen and (max-width: nth($breakpoints, 1) - 1px) {
-				width: calc(100% - #{$gutter});
-			}
-			width: 100%;
-			margin-left: $gutter / 2;
-			margin-right: $gutter / 2;
-			margin-top: 0;
-			margin-bottom: $leading/2;
-		}
-		&>img {
-			&:first-child {
-				margin-top: 0;
-			}
-			margin-top: $leading;
-			margin-bottom: $leading;
-		}
-		p, a {
-			@include italic;
-			color: #4a4a4a;
-		}
-	}
 }

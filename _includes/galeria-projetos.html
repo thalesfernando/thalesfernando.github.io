@@ -1,0 +1,8 @@
+<section>
+	{% assign partes-permalink = page.permalink | split:'/' %}
+	{% assign colecao = partes-permalink[0] %}
+	{% capture parte-permalink-string %}/{{ partes-permalink[0] }}{% endcapture %}
+	{% for item in site.[colecao] %}
+		{% include projeto-thumb.html %}
+	{% endfor %}
+</section>

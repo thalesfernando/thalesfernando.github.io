@@ -1,0 +1,114 @@
+@import "variaveis-responsividade";
+
+@mixin thin {
+	font-weight: 100;
+}
+
+@mixin light {
+	font-weight: 300;
+}
+
+@mixin regular {
+	font-weight: 400;
+}
+
+@mixin medium {
+	font-weight: 500;
+}
+
+@mixin bold {
+	font-weight: 700;
+}
+
+@mixin extrabold {
+	font-weight: 800;
+}
+
+@mixin black {
+	font-weight: 900;
+}
+
+@mixin italic {
+	font-style: italic;
+}
+
+@mixin normal {
+	font-style: normal;
+}
+
+@mixin versalete {
+	font-family: 'Alegreya Sans SC', sans-serif;
+	text-transform: lowercase;
+
+}
+
+@mixin text-size {
+	font-size: 0.9rem;
+	line-height: $leading;
+}
+
+@mixin t1 {
+	@media screen and (max-width: nth($breakpoints, 3) - 1px) {
+		font-size: 2.5rem;
+		line-height: 2*$leading;
+	}
+	@media screen and (min-width: nth($breakpoints, 3)) {
+		font-size: 3.375rem;
+		line-height: 2.5*$leading;
+	}
+}
+
+@mixin t2 {
+	@media screen and (max-width: nth($breakpoints, 3) - 1px) {
+		font-size: 2rem;
+		line-height: 2*$leading;
+	}
+	@media screen and (min-width: nth($breakpoints, 3)) {
+		font-size: 3rem;
+		line-height: 2*$leading;
+	}
+}
+
+@mixin t3 {
+	@media screen and (max-width: nth($breakpoints, 3) - 1px) {
+		font-size: 1.625rem;
+		line-height: 1.5*$leading;
+	}
+	@media screen and (min-width: nth($breakpoints, 3)) {
+		font-size: 2.25rem;
+		line-height: 1.5*$leading;
+	}
+}
+
+@mixin t4 {
+	@media screen and (max-width: nth($breakpoints, 3) - 1px) {
+		font-size: 1.5rem;
+		line-height: 1.5*$leading;
+	}
+	@media screen and (min-width: nth($breakpoints, 3)) {
+		font-size: 1.625rem;
+		line-height: 1.5*$leading;
+	}
+}
+
+@mixin t5 {
+	@media screen and (max-width: nth($breakpoints, 3) - 1px) {
+		font-size: 1.125rem;
+		line-height: $leading;
+	}
+	@media screen and (min-width: nth($breakpoints, 3)) {
+		font-size: 1.375rem;
+		line-height: 1.5*$leading;
+	}
+}
+
+@mixin t6 {
+	@media screen and (max-width: nth($breakpoints, 3) - 1px) {
+		font-size: 1rem;
+		line-height: $leading;
+	}
+	@media screen and (min-width: nth($breakpoints, 3)) {
+		font-size: 1rem;
+		line-height: $leading;
+	}
+}

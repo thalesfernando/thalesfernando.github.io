@@ -1,0 +1,24 @@
+{% assign partes-permalink = page.permalink | split:'/' %}
+{% assign colecao = partes-permalink[0] %}
+{% capture parte-permalink-string %}/{{ partes-permalink[0] }}{% endcapture %}
+<section>
+	<h2 class="titulo-secao-projeto">
+	{% for pagina in site.paginas %}
+		{% if pagina.url contains partes-permalink[0] %}
+			+ {{ pagina.title | downcase}}
+		{% endif %}
+	{% endfor %}
+	</h2>
+	{% for item in site.[colecao] %}
+		{% unless item.url == page.url %}
+			<article class="s1_0 s2_0 s3_1 s4_1"></article>
+			<article class="s1_1 s2_2 s3_3 s4_3">
+				<a class="thumb-link" href="{{ site.baseurl }}{{item.url}}">
+					<div class="exhibition-thumb" style="background-image: url({{ site.baseurl }}/img{{ item.url | remove: '.html'}}{{ item.url | remove: '.html'| remove: parte-permalink-string }}-thumb.jpg)">
+					</div>
+					<h3 class="titulo-thumbnail">{{ item.title }}</h3>
+				</a>
+			</article>
+		{% endunless %}
+	{% endfor %}
+</section>

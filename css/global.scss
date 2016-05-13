@@ -2,11 +2,11 @@
 ---
 
 @import
-	"responsive-variables",
-    "diagram-mixins",
+	"variaveis-responsividade",
+    "mixins-diagrama",
     "normalize",
-    "grid",
-    "typography"
+    "metrica-horizontal",
+    "tipografia"
 ;
 
 html {
@@ -14,9 +14,11 @@ html {
 }
 
 body {
-	position: relative;
+	position: absolute;
 	min-height: 100%;
+	width: 100%;
 	background-color: white;
+	@include h-distribute-left;
 	@media screen and (max-width: nth($breakpoints, 2) - 1px) {
 		&.fixed {
 			overflow: hidden;
@@ -48,32 +50,6 @@ img {
 	fill: orange;
 }
 
-.grid {
-	position: fixed;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	padding-left: calc(#{(100% - $area)/2} - #{$gutter/2});
-	padding-right: calc(#{(100% - $area)/2} - #{$gutter/2});
-	opacity: 0;
-	opacity: 1;
-	transition: opacity .3s;
-	z-index: 1;
-	.area {
-		width: 100%;
-		height: 100%;
-		background-color: rgba(0, 255, 255, 0.2);
-		display: flex;
-		flex-wrap: wrap;
-		flex-direction: row;
-	}
-	.module {
-		height: 100%;
-		background-color: rgba(255, 0, 255, 0.2);
-		transition: width .5s;
-	}
-}
-
 .processing-canvas {
 	zoom: 50%;
 	&:focus {
@@ -94,6 +70,81 @@ img {
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
+}
+
+#grid {
+	position: fixed;
+	z-index: 4;
+	width: calc(24px + #{4/3*$gutter});
+	height: calc(24px + #{4/3*$gutter});
+	bottom:0;
+	right:0;
+	padding: 0;
+	background-color: rgba(0, 255, 255, 0.25);
+	display: flex;
+	-webkit-transition: all .1s ease-in-out, padding .1s ease-in-out .1s;
+	-moz-transition: all .1s ease-in-out, padding .1s ease-in-out .1s;
+	-o-transition: all .1s ease-in-out, padding .1s ease-in-out .1s;
+	transition: all .1s ease-in-out, padding .1s ease-in-out .1s;
+	@include v-align-center;
+	&::after {
+		position: absolute;
+		@include bold;
+		@include versalete;
+		@extend .subtitulo-2;
+		width: calc(24px + #{4/3*$gutter});
+		line-height: calc(24px + #{4/3*$gutter});
+		text-align: center;
+		bottom: 0;
+		right: 0;
+		color: #4a4a4a;
+		mix-blend-mode: multiply;
+		-webkit-transition: opacity .1s ease-in-out;
+		-moz-transition: opacity .1s ease-in-out;
+		-o-transition: opacity .1s ease-in-out;
+		transition: opacity .1s ease-in-out;
+		content: 'grid';
+	}
+	.grid-column {
+		-webkit-transition: opacity .1s linear .15s;
+		-moz-transition: opacity .1s linear .15s;
+		-o-transition: opacity .1s linear .15s;
+		transition: opacity .1s linear .15s;
+		height: 0;
+		opacity: 0;
+	}
+	&:hover {
+		background-color: rgba(0, 255, 255, 1);
+		cursor: nw-resize;
+		p {
+			opacity: 1;
+		}
+	}
+	&.aberto {
+		width: 100%;
+		height: 100vh;
+		background-color: rgba(0, 255, 255, 0.15);
+		padding-left: calc(#{(100% - 83.333%)/2} - #{$gutter/2});
+		padding-right: calc(#{(100% - 83.333%)/2} - #{$gutter/2});
+		&::after {
+			content: 'fechar grid';
+			text-align: right;
+			right: 2/3*$gutter;
+			width: 100%;
+		}
+		.grid-column {
+			opacity: 1;
+			height: 100vh;
+			background-color: rgba(0, 255, 255, 0.25);
+		}
+		&:hover {
+			background-color: rgba(0, 255, 255, 0.25);
+			cursor: se-resize;
+			p {
+				opacity: 1;
+			}
+		}
+	}
 }
 
 @import "header";

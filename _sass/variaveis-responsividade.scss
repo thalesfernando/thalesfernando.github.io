@@ -1,0 +1,28 @@
+$breakpoints: 580px, 900px, 1280px;
+
+// ritmo vertical
+$leading: 1.5rem;
+$base-font-size: 1rem;
+
+// ritmo horizontal
+$col: 2, 6, 12, 12; // número de colunas em cada faixa de resolução
+$gutter: $leading; // entrecoluna
+$area: 83.333%; // vai se tornar uma lista, com os diferentes valores da área útil para cada resolução
+$max-area: 1240px;
+$min-column: 7.5rem; // largura mínima da coluna (para o base-font-size especificado)
+$max-column: 640px;
+$left-side: 0, 2, 2, 2;
+$right-side: 0, 0, 0, 2;
+$aside-side: left;
+
+$logo-m-height: 18px;
+$logo-m-margin: 15px;
+$logo-d-height: 30px;
+$logo-d-margin: 21px;
+
+$column: 100%/nth($col, 4);
+$l-blank: 2;
+$r-blank: 2;
+$l-side: 2;
+$r-side: 0;
+$main-column: nth($col, 4) - $l-blank - $r-blank - $l-side - $r-side;

@@ -1,0 +1,13 @@
+---
+---
+
+@import
+    "mixins-tipografia",
+    "variaveis-responsividade"
+;
+
+main {
+	.titulo-thumbnail {
+		text-align: center;
+	}
+}

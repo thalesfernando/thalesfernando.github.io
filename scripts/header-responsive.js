@@ -7,6 +7,9 @@ $(document).ready(function(){
 		$('main').toggleClass('blurred');
 		$('footer').toggleClass('blurred');
 	});
+	$('#grid').click(function(){
+		$(this).toggleClass('aberto');
+	});
 });
 
 var mobmenu = document.querySelector("#nav-icon");

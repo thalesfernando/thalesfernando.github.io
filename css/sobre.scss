@@ -1,39 +1,17 @@
 ---
 ---
 
-@import
-    "color-mixins",
-    "responsive-variables"
-;
+@import "variaveis-responsividade";
 
 main {
-	article {
-		&>img {
-			margin-top: 0;
-			padding-left: 0;
-			padding-right: 0;
+	.sobre-img {
+		@media screen and (max-width: nth($breakpoints, 2) - 1px) and (min-width: nth($breakpoints, 1)) {
+			background: url(/img/sobre-tablet.jpg) no-repeat;
+			background-size: cover;
+			padding-top: 100%;
+			width: 100%;
+			height: 0;
+			transition: none;
 		}
-	}
-	section {
-		@media screen and (min-width: nth($breakpoints, 1)) {
-			&:first-child {
-				padding-top: 5.5*$leading;
-				.left-side {
-					top: 4.5*$leading;
-					padding-top: 1.5*$leading;
-				}
-			}
-		}
-		.left-side {
-			p {
-				text-align: left;
-			}
-		}
-	}
-	.wufoo {
-		font-family: "Greta Sans";
-	}
-	.about-text {
-		padding-top: 3*$leading;
 	}
 }

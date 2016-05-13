@@ -1,0 +1,20 @@
+---
+---
+
+@import
+    "mixins-tipografia",
+    "variaveis-responsividade"
+;
+
+main {
+	@media screen and (max-width: nth($breakpoints, 2) - 1px) {
+		>*:first-child {
+			margin-top: $logo-m-height + 2*$logo-m-margin;
+		}
+	}
+	@media screen and (min-width: nth($breakpoints, 2)) {
+		>*:first-child {
+			margin-top: $logo-d-height + 2*$logo-d-margin;
+		}
+	}
+}

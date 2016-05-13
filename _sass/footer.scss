@@ -1,4 +1,4 @@
-@import "responsive-variables";
+@import "variaveis-responsividade";
 
 footer {
 	width: 100%;
@@ -6,20 +6,20 @@ footer {
 	padding-right: calc(#{(100% - $area)/2} - #{$gutter/2});
 	position: absolute;
 	bottom: 0;
-	height: 120px;
+	left:0;
 	background-color: white;
-	box-shadow: 0 0 3*$leading 0 rgba(0,0,0,0.05);
-	p {
-		text-align: center;
-		width: 100%;
-	}
-	.footnote {
-		//revisar
-		margin-top: 48px;
-		margin-bottom: 48px;
-		//
-		//revisar (criar estilo e colocar em typography.sass?)
-		color: #4a4a4a;
-		//
+	section {
+		margin-left: $gutter/2;
+		margin-right: $gutter/2;
+		article {
+			border-top: solid #d8d8d8 1px;
+			.rodape {
+				margin-top: 2 * $leading;
+				margin-bottom: 2 * $leading;
+				color: #4a4a4a;
+				text-align: center;
+				width: 100%;
+			}
+		}
 	}
 }

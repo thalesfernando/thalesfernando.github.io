@@ -2,9 +2,8 @@
 ---
 
 @import
-    "color-mixins",
-    "type-mixins",
-    "responsive-variables"
+    "mixins-tipografia",
+    "variaveis-responsividade"
 ;
 
 h1 {
@@ -17,7 +16,9 @@ h5 {
 		margin-bottom: 0;
 	}
 }
+
 main {
+	padding-top: 0;
 	.capa-home {
 		&:first-child {
 			height: 100vh;
@@ -25,6 +26,7 @@ main {
 				padding-top: $logo-m-height + 2*$logo-m-margin;
 				padding-bottom: 2*($logo-m-height + 2*$logo-m-margin);
 			}
+			margin-top: 0;
 			padding-top: $logo-d-height + 2*$logo-d-margin;
 			padding-bottom: 2*($logo-d-height + 2*$logo-d-margin);
 			padding-right: 0;
@@ -51,9 +53,9 @@ main {
 		article{
 			margin-top: 0;
 		}
-		-webkit-transition-property: all;
-		transition-property: all;
-		-webkit-transition-duration: 0.5s;
-		transition-duration: 0.5s;
+		-webkit-transition: all .25s ease;
+		-moz-transition: all .25s ease;
+		-o-transition: all .25s ease;
+		transition: all .25s ease;
 	}
 }

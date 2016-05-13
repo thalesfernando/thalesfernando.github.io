@@ -1,0 +1,98 @@
+@import
+	"variaveis-responsividade",
+	"mixins-tipografia"
+;
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Alegreya Sans', sans-serif;
+	font-stretch: normal;
+	-webkit-transition: font .25s ease;
+	-moz-transition: font .25s ease;
+	-o-transition: font .25s ease;
+	transition: font .25s ease;
+	color: #4a4a4a;
+}
+
+p, figcaption, ul {
+	font-family: 'Lato', sans-serif;
+	@include light;
+	@include normal;
+	@include text-size;
+	color: #4a4a4a;
+}
+
+h1 {
+	@extend .titulo-pagina;
+}
+
+h2 {
+	@extend .titulo-secao-pagina;
+}
+
+h3 {
+	@extend .subtitulo;
+}
+
+h4 {
+	@extend .subtitulo-2;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.titulo-pagina {
+	@include t2;
+}
+
+.titulo-projeto {
+	@include t3;
+	@include versalete;
+}
+
+.titulo-secao-pagina {
+	@include t4;
+}
+
+.titulo-secao-projeto {
+	@include t4;
+	@include versalete;
+}
+
+.subtitulo {
+	@include t5;
+	@include light;
+	@include versalete;
+}
+
+.subtitulo-2 {
+	@include t6;
+}
+
+.titulo-bloco {
+	@include t5;
+}
+.titulo-thumbnail {
+	@include t5;
+	@include light;
+	@include versalete;
+}
+.rodape {
+	@include italic;
+}
+
+.destaque {
+	padding-left: $gutter;
+	border-left: solid #4a4a4a 1px;
+}
+
+a {
+	line-height: $leading;
+}
+
+p > a {
+	@include italic;
+	&:hover{
+		color: orange;
+	}
+}

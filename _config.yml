@@ -5,11 +5,19 @@ email: hello@pomb.com.br
 markdown: kramdown
 
 collections:
+  paginas:
+    output: true
+  trabalhos:
+    output: true
+  exposicoes:
+    output: true
+  rascunhos:
+    output: false
   main-pages:
     output: true
-  work:
+  works:
     output: true
-  exhibition:
+  exhibitions:
     output: true
-  work-soon:
+  drafts:
     output: false

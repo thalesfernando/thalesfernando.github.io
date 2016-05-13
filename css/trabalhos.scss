@@ -1,0 +1,15 @@
+---
+---
+
+@import "variaveis-responsividade";
+
+main {
+	.exhibition-thumb{
+		padding-left: $gutter;
+		padding-right: $gutter;
+		background-size: auto 100%;
+	}
+	.titulo-thumbnail {
+		text-align: center;
+	}
+}

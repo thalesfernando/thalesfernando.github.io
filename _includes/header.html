@@ -1,25 +1,25 @@
-{% if page.layout == 'project' %}<header class="on-cover">{% else %}<header>{% endif %}
+<header>
 	<nav>
 		<a href="{{ site.baseurl }}/" class="logo">
 			{% include logo.html %}
 		</a>
-		<div class="menu">
-			{% for main-page in site.main-pages %}
+		<div id="menu-desktop">
+			{% for pagina in site.paginas %}
 				<a
-				{% if page.url contains main-page.url %}
+				{% if page.url contains pagina.url %}
 				 class="current-page
-					{% if page.url != main-page.url %}
+					{% if page.url != pagina.url %}
 						 link
 					{% endif %}
 						"
-					{% if page.url != main-page.url %}
-						href="{{ site.baseurl }}{{ main-page.url}}"
+					{% if page.url != pagina.url %}
+						href="{{ site.baseurl }}{{pagina.url}}"
 					{% endif %}
 				{% else %}
-					 class="link" href="{{ site.baseurl }}{{ main-page.url }}"
+					 class="link" href="{{ site.baseurl }}{{ pagina.url }}"
 				{% endif %}>
 					<span>
-						{{ main-page.title | upcase }}
+						{{ pagina.title | upcase }} 
 					</span>
 				</a>
 			{% endfor %}
@@ -31,12 +31,34 @@
 		</div>
 	</nav>
 </header>
+<nav id="menu-mobile">
+	<ul>
+	{% for pagina in site.paginas %}
+		<li>
+			<a
+			{% if page.url contains pagina.url %}
+			 class="current-page
+				{% if page.url != pagina.url %}
+					 link
+				{% endif %}
+					"
+				{% if page.url != pagina.url %}
+					href="{{ site.baseurl }}{{pagina.url}}"
+				{% endif %}
+			{% else %}
+				 class="link" href="{{ site.baseurl }}{{ pagina.url }}"
+			{% endif %}>
+				<span>
+					{{ pagina.title | downcase }} 
+				</span>
+			</a>
+		</li>
+	{% endfor %}
+		<li><a><span>loja</span></a></li>
+	</ul>
+</nav>
 <div id="nav-icon">
 	<span></span>
 	<span></span>
 	<span></span>
 </div>
-<nav id="menu-mobile">
-</nav>
-{% if page.layout == 'project' %}<script type="text/javascript" src="{{ site.baseurl }}/scripts/header-project.js"></script>{% endif %}
-{% if page.permalink == '/' or page.permalink == 'about/'%}<script type="text/javascript" src="{{ site.baseurl }}/scripts/header-shrink.js"></script>{% endif %}
