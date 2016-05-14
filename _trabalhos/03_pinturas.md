@@ -37,11 +37,13 @@ permalink: trabalhos/pinturas
 </article>
 <article class="s1_0 s2_0 s3_1 s4_1"></article>
 
-<article class="s1_2 s2_3 s3_6 s4_6">
+<article class="s1_0 s2_0 s3_1 s4_1"></article>
+<article class="s1_2 s2_3 s3_5 s4_5">
 	<img src="/img/trabalhos/pinturas/pinturas-8.jpg">
 </article>
-<article class="s1_2 s2_3 s3_6 s4_6">
+<article class="s1_2 s2_3 s3_5 s4_5">
 	<img src="/img/trabalhos/pinturas/pinturas-9.jpg">
 </article>
+<article class="s1_0 s2_0 s3_1 s4_1"></article>
 
 </section>
