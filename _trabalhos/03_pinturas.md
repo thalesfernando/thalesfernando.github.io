@@ -19,22 +19,20 @@ permalink: trabalhos/pinturas
 	<img src="/img/trabalhos/pinturas/pinturas-3.jpg">
 </article>
 
-<article class="s1_0 s2_0 s3_1 s4_2"></article>
-<article class="s1_2 s2_3 s3_5 s4_4">
+<article class="s1_0 s2_0 s3_1 s4_1"></article>
+<article class="s1_2 s2_3 s3_5 s4_5">
 	<img src="/img/trabalhos/pinturas/pinturas-4.jpg">
 </article>
-<article class="s1_0 s2_0 s3_0 s4_1"></article>
-<article class="s1_2 s2_3 s3_5 s4_4">
+<article class="s1_2 s2_3 s3_5 s4_5">
 	<img src="/img/trabalhos/pinturas/pinturas-5.jpg">
 </article>
 <article class="s1_0 s2_0 s3_1 s4_1"></article>
 
-<article class="s1_0 s2_0 s3_1 s4_2"></article>
-<article class="s1_2 s2_3 s3_5 s4_4">
+<article class="s1_0 s2_0 s3_1 s4_1"></article>
+<article class="s1_2 s2_3 s3_5 s4_5">
 	<img src="/img/trabalhos/pinturas/pinturas-6.jpg">
 </article>
-<article class="s1_0 s2_0 s3_0 s4_1"></article>
-<article class="s1_2 s2_3 s3_5 s4_4">
+<article class="s1_2 s2_3 s3_5 s4_5">
 	<img src="/img/trabalhos/pinturas/pinturas-7.jpg">
 </article>
 <article class="s1_0 s2_0 s3_1 s4_1"></article>
