@@ -1,7 +1,7 @@
 {% assign partes-permalink = page.permalink | split:'/' %}
 {% assign colecao = partes-permalink[0] %}
 {% capture parte-permalink-string %}/{{ partes-permalink[0] }}{% endcapture %}
-<section>
+<section class="mais-projetos">
 	<h2 class="titulo-secao-projeto">
 	{% for pagina in site.paginas %}
 		{% if pagina.url contains partes-permalink[0] %}

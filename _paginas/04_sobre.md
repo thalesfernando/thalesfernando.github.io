@@ -46,12 +46,9 @@ permalink: sobre/
 				<ul>
 				{% for expo in site.data.exposicoes-individuais %}
 					{% if expo.ano == exposicao.ano %}
-						<li><i>{{ expo.titulo }}</i>
-						{% if expo.titulo != '' and expo.local != '' %}
-						 | 
-						{% else %}
-						{% endif %}
-						{{ expo.local }}</li>
+						<li><i>{% if expo.titulo %} {{ expo.titulo }} {% endif %}</i>
+						{% if expo.titulo %} | {% endif %}
+						{% if expo.local %}{{ expo.local }}{% endif %}</li>
 					{% endif %}
 				{% endfor %}
 				</ul>
@@ -73,12 +70,9 @@ permalink: sobre/
 				<ul>
 				{% for expo in site.data.exposicoes-coletivas %}
 					{% if expo.ano == exposicao.ano %}
-						<li><i>{{ expo.titulo }}</i>
-						{% if expo.titulo =='' or expo.local =='' %}
-						{% else %}
-						 | 
-						{% endif %}
-						{{ expo.local }}</li>
+						<li><i>{% if expo.titulo %} {{ expo.titulo }} {% endif %}</i>
+						{% if expo.titulo %} | {% endif %}
+						{% if expo.local %}{{ expo.local }}{% endif %}</li>
 					{% endif %}
 				{% endfor %}
 				</ul>

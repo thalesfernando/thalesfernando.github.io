@@ -40,7 +40,7 @@ main {
 			}
 		}
 	}
-	.video-home{
+	.video-largo{
 		@media screen and (max-width: nth($breakpoints, 2) - 1px) {
 			transform: translateY(-($logo-m-height + 2*$logo-m-margin));
 			margin-bottom: -($logo-m-height + 2*$logo-m-margin);

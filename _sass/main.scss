@@ -12,7 +12,7 @@ main {
 	padding-top: 2*$leading;;
 	width: 100%;
 
-	img, p, ul, .full-video {
+	img, p, ul, .video {
 		margin-bottom: 2 * $leading;
 	}
 
@@ -33,6 +33,11 @@ main {
 		@include h-distribute-left;
 	}
 
+	section > section {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
 	section > article {
 		margin-left: $gutter/2;
 		margin-right: $gutter/2;
@@ -41,11 +46,6 @@ main {
 		&>* {
 			width: calc(100% - #{$gutter});
 			z-index: 1;
-		}
-		.full-video {
-			width: 100%;
-			margin-right: auto;
-			margin-left: auto;
 		}
 	}
 	

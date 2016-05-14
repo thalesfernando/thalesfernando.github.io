@@ -1,5 +1,5 @@
 var $allVideos = $("iframe"),
-    $fluidEl = $(".full-video");
+    $fluidEl = $(".video");
 
 $allVideos.each(function() {
 

@@ -97,7 +97,7 @@ permalink: exhibitions/on-infinity
 <section>
 	<article class="s1_0 s2_0 s3_0 s4_2"></article>
 	<article class="s1_2 s2_6 s3_12 s4_9">
-		<div class="full-video">
+		<div class="video">
 			<iframe src="https://player.vimeo.com/video/129667484?color=ffa500&title=0&byline=0&portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 		</div>
 	</article>
