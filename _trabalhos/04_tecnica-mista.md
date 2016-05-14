@@ -5,17 +5,12 @@ permalink: trabalhos/tecnica-mista
 ---
 
 <section>
-	<article class="s1_0 s2_1 s3_2 s4_2"></article>
-	<article class="s1_2 s2_4 s3_9 s4_8">
-		<img src="/img/trabalhos/tecnica-mista/mista-0.jpg">
-	</article>
-	<article class="s1_0 s2_1 s3_1 s4_2"></article>
-
-	<article class="s1_0 s2_1 s3_2 s4_3"></article>
-	<article class="s1_2 s2_4 s3_8 s4_6">
+	<article class="s1_2 s2_3 s3_6 s4_6">
 		<img src="/img/trabalhos/tecnica-mista/mista-1.jpg">
 	</article>
-	<article class="s1_0 s2_1 s3_2 s4_3"></article>
+	<article class="s1_2 s2_3 s3_6 s4_6">
+		<img src="/img/trabalhos/tecnica-mista/mista-0.jpg">
+	</article>
 
 	<article class="s1_0 s2_0 s3_0 s4_0"></article>
 	<article class="s1_2 s2_6 s3_12 s4_12">
