@@ -6,45 +6,39 @@ permalink: trabalhos/desenhos
 
 <section>
 
-<article class="s1_0 s2_0 s3_1 s4_2"></article>
-<article class="s1_2 s2_6 s3_10 s4_9">
-	<img src="/img/trabalhos/desenhos/desenhos-1.png">
-</article>
-<article class="s1_0 s2_0 s3_1 s4_1"></article>
+{% include
+	img-solo-largo.html
+	img="/img/trabalhos/desenhos/desenhos-1.png"
+%}
 
-<article class="s1_2 s2_3 s3_6 s4_6">
-	<img src="/img/trabalhos/desenhos/desenhos-2.jpg">
-</article>
-<article class="s1_2 s2_3 s3_6 s4_6">
-	<img src="/img/trabalhos/desenhos/desenhos-3.jpg">
-</article>
+{% include
+	img-duo-cheio.html
+	img-1="/img/trabalhos/desenhos/desenhos-2.jpg"
+	img-2="/img/trabalhos/desenhos/desenhos-3.jpg"
+%}
 
-<article class="s1_2 s2_3 s3_6 s4_6">
-	<img src="/img/trabalhos/desenhos/desenhos-4.jpg">
-</article>
-<article class="s1_2 s2_3 s3_6 s4_6">
-	<img src="/img/trabalhos/desenhos/desenhos-5.jpg">
-</article>
+{% include
+	img-duo-cheio.html
+	img-1="/img/trabalhos/desenhos/desenhos-4.jpg"
+	img-2="/img/trabalhos/desenhos/desenhos-5.jpg"
+%}
 
-<article class="s1_2 s2_3 s3_6 s4_6">
-	<img src="/img/trabalhos/desenhos/desenhos-6.jpg">
-</article>
-<article class="s1_2 s2_3 s3_6 s4_6">
-	<img src="/img/trabalhos/desenhos/desenhos-7.jpg">
-</article>
+{% include
+	img-duo-cheio.html
+	img-1="/img/trabalhos/desenhos/desenhos-6.jpg"
+	img-2="/img/trabalhos/desenhos/desenhos-7.jpg"
+%}
 
-<article class="s1_2 s2_3 s3_6 s4_6">
-	<img src="/img/trabalhos/desenhos/desenhos-8.jpg">
-</article>
-<article class="s1_2 s2_3 s3_6 s4_6">
-	<img src="/img/trabalhos/desenhos/desenhos-9.jpg">
-</article>
+{% include
+	img-duo-cheio.html
+	img-1="/img/trabalhos/desenhos/desenhos-8.jpg"
+	img-2="/img/trabalhos/desenhos/desenhos-9.jpg"
+%}
 
-<article class="s1_2 s2_3 s3_6 s4_6">
-	<img src="/img/trabalhos/desenhos/desenhos-10.png">
-</article>
-<article class="s1_2 s2_3 s3_6 s4_6">
-	<img src="/img/trabalhos/desenhos/desenhos-11.jpg">
-</article>
+{% include
+	img-duo-cheio.html
+	img-1="/img/trabalhos/desenhos/desenhos-10.png"
+	img-2="/img/trabalhos/desenhos/desenhos-11.jpg"
+%}
 
 </section>

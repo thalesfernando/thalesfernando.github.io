@@ -6,44 +6,33 @@ permalink: trabalhos/pinturas
 
 <section>
 
-<article class="s1_0 s2_0 s3_2 s4_2"></article>
-<article class="s1_2 s2_6 s3_9 s4_9">
-	<img src="/img/trabalhos/pinturas/pinturas-1.jpg">
-</article>
-<article class="s1_0 s2_0 s3_1 s4_1"></article>
+{% include 
+	img-solo-largo.html
+	img="/img/trabalhos/pinturas/pinturas-1.jpg"
+%}
 
-<article class="s1_2 s2_3 s3_6 s4_6">
-	<img src="/img/trabalhos/pinturas/pinturas-2.jpg">
-</article>
-<article class="s1_2 s2_3 s3_6 s4_6">
-	<img src="/img/trabalhos/pinturas/pinturas-3.jpg">
-</article>
+{% include
+	img-duo-cheio.html
+	img-1="/img/trabalhos/pinturas/pinturas-2.jpg"
+	img-2="/img/trabalhos/pinturas/pinturas-3.jpg"
+%}
 
-<article class="s1_0 s2_0 s3_1 s4_1"></article>
-<article class="s1_2 s2_3 s3_5 s4_5">
-	<img src="/img/trabalhos/pinturas/pinturas-4.jpg">
-</article>
-<article class="s1_2 s2_3 s3_5 s4_5">
-	<img src="/img/trabalhos/pinturas/pinturas-5.jpg">
-</article>
-<article class="s1_0 s2_0 s3_1 s4_1"></article>
+{% include
+	img-duo-largo.html
+	img-1="/img/trabalhos/pinturas/pinturas-4.jpg"
+	img-2="/img/trabalhos/pinturas/pinturas-5.jpg"
+%}
 
-<article class="s1_0 s2_0 s3_1 s4_1"></article>
-<article class="s1_2 s2_3 s3_5 s4_5">
-	<img src="/img/trabalhos/pinturas/pinturas-6.jpg">
-</article>
-<article class="s1_2 s2_3 s3_5 s4_5">
-	<img src="/img/trabalhos/pinturas/pinturas-7.jpg">
-</article>
-<article class="s1_0 s2_0 s3_1 s4_1"></article>
+{% include
+	img-duo-largo.html
+	img-1="/img/trabalhos/pinturas/pinturas-6.jpg"
+	img-2="/img/trabalhos/pinturas/pinturas-7.jpg"
+%}
 
-<article class="s1_0 s2_0 s3_1 s4_1"></article>
-<article class="s1_2 s2_3 s3_5 s4_5">
-	<img src="/img/trabalhos/pinturas/pinturas-8.jpg">
-</article>
-<article class="s1_2 s2_3 s3_5 s4_5">
-	<img src="/img/trabalhos/pinturas/pinturas-9.jpg">
-</article>
-<article class="s1_0 s2_0 s3_1 s4_1"></article>
+{% include
+	img-duo-largo.html
+	img-1="/img/trabalhos/pinturas/pinturas-8.jpg"
+	img-2="/img/trabalhos/pinturas/pinturas-9.jpg"
+%}
 
 </section>
