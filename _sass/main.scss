@@ -4,9 +4,6 @@
 	"mixins-diagrama"
 ;
 
-$footnote-padding: 2 * $leading;
-$footer-height: $leading + 2 * $footnote-padding;
-
 main {
 	padding-bottom: $footer-height;
 	padding-top: 2*$leading;;
@@ -36,6 +33,9 @@ main {
 	section > section {
 		padding-left: 0;
 		padding-right: 0;
+		margin-left: 0;
+		margin-right: 0;
+		width: 100%;
 	}
 
 	section > article {

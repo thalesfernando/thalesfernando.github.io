@@ -20,6 +20,9 @@ $logo-m-margin: 15px;
 $logo-d-height: 30px;
 $logo-d-margin: 21px;
 
+$footnote-padding: 2 * $leading;
+$footer-height: $leading + 2 * $footnote-padding;
+
 $column: 100%/nth($col, 4);
 $l-blank: 2;
 $r-blank: 2;

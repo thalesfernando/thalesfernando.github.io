@@ -3,10 +3,29 @@ layout: pagina
 title: POMB
 permalink: /
 ---
-<section class="capa-home">
-	<article>
-	</article>
-</section>
+<section class="capa-home"></section>
+
+<a href="#proximo-2">
+	<section id="proximo">
+		<nav>
+			{% include botao-desce.html %}
+		</nav>
+	</section>
+</a>
+
+<section id="video-home">
 {% include video-largo.html
 	video="https://vimeo.com/106278303"
 %}
+	<section id="proximo-2"></section>
+</section>
+
+<script type="text/javascript">
+	$('a').click(function(){
+	    $('html, body').animate (
+    		{scrollTop: $( $(this).attr('href') ).offset().top}, 
+    		{duration: 1200, specialEasing: {scrollTop: "easeInOutCubic"}}
+    	);
+    	return false;
+	});
+</script>
