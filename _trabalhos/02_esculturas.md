@@ -2,7 +2,18 @@
 layout: projeto
 title: Esculturas
 permalink: trabalhos/esculturas
+published: true
 ---
+## Titulo 2
+
+![]({{site.baseurl}}//img/trabalhos/esculturas/esculturas-4.jpg)
+
+Thales Fernando – POMB – é designer de formação, mas artista urbano e ilustrador por vocação.
+
+### Titulo 2
+
+Além do muralismo e gravuras, seu atual estudo envolve colagens em larga escala, utilizando­-se de peças de madeira para a construção de totens e máscaras. Seu trabalho possui cores e personagens vibrantes, derivados de seu imaginário e de tudo que o rodeia.
+
 
 {% include img-solo-largo.html
 	img="/img/trabalhos/esculturas/esculturas-1.jpg" 
