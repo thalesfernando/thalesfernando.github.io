@@ -4,9 +4,6 @@ title: Esculturas
 permalink: trabalhos/esculturas
 published: true
 ---
-![]({{site.baseurl}}/img/trabalhos/esculturas/esculturas-1.jpg)
-
-
 {% include img-solo-largo.html
 	img="/img/trabalhos/esculturas/esculturas-1.jpg" 
 %}
