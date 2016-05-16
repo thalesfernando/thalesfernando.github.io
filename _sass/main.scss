@@ -74,11 +74,32 @@ main {
 			padding-right: 2*$gutter;
 		}
 
+		.projeto-thumb:hover {
+			.exhibition-thumb {
+				&::after {
+				    background-color: orange;
+					mix-blend-mode: soft-light;
+				}
+			}
+			.titulo-thumbnail {
+				color: orange;
+			}
+		}
+
+		.projeto-thumb:active {
+			.exhibition-thumb {
+				&::after {
+				    background-color: orange;
+					mix-blend-mode: overlay;
+				}
+			}
+		}
+
 		.exhibition-thumb {
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
-			&:after {
+			&::after {
 				content: "";
 				display: block;
 				padding-bottom: 100%;
