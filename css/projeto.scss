@@ -3,6 +3,7 @@
 
 @import
     "mixins-tipografia",
+    "mixins-diagrama",
     "variaveis-responsividade"
 ;
 
@@ -10,4 +11,33 @@ main {
 	.titulo-thumbnail {
 		text-align: center;
 	}
+}
+
+.proximo-projeto, .projeto-anterior {
+	width: (100% - $area)/2;
+	height: 100vh;
+	position: fixed;
+	@include v-align-center;
+	svg {
+		display: block;
+	    height: auto;
+	    width: 12px;
+	    right: 0;
+	    fill: none;
+	    stroke: #d8d8d8;
+	    overflow: visible;
+	    stroke-linecap: round;
+	    stroke-width: 4;
+	    transition: stroke .1s linear, transform .1s ease-in-out;
+	}
+}
+
+.proximo-projeto {
+	right: 0;
+	top: 0;
+}
+
+.projeto-anterior {
+	left: 0;
+	top: 0;
 }

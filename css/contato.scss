@@ -7,16 +7,4 @@
 ;
 
 main {
-	section{
-		article {
-			h3 {
-				padding-left: $gutter;
-				border-left: solid #4a4a4a 1px;
-				font-weight: 200;
-				a:hover {
-					color: orange;
-				}
-			}
-		}
-	}
 }

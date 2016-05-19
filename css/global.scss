@@ -35,6 +35,70 @@ img {
 	height: auto;
 }
 
+form {
+	* {
+		display: block;
+		outline: 0;
+		margin-bottom: $leading/2;
+		width: 100%;
+		box-sizing: border-box;
+		-webkit-transition: all .1s ease-in-out;
+		-moz-transition:  all .1s ease-in-out;
+		-o-transition:  all .1s ease-in-out;
+		transition:  all .05s ease-in-out;
+		padding-top: $gutter/2;
+    	padding-bottom: $gutter/2;
+	}
+}
+
+input[type*="submit"] {
+    background-color: #9b9b9b;
+    color: #fff;
+    font-family: 'Lato';
+    font-size: 0.9rem;
+    text-decoration: none;
+    cursor: pointer;
+    border:none;
+    font-weight: 300;
+    &:hover {
+	    background-color: orange;
+	}
+	&:focus {
+	    background-color: orange;
+	}
+}
+
+textarea, input[type*="text"] {
+    background-color: white;
+    color: #4a4a4a;
+    font-size: 0.9rem;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 300;
+    line-height: $leading;
+    box-sizing: border-box;
+    resize: none;
+	padding-left: $gutter/2;
+	border: solid #e6e6e6 1px;
+    &:focus {
+    	border: solid orange 1px;
+	    padding-left: 3/4*$gutter;
+	}
+}
+
+::-webkit-input-placeholder {
+   @include italic;
+}
+:-moz-placeholder { /* Firefox 18- */
+   @include italic;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+   @include italic;
+}
+:-ms-input-placeholder {  
+   @include italic;
+}
+
 .minhoca {
 	width: 2*$gutter;
 	position: absolute;
