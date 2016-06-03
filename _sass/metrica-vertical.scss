@@ -53,6 +53,9 @@ main {
 
 	p + ol, p + ul, p + form {
 		margin-top: 0;
+		@media screen and (min-width: nth($breakpoints, 1)) {
+			margin-top: -$leading;
+		}
 		@media screen and (min-width: nth($breakpoints, 2)) {
 			margin-top: -2*$leading;
 		}
