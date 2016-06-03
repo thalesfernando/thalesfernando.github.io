@@ -60,6 +60,9 @@ body {
 
 		figure {
 			margin-bottom: $leading;
+			@media screen and (min-width: nth($breakpoints, 1)) {
+				margin-bottom: 2*$leading;
+			}
 			@media screen and (min-width: nth($breakpoints, 2)) {
 				margin-bottom: 4*$leading;
 			}

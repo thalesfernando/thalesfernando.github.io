@@ -4,7 +4,6 @@
 ;
 
 main {
-	padding-bottom: 2 * $leading;
 	@media screen and (max-width: nth($breakpoints, 2) - 1px) {
 		>*:first-child {
 			margin-top: $logo-m-height + 2*$logo-m-margin;
@@ -24,6 +23,18 @@ main {
 
 	figure, img, p, ul, ol, form, blockquote, address, .video {
 		margin-bottom: 2 * $leading;
+	}
+
+	p {
+		&:last-of-type {
+			margin-bottom: $leading;
+			@media screen and (min-width: nth($breakpoints, 1)) {
+				margin-bottom: 2*$leading;
+			}
+			@media screen and (min-width: nth($breakpoints, 2)) {
+				margin-bottom: 4*$leading;
+			}
+		}
 	}
 
 	figure > *, figure > .video, blockquote > p  {
