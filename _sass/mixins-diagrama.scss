@@ -11,6 +11,7 @@
 	padding-left: calc(#{(100% - $area)/2} - #{$gutter/2});
 	padding-right: calc(#{(100% - $area)/2} - #{$gutter/2});
 	width: 100%;
+	align-items: flex-start;
 }
 
 @mixin neutral-container {

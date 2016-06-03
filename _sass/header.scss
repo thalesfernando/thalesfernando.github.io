@@ -13,7 +13,7 @@ header {
 	position: fixed;
 	top: 0;
 	background-color: $branco;
-	box-shadow: 0 0 $leading 0 transparentize($preto, 0.95);
+	box-shadow: 0 0 $leading/2 0 transparentize($preto, 0.9);
 
 	nav {
 		* {
