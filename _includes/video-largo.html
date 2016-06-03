@@ -1,13 +1,13 @@
 <section class="video-largo">
-	<article class="s1_0 s2_0 s3_1 s4_1"></article>
-	<article class="s1_2 s2_6 s3_10 s4_10 video">
-	{% if include.video contains "vimeo.com"%}
-	{% assign id-video = include.video | remove: "https://vimeo.com/"  | remove: ' ' %}
-		<iframe src="https://player.vimeo.com/video/{{ id-video }}?color=ff9933&title=0&byline=0&portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-	{% elsif include.video contains "youtube.com"%}
-	{% assign id-video = include.video | remove: "https://www.youtube.com/watch?v="  | remove: ' ' %}
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/{{ id-video }}?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-	{% endif %}
-	</article>
-	<article class="s1_0 s2_0 s3_1 s4_1"></article>
+	<figure>
+		<div class="video" >
+		{% if include.video contains "vimeo.com"%}
+		{% assign id-video = include.video | remove: "https://vimeo.com/"  | remove: ' ' %}
+			<iframe src="https://player.vimeo.com/video/{{ id-video }}?color=ff9933&title=0&byline=0&portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+		{% elsif include.video contains "youtube.com"%}
+		{% assign id-video = include.video | remove: "https://www.youtube.com/watch?v="  | remove: ' ' %}
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/{{ id-video }}?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+		{% endif %}
+		</div>
+	</figure>
 </section>

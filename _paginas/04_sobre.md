@@ -4,15 +4,11 @@ title: Sobre
 permalink: sobre/
 ---
 
-<section>
-	<article class="s1_2 s2_2 s3_7 s4_6">
-		<img class="sobre-img" src="/img/sobre.jpg">
-		<article class="minhoca">
-			{% include minhoca.html %}
-		</article>
-	</article>
-	<article class="s1_0 s2_1 s3_1 s4_2"></article>
-	<article class="s1_2 s2_3 s3_4 s4_3 about-text">
+<section class="sobre-intro">
+	<figure>
+		<img src="/img/sobre.jpg">
+	</figure>
+	<article class="sobre-txt">
 		<p>
 			Thales Fernando – POMB – é designer de formação, mas artista urbano e ilustrador por vocação.
 		</p>
@@ -24,15 +20,13 @@ permalink: sobre/
 			<a href="http://pomb.com.br/curriculo_pomb.pdf" target="_blank">Currículo (pdf)</a>
 		</p>
 	</article>
-
 </section>
 
-<section>
-		<h2>
-			Exposições
-		</h2>
-	<article class="s1_0 s2_2 s3_4 s4_4"></article>
-	<article class="s1_2 s2_2 s3_4 s4_3">
+<section class="lista-dupla">
+	<h2>
+		Exposições
+	</h2>
+	<article>
 		<h3>
 			­Individuais
 		</h3>
@@ -42,21 +36,20 @@ permalink: sobre/
 			{% assign prev-index = forloop.index0 | minus: 1 %}
 			{% assign prev-index-ano = site.data.exposicoes-individuais[prev-index].ano %}
 			{% unless index-ano == prev-index-ano %}
-				<h4>{{ exposicao.ano }}</h4>
-				<ul>
+		<h4>{{ exposicao.ano }}</h4>
+		<ul>
 				{% for expo in site.data.exposicoes-individuais %}
 					{% if expo.ano == exposicao.ano %}
-						<li><i>{% if expo.titulo %} {{ expo.titulo }} {% endif %}</i>
-						{% if expo.titulo %} | {% endif %}
-						{% if expo.local %}{{ expo.local }}{% endif %}</li>
+			<li>
+				{% if expo.titulo %}{{ expo.titulo }}{% endif %}{% if expo.titulo %} | {% endif %}{% if expo.local %}{{ expo.local }}{% endif %}
+			</li>
 					{% endif %}
 				{% endfor %}
-				</ul>
+		</ul>
 			{% endunless %}
 		{% endfor %}
 	</article>
-	<article class="s1_0 s2_0 s3_0 s4_1"></article>
-	<article class="s1_2 s2_2 s3_4 s4_3">
+	<article>
 		<h3>
 			­Coletivas
 		</h3>
@@ -66,19 +59,17 @@ permalink: sobre/
 			{% assign prev-index = forloop.index0 | minus: 1 %}
 			{% assign prev-index-ano = site.data.exposicoes-coletivas[prev-index].ano %}
 			{% unless index-ano == prev-index-ano %}
-				<h4>{{ exposicao.ano }}</h4>
-				<ul>
+		<h4>{{ exposicao.ano }}</h4>
+		<ul>
 				{% for expo in site.data.exposicoes-coletivas %}
 					{% if expo.ano == exposicao.ano %}
-						<li><i>{% if expo.titulo %} {{ expo.titulo }} {% endif %}</i>
-						{% if expo.titulo %} | {% endif %}
-						{% if expo.local %}{{ expo.local }}{% endif %}</li>
+			<li>
+				{% if expo.titulo %} {{ expo.titulo }}{% endif %}{% if expo.titulo %} | {% endif %}{% if expo.local %}{{ expo.local }}{% endif %}
+			</li>
 					{% endif %}
 				{% endfor %}
-				</ul>
+		</ul>
 			{% endunless %}
 		{% endfor %}
 	</article>
-	<article class="s1_0 s2_0 s3_0 s4_1"></article>
-
 </section>

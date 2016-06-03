@@ -2,42 +2,140 @@
 ---
 
 @import
+    "variaveis-responsividade",
+    "variaveis-cor",
     "mixins-tipografia",
-    "mixins-diagrama",
-    "variaveis-responsividade"
+    "mixins-diagrama"
 ;
 
 main {
-	.titulo-thumbnail {
-		text-align: center;
+}
+
+.projeto-nav {
+	width: 100%;
+	height: 2*$leading;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+	position: fixed;
+	box-shadow: 0 0 $leading 0 transparentize($preto, 0.9);
+	background-color: $branco;
+	@media screen and (min-width: nth($breakpoints, 1)) {
+		display: none;
 	}
 }
 
 .proximo-projeto, .projeto-anterior {
 	width: (100% - $area)/2;
 	height: 100vh;
+	top: 0;
 	position: fixed;
+	z-index: 1;
+	background-color: $branco;
+	transition: all .1s ease-in-out;
 	@include v-align-center;
+	a {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
+	@media screen and (max-width: nth($breakpoints, 1) - 1px) {
+		width: 50%;
+		height: 2*$leading;
+		top: unset;
+		bottom: 0;
+	}
+	@media screen and (min-width: nth($breakpoints, 2)) {
+		width: calc(#{(100% - $area)/2} - #{$gutter});
+	}
+	&:hover {
+		z-index: 2;
+		background-color: transparentize($preto, 0.98);;
+		cursor: pointer;
+		// @media screen and (max-width: nth($breakpoints, 1) - 1px) {
+		// 	box-shadow: 0 0 3*$leading 0 transparentize($preto, 0.95);
+		// }
+		svg {
+			stroke: $cinza-claro;
+		}
+	}
 	svg {
-		display: block;
-	    height: auto;
-	    width: 12px;
-	    right: 0;
+	    position: absolute;
+	    width: 2*$gutter/5;
+	    height: 2*$leading;
+	    top: 50%;
 	    fill: none;
-	    stroke: #d8d8d8;
+	    stroke: $cinza-claro;
 	    overflow: visible;
 	    stroke-linecap: round;
 	    stroke-width: 4;
-	    transition: stroke .1s linear, transform .1s ease-in-out;
+	    transition: all .1s ease-in-out;
+	    @media screen and (max-width: nth($breakpoints, 1) - 1px) {
+			width: 4px;
+	   		height: 20px;
+	   		stroke-width: 8;
+	   		stroke: $cinza-claro;
+		}
 	}
 }
 
 .proximo-projeto {
 	right: 0;
-	top: 0;
+	svg {
+
+		@media screen and (max-width: nth($breakpoints, 1) - 1px) {
+			right: 2/3*$gutter;
+			transform: translate(0,-50%);
+		}
+		@media screen and (min-width: nth($breakpoints, 1)) {
+	    	right: calc(#{2/3*$gutter} + 12px);
+	    	transform: translate(50%,-50%);
+	    }
+	    @media screen and (min-width: nth($breakpoints, 2)) {
+	    	right: 50%;
+	    }
+	}
+	&:hover {
+		svg {
+			@media screen and (max-width: nth($breakpoints, 1) - 1px) {
+				right: calc(#{2/3*$gutter} - 2px);
+			}
+			@media screen and (min-width: nth($breakpoints, 1)) {
+				right: calc(#{2/3*$gutter} + 10px);
+		    }
+		    @media screen and (min-width: nth($breakpoints, 2)) {
+				right: calc(50% - 2px);
+			}
+		}
+	}
 }
 
 .projeto-anterior {
 	left: 0;
-	top: 0;
+	svg {
+		@media screen and (max-width: nth($breakpoints, 1) - 1px) {
+			left: 2/3*$gutter;
+			transform: translate(0,-50%) rotate(180deg);
+		}
+		@media screen and (min-width: nth($breakpoints, 1)) {
+	    	left: calc(#{2/3*$gutter} + 12px);
+	    	transform: translate(-50%,-50%) rotate(180deg);
+	    }
+	    @media screen and (min-width: nth($breakpoints, 2)) {
+	    	left: 50%;
+	    }
+	}
+	&:hover {
+		svg {
+			@media screen and (max-width: nth($breakpoints, 1) - 1px) {
+				left: calc(#{2/3*$gutter} - 2px);
+			}
+			@media screen and (min-width: nth($breakpoints, 1)) {
+				left: calc(#{2/3*$gutter} + 10px);
+		    }
+		    @media screen and (min-width: nth($breakpoints, 2)) {
+				left: calc(50% - 2px);
+			}
+		}
+	}
 }

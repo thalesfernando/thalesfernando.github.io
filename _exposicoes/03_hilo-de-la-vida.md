@@ -18,19 +18,14 @@ permalink: exposicoes/hilo-de-la-vida
 	img-2="/img/exposicoes/hilo-de-la-vida/hilo-2.jpg" 
 %}
 
-{% include img-duo-largo.html
+{% include img-duo-cheio.html
 	img-1="/img/exposicoes/hilo-de-la-vida/hilo-4.jpg"
 	img-2="/img/exposicoes/hilo-de-la-vida/hilo-5.jpg" 
 %}
 
-<section>
-	<article class="s1_0 s2_3 s3_6 s4_6"></article>
-	<p class="s1_2 s2_3 s3_6 s4_6">
-		A exposição tem como intuito representar as diferentes passagens da existência, seja em vida ou em morte. Cada obra é um dos fios que compõem o tear desse contexto extenso e juntas pretendem evocar a sensibilidade e reflexão de quem as vê, instigando os mais diversos tipos de sensações; identificação, agonia, alívio, angústia, esperança, medo.
-	</p>
-</section>
+A exposição tem como intuito representar as diferentes passagens da existência, seja em vida ou em morte. Cada obra é um dos fios que compõem o tear desse contexto extenso e juntas pretendem evocar a sensibilidade e reflexão de quem as vê, instigando os mais diversos tipos de sensações; identificação, agonia, alívio, angústia, esperança, medo.
 
-{% include img-duo-largo.html
+{% include img-duo-cheio.html
 	img-1="/img/exposicoes/hilo-de-la-vida/hilo-9.jpg"
 	img-2="/img/exposicoes/hilo-de-la-vida/hilo-10.jpg" 
 %}

@@ -3,32 +3,32 @@
 		<a href="{{ site.baseurl }}/" class="logo">
 			{% include logo.html %}
 		</a>
-		<div id="menu-desktop">
+		<ul id="menu-desktop">
 			{% for pagina in site.paginas %}
-				<a
-				{% if page.url contains pagina.url %}
-				 class="current-page
-					{% if page.url != pagina.url %}
-						 link
-					{% endif %}
-						"
-					{% if page.url != pagina.url %}
-						href="{{ site.baseurl }}{{pagina.url}}"
-					{% endif %}
-				{% else %}
-					 class="link" href="{{ site.baseurl }}{{ pagina.url }}"
-				{% endif %}>
-					<span>
+				<li>
+					<a
+					{% if page.url contains pagina.url %}
+					 class="current-page
+						{% if page.url != pagina.url %}
+							 link
+						{% endif %}
+							"
+						{% if page.url != pagina.url %}
+							href="{{ site.baseurl }}{{pagina.url}}"
+						{% endif %}
+					{% else %}
+						 class="link" href="{{ site.baseurl }}{{ pagina.url }}"
+					{% endif %}>
 						{{ pagina.title | upcase }} 
-					</span>
-				</a>
+					</a>
+				</li>
 			{% endfor %}
-			<a>
-				<span>
+			<li class="soon">
+				<a>
 					loja
-				</span>
-			</a>
-		</div>
+				</a>
+			</li>
+		</ul>
 	</nav>
 </header>
 
@@ -50,18 +50,16 @@
 			{% else %}
 				 class="link" href="{{ site.baseurl }}{{ pagina.url }}"
 			{% endif %}>
-				<span>
-					{{ pagina.title | downcase }} 
-				</span>
+				{{ pagina.title | downcase }} 
 			</a>
 		</li>
 	{% endfor %}
-		<li><a><span>loja</span></a></li>
+		<li class="soon"><a>loja</a></li>
 	</ul>
 </nav>
 
-<div id="nav-icon">
+<button id="nav-icon">
 	<span></span>
 	<span></span>
 	<span></span>
-</div>
+</button>

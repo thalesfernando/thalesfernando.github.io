@@ -19,22 +19,12 @@ permalink: exposicoes/sobre-o-infinito
 	img-3="/img/exposicoes/sobre-o-infinito/sobre-o-infinito-4.jpg" 
 %}
 
-<section>
-	<article class="s1_0 s2_3 s3_6 s4_6"></article>
-	<p class="s1_2 s2_3 s3_6 s4_6">
-		A obra encontra na madeira seu suporte ideal: à medida em que o tempo passa, deixa suas marcas impressas em casca e carne. Acumulam­se cicatrizes e rachaduras, que interferem, assim como o próprio tempo, direta e imprevisivelmente em cada uma das pinturas. Na mostra são apresentados trabalhos desenvolvidos em técnica mista sobre suporte de madeira.<br/><br/>
-	</p>
-</section>
+A obra encontra na madeira seu suporte ideal: à medida em que o tempo passa, deixa suas marcas impressas em casca e carne. Acumulam­se cicatrizes e rachaduras, que interferem, assim como o próprio tempo, direta e imprevisivelmente em cada uma das pinturas. Na mostra são apresentados trabalhos desenvolvidos em técnica mista sobre suporte de madeira.
 
-<section>
-	<article class="s1_2 s2_3 s3_6 s4_4">
-		<img src="/img/exposicoes/sobre-o-infinito/sobre-o-infinito-5.jpeg">
-	</article>
-	<article class="s1_0 s2_0 s3_0 s4_1"></article>
-	<article class="s1_2 s2_3 s3_6 s4_7">
-		<img src="/img/exposicoes/sobre-o-infinito/sobre-o-infinito-6.jpeg">
-	</article>
-</section>
+{% include img-duo-largo.html
+	img-1="/img/exposicoes/sobre-o-infinito/sobre-o-infinito-6.jpeg"
+	img-2="/img/exposicoes/sobre-o-infinito/sobre-o-infinito-5.jpeg" 
+%}
 
 {% include img-duo-cheio.html
 	img-1="/img/exposicoes/sobre-o-infinito/sobre-o-infinito-7.jpg"

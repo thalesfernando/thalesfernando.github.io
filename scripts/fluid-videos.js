@@ -24,5 +24,4 @@ $(window).resize(function() {
   });
 
 }).resize();
-console.log($fluidEl);
   

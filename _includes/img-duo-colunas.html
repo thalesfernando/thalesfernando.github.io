@@ -1,0 +1,14 @@
+{% assign coluna-1 = include.img-1 | split: ";" %}
+{% assign coluna-2 = include.img-2 | split: ";" %}
+<section class="img-duo-colunas">
+	<figure>
+		{% for img in coluna-1 %}
+			<img src="{{ img | remove: " " }}">
+		{% endfor %}
+	</figure>
+	<figure>
+		{% for img in coluna-2 %}
+			<img src="{{ img | remove: " " }}">
+		{% endfor %}
+	</figure>
+</section>

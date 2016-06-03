@@ -2,9 +2,10 @@
 ---
 
 @import
-    "mixins-tipografia",
-    "mixins-diagrama",
-    "variaveis-responsividade"
+	"variaveis-responsividade",
+	"variaveis-cor",
+	"mixins-tipografia",
+    "mixins-diagrama"
 ;
 
 h1 {
@@ -19,7 +20,7 @@ h5 {
 }
 
 main {
-	padding-top: 0;
+	padding-top: $footer-height;
 	.capa-home {
 		height: 100vh;
 		margin-top: 0;
@@ -31,7 +32,7 @@ main {
 		background-image: url(/img/home.jpg);
 		background-repeat: no-repeat;
 		background-size: auto calc(100% - #{2*($logo-d-height + 2*$logo-d-margin)});
-		box-shadow: inset 0 (-$logo-d-height - 2*$logo-d-margin) ($logo-d-height + 2*$logo-d-margin) 0 rgba(0,0,0,0.05);
+		box-shadow: inset 0 (-$logo-d-height - 2*$logo-d-margin) ($logo-d-height + 2*$logo-d-margin) 0 transparentize($preto, 0.95);
 		transition: background-position .25s ease-in-out;
 		background-position: 50% 50%;
 		@media screen and (max-width: nth($breakpoints, 2) - 1px) {
@@ -46,7 +47,7 @@ main {
 	}
 	#proximo {
 		transform: translateY(-($logo-d-height + 2*$logo-d-margin));
-		background-color: white;
+		background-color: $branco;
 		z-index: 1;
 		nav {
 			width: 100%;
@@ -54,11 +55,11 @@ main {
 			@include v-align-center;
 			svg {
 				display: block;
-				width: auto;
-				height: 12px;
+				width: 2*$gutter;
+				height: 2*$leading/5;
 				margin: auto;
 				fill: none;
-				stroke: #d8d8d8;
+				stroke: $cinza-claro;
 				overflow: visible;
 				stroke-linecap: round;
 				stroke-width: 4;
@@ -69,7 +70,7 @@ main {
 			cursor: pointer;
 			nav {
 				svg {
-					stroke: orange;
+					stroke: $laranja;
 					-webkit-transform: translateY(2px);
 					-moz-transform: translateY(2px);
 					-o-transform: translateY(2px);
@@ -89,14 +90,12 @@ main {
 			}
 		}
 	}
-	#video-home {
+	.video-largo {
 		transform: translateY(-($logo-d-height + 2*$logo-d-margin));
 		margin-bottom: -($logo-d-height + 2*$logo-d-margin);
 		padding-top: $logo-d-height + 2*$logo-d-margin;
-		background-color: white;
-		.video-largo {
-			z-index: 2;
-		}
+		background-color: $branco;
+		z-index: 3;
 		@media screen and (max-width: nth($breakpoints, 2) - 1px) {
 			transform: translateY(-($logo-m-height + 2*$logo-m-margin));
 			margin-bottom: -($logo-m-height + 2*$logo-m-margin);

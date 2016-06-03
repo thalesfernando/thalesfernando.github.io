@@ -27,7 +27,13 @@
                 {% endif %}
             {% elsif page.layout == "projeto" %}
         <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/{{ page.permalink }}.css">
+                {% if page.url contains "/exposicoes/" %}
+        <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/exposicoes/exposicao.css">
+                {% elsif page.url contains "/trabalhos/" %}
+        <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/trabalhos/trabalho.css">
+                {% endif %}
             {% endif %}
+        <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/grid.css">
      
         <link rel="apple-touch-icon" sizes="57x57" href="{{ site.baseurl }}/apple-touch-icon-57x57.png?v=oLL0eg7qwO">
         <link rel="apple-touch-icon" sizes="60x60" href="{{ site.baseurl }}/apple-touch-icon-60x60.png?v=oLL0eg7qwO">

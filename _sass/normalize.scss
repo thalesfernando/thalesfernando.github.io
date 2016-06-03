@@ -1,4 +1,9 @@
-html, body, header, main, footer, section, nav, div, article, figure, figcaption, img, ol, ul, li, h1, h2, h3, h4, h5, h6, p, a, span, b, u, i
+@import 
+	"variaveis-responsividade",
+	"variaveis-cor"
+;
+
+html, body, header, main, footer, section, nav, address, div, article, figure, figcaption, img, hr, ol, ul, li, h1, h2, h3, h4, h5, h6, p, blockquote, a, span, b, u, i, textarea, input
 {
 	border: 0;
 	margin: 0;
@@ -10,14 +15,30 @@ html, body, header, main, footer, section, nav, div, article, figure, figcaption
 	-o-transition: margin .25s ease, padding .25s ease;
 	transition: margin .25s ease, padding .25s ease;
 	&:visited {
-		color: #4a4a4a;
+		color: $cinza-escuro;
 	}
 	&:link {
-		color: #4a4a4a;
+		color: $cinza-escuro;
+	}
+}
+
+img {
+	-webkit-transition: margin .25s ease;
+	-moz-transition: margin .25s ease;
+	-o-transition: margin .25s ease;
+	transition: margin .25s ease;
+	display: block;
+}
+
+button {
+	border: none;
+	background-color: transparent;
+	&:focus {
+		outline: none;
 	}
 }
 a[href^="mailto:"] {
-	color: #4a4a4a;
+	color: $cinza-escuro;
 }
 
 article {

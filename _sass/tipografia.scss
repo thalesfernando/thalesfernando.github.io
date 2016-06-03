@@ -1,24 +1,25 @@
 @import
 	"variaveis-responsividade",
+	"variaveis-cor",
 	"mixins-tipografia"
 ;
 
-h1,h2,h3,h4,h5,h6 {
+h1,h2,h3,h4,h5,h6, q {
 	font-family: 'Alegreya Sans', sans-serif;
 	font-stretch: normal;
 	-webkit-transition: font .25s ease;
 	-moz-transition: font .25s ease;
 	-o-transition: font .25s ease;
 	transition: font .25s ease;
-	color: #4a4a4a;
+	color: $cinza-escuro;
 }
 
-p, figcaption, ul, form, input, textarea {
+p, figcaption, ul, ol, form, input, textarea, address {
 	font-family: 'Lato', sans-serif;
 	@include light;
 	@include normal;
 	@include text-size;
-	color: #4a4a4a;
+	color: $cinza-escuro;
 }
 
 h1 {
@@ -37,62 +38,62 @@ h4 {
 	@extend .subtitulo-2;
 }
 
+h5 {
+	@include t6;
+	@include versalete;
+}
+
+h6 {
+	@include t6;
+}
+
+q {
+	@include t4;
+	@include italic;
+	@include medium;
+}
+
 ul {
 	list-style-type: none;
 }
 
+ol {
+	list-style-position: inside;
+}
+
+address {
+	@include italic;
+}
+
 .titulo-pagina {
 	@include t2;
+	@include bold;
+}
+
+.titulo-secao-pagina {
+	@include t3;
+	@include bold;
 }
 
 .titulo-projeto {
 	@include t3;
+	@include bold;
 	@include versalete;
-}
-
-.titulo-secao-pagina {
-	@include t4;
 }
 
 .titulo-secao-projeto {
 	@include t4;
+	@include bold;
 	@include versalete;
 }
 
 .subtitulo {
-	@include t5;
-	@include light;
+	@include t4;
+	@include bold;
 	@include versalete;
 }
 
 .subtitulo-2 {
-	@include t6;
-}
-
-.titulo-bloco {
+	@include bold;
 	@include t5;
-}
-.titulo-thumbnail {
-	@include t5;
-	@include light;
-	@include versalete;
-}
-.rodape {
-	@include italic;
-}
-
-.destaque {
-	padding-left: $gutter;
-	border-left: solid #4a4a4a 1px;
-}
-
-a {
-	line-height: $leading;
-}
-
-p > a {
-	@include italic;
-	&:hover{
-		color: orange;
-	}
 }

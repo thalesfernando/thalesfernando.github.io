@@ -13,7 +13,7 @@ permalink: trabalhos/desenhos
 	img-2="/img/trabalhos/desenhos/desenhos-3.jpg"
 %}
 
-{% include img-duo-cheio.html
+{% include img-duo-largo.html
 	img-1="/img/trabalhos/desenhos/desenhos-4.jpg"
 	img-2="/img/trabalhos/desenhos/desenhos-5.jpg"
 %}

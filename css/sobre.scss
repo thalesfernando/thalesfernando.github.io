@@ -1,17 +1,35 @@
 ---
 ---
 
-@import "variaveis-responsividade";
+@import 
+	"variaveis-responsividade",
+	"variaveis-cor",
+	"mixins-diagrama"
+;
 
 main {
-	.sobre-img {
-		@media screen and (max-width: nth($breakpoints, 2) - 1px) and (min-width: nth($breakpoints, 1)) {
-			background: url(/img/sobre-tablet.jpg) no-repeat;
-			background-size: cover;
-			padding-top: 100%;
-			width: 100%;
-			height: 0;
-			transition: none;
+	.sobre-intro {
+		figure {
+			@include margin-col-1(0, 2, 0);
+			@include margin-col-2(0, 2, 0);
+			@include margin-col-3(0, 7, 0);
+			@include margin-col-4(0, 6, 0);
+			img {
+				@media screen and (max-width: nth($breakpoints, 2) - 1px) and (min-width: nth($breakpoints, 1)) {
+					background: url(/img/sobre-tablet.jpg) no-repeat;
+					background-size: cover;
+					padding-top: 100%;
+					height: 0;
+					transition: none;
+				}
+			}
+		}
+		article {
+
+			@include margin-col-1(0, 2, 0);
+			@include margin-col-2(1, 3, 0);
+			@include margin-col-3(1, 4, 0);
+			@include margin-col-4(1, 4, 1);
 		}
 	}
 }

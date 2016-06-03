@@ -1,0 +1,12 @@
+---
+layout: pagina
+title: Vídeos
+permalink: videos/
+---
+
+{% for video in site.data.videos %}
+	{% include video-completo.html 
+	link = video.link 
+	titulo = video.titulo 
+	descricao = video.descricao %}
+{% endfor %}

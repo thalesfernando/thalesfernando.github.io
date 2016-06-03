@@ -5,7 +5,7 @@ permalink: trabalhos/esculturas
 published: true
 ---
 
-{% include img-solo-largo.html
+{% include img-solo-cheio.html
 	img="/img/trabalhos/esculturas/esculturas-1.jpg" 
 %}
 

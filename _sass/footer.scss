@@ -1,25 +1,19 @@
-@import "variaveis-responsividade";
-
-footer {
-	width: 100%;
-	padding-left: calc(#{(100% - $area)/2} - #{$gutter/2});
-	padding-right: calc(#{(100% - $area)/2} - #{$gutter/2});
-	position: absolute;
-	bottom: 0;
-	left:0;
-	background-color: white;
-	section {
-		margin-left: $gutter/2;
-		margin-right: $gutter/2;
-		article {
-			border-top: solid #d8d8d8 1px;
-			.rodape {
-				margin-top: 2 * $leading;
-				margin-bottom: 2 * $leading;
-				color: #4a4a4a;
-				text-align: center;
-				width: 100%;
-			}
+@import 
+	"variaveis-responsividade",
+	"variaveis-cor"
+;
+body {
+	footer {
+		position: absolute;
+		bottom: 0;
+		left:0;
+		background-color: $branco;
+		z-index: 2;
+		address {
+			border-top: solid $cinza-claro 1px;
+			padding-top: calc(#{2*$leading} - 1px);
+			padding-bottom: 2 * $leading;
+			text-align: center;
 		}
 	}
 }

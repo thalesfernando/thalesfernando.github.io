@@ -3,212 +3,153 @@
 
 @import
 	"variaveis-responsividade",
+	"variaveis-cor",
     "mixins-diagrama",
     "normalize",
     "metrica-horizontal",
+    "metrica-vertical",
+    "camadas",
     "tipografia"
 ;
 
-html {
-	height: 100%;
-}
-
 body {
+
 	position: absolute;
 	min-height: 100%;
-	width: 100%;
-	background-color: white;
-	@include h-distribute-left;
-	@media screen and (max-width: nth($breakpoints, 2) - 1px) {
-		&.fixed {
-			overflow: hidden;
+	background-color: $branco;
+
+	main {
+		transform: translateY( -$footer-height );
+		@include h-align-center;
+		
+		section {
+			position: relative;
 		}
-	}
-}
 
-article, figure {
-	position: relative;
-}
-
-img {
-	width: 100%;
-	height: auto;
-}
-
-form {
-	* {
-		display: block;
-		outline: 0;
-		margin-bottom: $leading/2;
-		width: 100%;
-		box-sizing: border-box;
-		-webkit-transition: all .1s ease-in-out;
-		-moz-transition:  all .1s ease-in-out;
-		-o-transition:  all .1s ease-in-out;
-		transition:  all .05s ease-in-out;
-		padding-top: $gutter/2;
-    	padding-bottom: $gutter/2;
-	}
-}
-
-input[type*="submit"] {
-    background-color: #9b9b9b;
-    color: #fff;
-    font-family: 'Lato';
-    font-size: 0.9rem;
-    text-decoration: none;
-    cursor: pointer;
-    border:none;
-    font-weight: 300;
-    &:hover {
-	    background-color: orange;
-	}
-	&:focus {
-	    background-color: orange;
-	}
-}
-
-textarea, input[type*="text"] {
-    background-color: white;
-    color: #4a4a4a;
-    font-size: 0.9rem;
-    text-decoration: none;
-    cursor: pointer;
-    font-weight: 300;
-    line-height: $leading;
-    box-sizing: border-box;
-    resize: none;
-	padding-left: $gutter/2;
-	border: solid #e6e6e6 1px;
-    &:focus {
-    	border: solid orange 1px;
-	    padding-left: 3/4*$gutter;
-	}
-}
-
-::-webkit-input-placeholder {
-   @include italic;
-}
-:-moz-placeholder { /* Firefox 18- */
-   @include italic;
-}
-::-moz-placeholder {  /* Firefox 19+ */
-   @include italic;
-}
-:-ms-input-placeholder {  
-   @include italic;
-}
-
-.minhoca {
-	width: 2*$gutter;
-	position: absolute;
-	right: -1.5*$gutter;
-	top: 3*$leading;
-}
-
-#minhoca {
-	fill: orange;
-}
-
-.processing-canvas {
-	zoom: 50%;
-	&:focus {
-		outline: none;
-	}
-}
-
-.container {
-	flex-wrap: wrap;
-	@include h-distribute-left;
-}
-
-.horizontal-rule {
-	content: "";
-	height: 1px;
-	width: calc(100% - #{$gutter});
-	background-color: blue;
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
-}
-
-#grid {
-	position: fixed;
-	z-index: 4;
-	width: calc(24px + #{4/3*$gutter});
-	height: calc(24px + #{4/3*$gutter});
-	bottom:0;
-	right:0;
-	padding: 0;
-	background-color: rgba(0, 255, 255, 0.25);
-	display: flex;
-	-webkit-transition: all .1s ease-in-out, padding .1s ease-in-out .1s;
-	-moz-transition: all .1s ease-in-out, padding .1s ease-in-out .1s;
-	-o-transition: all .1s ease-in-out, padding .1s ease-in-out .1s;
-	transition: all .1s ease-in-out, padding .1s ease-in-out .1s;
-	@include v-align-center;
-	&::after {
-		position: absolute;
-		@include bold;
-		@include versalete;
-		@extend .subtitulo-2;
-		width: calc(24px + #{4/3*$gutter});
-		line-height: calc(24px + #{4/3*$gutter});
-		text-align: center;
-		bottom: 0;
-		right: 0;
-		color: #4a4a4a;
-		mix-blend-mode: multiply;
-		-webkit-transition: opacity .1s ease-in-out;
-		-moz-transition: opacity .1s ease-in-out;
-		-o-transition: opacity .1s ease-in-out;
-		transition: opacity .1s ease-in-out;
-		content: 'grid';
-	}
-	.grid-column {
-		-webkit-transition: opacity .1s linear .15s;
-		-moz-transition: opacity .1s linear .15s;
-		-o-transition: opacity .1s linear .15s;
-		transition: opacity .1s linear .15s;
-		height: 0;
-		opacity: 0;
-	}
-	&:hover {
-		background-color: rgba(0, 255, 255, 1);
-		cursor: nw-resize;
-		p {
-			opacity: 1;
-		}
-	}
-	&.aberto {
-		width: 100%;
-		height: 100vh;
-		background-color: rgba(0, 255, 255, 0.15);
-		padding-left: calc(#{(100% - 83.333%)/2} - #{$gutter/2});
-		padding-right: calc(#{(100% - 83.333%)/2} - #{$gutter/2});
-		&::after {
-			content: 'fechar grid';
-			text-align: right;
-			right: 2/3*$gutter;
+		article {
+			position: relative;
 			width: 100%;
 		}
-		.grid-column {
-			opacity: 1;
-			height: 100vh;
-			background-color: rgba(0, 255, 255, 0.25);
+		
+		p {
+
 		}
-		&:hover {
-			background-color: rgba(0, 255, 255, 0.25);
-			cursor: se-resize;
-			p {
-				opacity: 1;
+		
+		.destaque {
+			padding-left: $gutter;
+			border-left: solid $cinza-claro 1px;
+		}
+		
+		a {
+
+		}
+		
+		p > a {
+			@include italic;
+			&:hover{
+				color: $laranja;
 			}
 		}
+		
+		blockquote {
+			* {
+				@include italic;
+				@extend .destaque;
+			}
+		}
+
+		figure {
+			margin-bottom: $leading;
+			@media screen and (min-width: nth($breakpoints, 2)) {
+				margin-bottom: 4*$leading;
+			}
+			@media screen and (min-width: nth($breakpoints, 3)) {
+				margin-bottom: 5*$leading;
+			}
+		}
+
+		img {
+			height: auto;
+		}
+
+		hr {
+			border-top: dotted $cinza-claro 1px;
+			height: $leading;
+		}
+
+		ul {
+			padding-left: $gutter/2;
+			li::before{
+				content: "›";
+				position: absolute;
+				left: 0;
+				color: $cinza-escuro;
+			}
+		}
+
+		form {
+			* {
+				display: block;
+				outline: 0;
+				margin-bottom: $leading;
+				-webkit-transition: all .1s ease-in-out;
+				-moz-transition:  all .1s ease-in-out;
+				-o-transition:  all .1s ease-in-out;
+				transition:  all .05s ease-in-out;
+				padding-top: $leading/2;
+		    	padding-bottom: $leading/2;
+			}
+			input[type*="submit"] {
+			    background-color: $cinza-medio;
+			    color: $branco;
+			    font-family: 'Lato';
+			    font-size: 0.9rem;
+			    text-decoration: none;
+			    cursor: pointer;
+			    border:none;
+			    font-weight: 300;
+			    &:hover {
+				    background-color: $laranja;
+				}
+				&:focus {
+				    background-color: $laranja;
+				}
+			}
+			> textarea, > input[type*="text"], > input[type*="email"] {
+			    background-color: $branco;
+			    text-decoration: none;
+			    cursor: pointer;
+			    line-height: $leading;
+			    resize: none;
+				padding-left: $gutter/2;
+				border: solid #e6e6e6 1px;
+				padding-top: calc(#{$leading/2} - 1px);
+			    padding-bottom: calc(#{$leading/2} - 1px);
+			    &:focus {
+			    	border: solid $laranja 1px;
+				    padding-left: 3/4*$gutter;
+				}
+			}
+			::-webkit-input-placeholder, :-moz-placeholder, ::-moz-placeholder, :-ms-input-placeholder {
+		    	@include italic;
+			}
+		}
+
+		.minhoca {
+			width: 2*$gutter;
+			position: absolute;
+			right: -1.5*$gutter;
+			top: 3*$leading;
+		}
+
+		#minhoca {
+			fill: $laranja;
+		}
+
+		@import "componentes";
 	}
 }
 
 @import "header";
-
-@import "main";
 
 @import "footer";
