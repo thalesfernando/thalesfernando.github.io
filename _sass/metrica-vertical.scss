@@ -37,6 +37,12 @@ main {
 		}
 	}
 
+	section + p {
+		@media screen and (min-width: nth($breakpoints, 3)) {
+			margin-top: -$leading;
+		}
+	}
+
 	figure > *, figure > .video, blockquote > p  {
 		margin-bottom: 0;
 	}
