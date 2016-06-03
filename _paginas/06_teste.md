@@ -2,7 +2,7 @@
 layout: pagina
 title: Teste
 permalink: teste/
-published: false
+published: true
 ---
 #Primeiro título h1
 
@@ -17,6 +17,8 @@ Parágrafo solto: Além do muralismo e gravuras, seu atual estudo envolve colage
 Parágrafo solto: Além do muralismo e gravuras, seu atual estudo envolve colagens em larga escala, utilizando­-se de peças de madeira para a construção de totens e máscaras. Seu trabalho possui cores e personagens vibrantes, derivados de seu imaginário e de tudo que o rodeia.
 
 ##Exemplo de h2
+
+![]({{site.baseurl}}//img/trabalhos/esculturas/esculturas-7.jpg)
 
 Parágrafo solto: Além do muralismo e gravuras, seu atual estudo envolve colagens em larga escala, utilizando­-se de peças de madeira para a construção de totens e máscaras. Seu trabalho possui cores e personagens vibrantes, derivados de seu imaginário e de tudo que o rodeia.
 
