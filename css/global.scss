@@ -41,7 +41,9 @@ body {
 		}
 		
 		a {
-
+			&:hover {
+				color: $laranja;
+			}
 		}
 		
 		p > a {

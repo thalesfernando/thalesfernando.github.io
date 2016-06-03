@@ -51,6 +51,16 @@ main {
 		margin-top: - $leading;
 	}
 
+	p + ol, p + ul, p + form {
+		margin-top: 0;
+		@media screen and (min-width: nth($breakpoints, 2)) {
+			margin-top: -2*$leading;
+		}
+		@media screen and (min-width: nth($breakpoints, 2)) {
+			margin-top: -3*$leading;
+		}
+	}
+
 	p, q, blockquote, address {
 		height: 100%;
 	}
