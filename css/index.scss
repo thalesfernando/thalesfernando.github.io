@@ -31,14 +31,14 @@ main {
 		margin: 0;
 		background-image: url(/img/home.jpg);
 		background-repeat: no-repeat;
-		background-size: auto calc(100% - #{2*($logo-d-height + 2*$logo-d-margin)});;
+		background-size: auto calc(100% - #{($logo-d-height + 2*$logo-d-margin)});
 		box-shadow: inset 0 (-$logo-d-height - 2*$logo-d-margin) ($logo-d-height + 2*$logo-d-margin) 0 transparentize($preto, 0.93);
 		transition: background-position .25s ease-in-out;
 		background-position: 50% 50%;
 		@media screen and (max-width: nth($breakpoints, 2) - 1px) {
 			padding-top: $logo-m-height + 2*$logo-m-margin;
 			padding-bottom: 2*($logo-m-height + 2*$logo-m-margin);
-			background-size: auto calc(100% - #{2*($logo-m-height + 2*$logo-m-margin)});
+			background-size: auto 100%;
 		}
 	}
 	#proximo {
