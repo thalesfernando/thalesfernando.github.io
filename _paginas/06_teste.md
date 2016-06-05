@@ -6,8 +6,9 @@ published: false
 ---
 #Primeiro título h1
 
-{% include img-solo-cheio.html
-	img="/img/trabalhos/esculturas/esculturas-7.jpg" 
+{% include img-duo-cheio.html
+	img-1="/img/trabalhos/esculturas/esculturas-7.jpg"
+	img-2="/img/trabalhos/esculturas/esculturas-7.jpg"  
 %}
 
 #Exemplo de h1
@@ -18,7 +19,7 @@ Parágrafo solto: Além do muralismo e gravuras, seu atual estudo envolve colage
 
 ##Exemplo de h2
 
-![]({{site.baseurl}}//img/trabalhos/esculturas/esculturas-7.jpg)
+![]({{site.baseurl}}/img/trabalhos/esculturas/esculturas-7.jpg)
 
 Parágrafo solto: Além do muralismo e gravuras, seu atual estudo envolve colagens em larga escala, utilizando­-se de peças de madeira para a construção de totens e máscaras. Seu trabalho possui cores e personagens vibrantes, derivados de seu imaginário e de tudo que o rodeia.
 

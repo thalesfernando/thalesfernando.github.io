@@ -87,16 +87,13 @@
 	}
 }
 #baseline-grid {
-	top: $logo-d-height + 2*$logo-d-margin;
-	@media screen and (max-width: nth($breakpoints, 2) - 1px) {
-		top: $logo-m-height + 2*$logo-m-margin;
-	}
 	width: calc(24px + #{4/3*$gutter});
 	height: calc(24px + #{4/3*$gutter});
 	right: 0;
+	bottom: 0;
 	opacity: 0;
 	z-index: 3;
-	position: absolute;
+	position: fixed;
 	background: linear-gradient(to bottom, blue, blue 50%, $branco 50%, $branco);
 	background-size: 100% 2*$leading;
 	padding: 0;
@@ -105,8 +102,13 @@
 	-o-transition: all .1s ease-in-out;
 	transition: all .1s ease-in-out;
 	&.aberto {
+		top: $logo-d-height + 2*$logo-d-margin;
+		@media screen and (max-width: nth($breakpoints, 2) - 1px) {
+			top: $logo-m-height + 2*$logo-m-margin;
+		}
 		width: 100%;
 		height: calc(100% - #{3*$leading});
+		position: absolute;
 		@media screen and (max-width: nth($breakpoints, 2) - 1px) {
 			height: calc(100% - #{2*$leading});
 		}
