@@ -15,10 +15,10 @@ main {
 		}
 	}
 	@media screen and (max-width: nth($breakpoints, 3) - 1px) {
-		padding-top: calc(#{4*$leading} + 116px);
+		padding-top: calc(#{5*$leading} + 64px);
 	}
 	@media screen and (min-width: nth($breakpoints, 3)) {
-		padding-top: calc(#{5*$leading} + 116px);
+		padding-top: calc(#{6*$leading} + 64px);
 	}
 
 	figure, img, p, ul, ol, form, blockquote, address, .video {
