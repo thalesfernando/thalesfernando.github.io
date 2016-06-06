@@ -1,0 +1,12 @@
+@media screen and (min-width: 992px) {
+  body main .intro-projeto figure {
+    margin-left: calc(0% + 0.75rem);
+    margin-right: calc(8.33333% + 0.75rem);
+    width: calc(41.66667% - 1.5rem);
+    display: block; } }
+@media screen and (min-width: 1200px) {
+  body main .intro-projeto figure {
+    margin-left: calc(0% + 0.75rem);
+    margin-right: calc(0% + 0.75rem);
+    width: calc(50.0% - 1.5rem);
+    display: block; } }

@@ -1,0 +1,2030 @@
+@charset "UTF-8";
+html, body, header, main, footer, section, nav, address, div, article, figure, figcaption, img, hr, ol, ul, li, h1, h2, h3, h4, h5, h6, p, blockquote, a, span, b, u, i, textarea, input {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  -webkit-transition: margin .25s ease, padding .25s ease;
+  -moz-transition: margin .25s ease, padding .25s ease;
+  -o-transition: margin .25s ease, padding .25s ease;
+  transition: margin .25s ease, padding .25s ease; }
+  html:visited, body:visited, header:visited, main:visited, footer:visited, section:visited, nav:visited, address:visited, div:visited, article:visited, figure:visited, figcaption:visited, img:visited, hr:visited, ol:visited, ul:visited, li:visited, h1:visited, h2:visited, h3:visited, h4:visited, h5:visited, h6:visited, p:visited, blockquote:visited, a:visited, span:visited, b:visited, u:visited, i:visited, textarea:visited, input:visited {
+    color: #4a4a4a; }
+  html:link, body:link, header:link, main:link, footer:link, section:link, nav:link, address:link, div:link, article:link, figure:link, figcaption:link, img:link, hr:link, ol:link, ul:link, li:link, h1:link, h2:link, h3:link, h4:link, h5:link, h6:link, p:link, blockquote:link, a:link, span:link, b:link, u:link, i:link, textarea:link, input:link {
+    color: #4a4a4a; }
+
+img {
+  -webkit-transition: margin .25s ease;
+  -moz-transition: margin .25s ease;
+  -o-transition: margin .25s ease;
+  transition: margin .25s ease;
+  display: block; }
+
+button {
+  border: none;
+  background-color: transparent; }
+  button:focus {
+    outline: none; }
+
+a[href^="mailto:"] {
+  color: #4a4a4a; }
+
+article {
+  line-height: 0; }
+
+@media screen and (max-width: 767px) {
+  body {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap; }
+    body > * {
+      margin-left: calc(8.3335% + 0rem);
+      margin-right: calc(8.3335% + 0rem);
+      padding-left: 0;
+      padding-right: 0;
+      width: calc(83.333% - 0rem); }
+      body > * * {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%; }
+    body > figure, body > img {
+      margin-left: calc(8.3335% + 0rem);
+      margin-right: calc(8.3335% + 0rem);
+      padding-left: 0;
+      padding-right: 0;
+      width: calc(83.333% - 0rem); }
+    body > ul, body > ol, body > form, body > p, body > q, body > ol, body > h1:not(:first-child), body > h2, body > h3, body > h4, body > h5, body > h6, body > hr, body > blockquote {
+      margin-left: calc(8.3335% + 0rem);
+      margin-right: calc(8.3335% + 0rem);
+      padding-left: 0;
+      padding-right: 0;
+      width: calc(83.333% - 0rem); }
+    body > header, body > footer, body > address, body > nav, body > section {
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: calc(8.3335% - 0.75rem);
+      padding-right: calc(8.3335% - 0.75rem);
+      width: 100%;
+      align-items: flex-start;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      flex-wrap: wrap; }
+      body > header > *, body > footer > *, body > address > *, body > nav > *, body > section > * {
+        margin-left: calc(0% + 0.75rem);
+        margin-right: calc(0% + 0.75rem);
+        padding-left: 0;
+        padding-right: 0;
+        width: calc(100% - 1.5rem); }
+        body > header > *.s1_0, body > footer > *.s1_0, body > address > *.s1_0, body > nav > *.s1_0, body > section > *.s1_0 {
+          display: none; }
+        body > header > *.s1_1, body > footer > *.s1_1, body > address > *.s1_1, body > nav > *.s1_1, body > section > *.s1_1 {
+          width: calc(50% - 1.5rem);
+          margin-left: 0.75rem;
+          margin-right: 0.75rem;
+          display: block; }
+        body > header > *.s1_2, body > footer > *.s1_2, body > address > *.s1_2, body > nav > *.s1_2, body > section > *.s1_2 {
+          width: calc(100% - 1.5rem);
+          margin-left: 0.75rem;
+          margin-right: 0.75rem;
+          display: block; }
+        body > header > * *, body > footer > * *, body > address > * *, body > nav > * *, body > section > * * {
+          margin-left: 0;
+          margin-right: 0;
+          padding-left: 0;
+          padding-right: 0;
+          width: 100%; }
+      body > header > figure, body > header > img, body > footer > figure, body > footer > img, body > address > figure, body > address > img, body > nav > figure, body > nav > img, body > section > figure, body > section > img {
+        margin-left: calc(0% + 0.75rem);
+        margin-right: calc(0% + 0.75rem);
+        padding-left: 0;
+        padding-right: 0;
+        width: calc(100% - 1.5rem); }
+      body > header > ul, body > header > ol, body > header > form, body > header > p, body > header > q, body > header > ol, body > header > h1:not(:first-child), body > header > h2, body > header > h3, body > header > h4, body > header > h5, body > header > h6, body > header > hr, body > header > blockquote, body > footer > ul, body > footer > ol, body > footer > form, body > footer > p, body > footer > q, body > footer > ol, body > footer > h1:not(:first-child), body > footer > h2, body > footer > h3, body > footer > h4, body > footer > h5, body > footer > h6, body > footer > hr, body > footer > blockquote, body > address > ul, body > address > ol, body > address > form, body > address > p, body > address > q, body > address > ol, body > address > h1:not(:first-child), body > address > h2, body > address > h3, body > address > h4, body > address > h5, body > address > h6, body > address > hr, body > address > blockquote, body > nav > ul, body > nav > ol, body > nav > form, body > nav > p, body > nav > q, body > nav > ol, body > nav > h1:not(:first-child), body > nav > h2, body > nav > h3, body > nav > h4, body > nav > h5, body > nav > h6, body > nav > hr, body > nav > blockquote, body > section > ul, body > section > ol, body > section > form, body > section > p, body > section > q, body > section > ol, body > section > h1:not(:first-child), body > section > h2, body > section > h3, body > section > h4, body > section > h5, body > section > h6, body > section > hr, body > section > blockquote {
+        margin-left: calc(0% + 0.75rem);
+        margin-right: calc(0% + 0.75rem);
+        padding-left: 0;
+        padding-right: 0;
+        width: calc(100% - 1.5rem); }
+    body > main {
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 0;
+      padding-right: 0;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      flex-wrap: wrap; }
+      body > main > * {
+        margin-left: calc(8.3335% + 0rem);
+        margin-right: calc(8.3335% + 0rem);
+        padding-left: 0;
+        padding-right: 0;
+        width: calc(83.333% - 0rem); }
+        body > main > * * {
+          margin-left: 0;
+          margin-right: 0;
+          padding-left: 0;
+          padding-right: 0;
+          width: 100%; }
+      body > main > figure, body > main > img {
+        margin-left: calc(8.3335% + 0rem);
+        margin-right: calc(8.3335% + 0rem);
+        padding-left: 0;
+        padding-right: 0;
+        width: calc(83.333% - 0rem); }
+      body > main > ul, body > main > ol, body > main > form, body > main > p, body > main > q, body > main > ol, body > main > h1:not(:first-child), body > main > h2, body > main > h3, body > main > h4, body > main > h5, body > main > h6, body > main > hr, body > main > blockquote {
+        margin-left: calc(8.3335% + 0rem);
+        margin-right: calc(8.3335% + 0rem);
+        padding-left: 0;
+        padding-right: 0;
+        width: calc(83.333% - 0rem); }
+      body > main > main, body > main > section, body > main > nav, body > main > address {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: calc(8.3335% - 0.75rem);
+        padding-right: calc(8.3335% - 0.75rem);
+        width: 100%;
+        align-items: flex-start;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap; }
+        body > main > main > *, body > main > section > *, body > main > nav > *, body > main > address > * {
+          margin-left: calc(0% + 0.75rem);
+          margin-right: calc(0% + 0.75rem);
+          padding-left: 0;
+          padding-right: 0;
+          width: calc(100% - 1.5rem); }
+          body > main > main > *.s1_0, body > main > section > *.s1_0, body > main > nav > *.s1_0, body > main > address > *.s1_0 {
+            display: none; }
+          body > main > main > *.s1_1, body > main > section > *.s1_1, body > main > nav > *.s1_1, body > main > address > *.s1_1 {
+            width: calc(50% - 1.5rem);
+            margin-left: 0.75rem;
+            margin-right: 0.75rem;
+            display: block; }
+          body > main > main > *.s1_2, body > main > section > *.s1_2, body > main > nav > *.s1_2, body > main > address > *.s1_2 {
+            width: calc(100% - 1.5rem);
+            margin-left: 0.75rem;
+            margin-right: 0.75rem;
+            display: block; }
+          body > main > main > * *, body > main > section > * *, body > main > nav > * *, body > main > address > * * {
+            margin-left: 0;
+            margin-right: 0;
+            padding-left: 0;
+            padding-right: 0;
+            width: 100%; }
+        body > main > main > figure, body > main > main > img, body > main > section > figure, body > main > section > img, body > main > nav > figure, body > main > nav > img, body > main > address > figure, body > main > address > img {
+          margin-left: calc(0% + 0.75rem);
+          margin-right: calc(0% + 0.75rem);
+          padding-left: 0;
+          padding-right: 0;
+          width: calc(100% - 1.5rem); }
+        body > main > main > ul, body > main > main > ol, body > main > main > form, body > main > main > p, body > main > main > q, body > main > main > ol, body > main > main > h1:not(:first-child), body > main > main > h2, body > main > main > h3, body > main > main > h4, body > main > main > h5, body > main > main > h6, body > main > main > hr, body > main > main > blockquote, body > main > section > ul, body > main > section > ol, body > main > section > form, body > main > section > p, body > main > section > q, body > main > section > ol, body > main > section > h1:not(:first-child), body > main > section > h2, body > main > section > h3, body > main > section > h4, body > main > section > h5, body > main > section > h6, body > main > section > hr, body > main > section > blockquote, body > main > nav > ul, body > main > nav > ol, body > main > nav > form, body > main > nav > p, body > main > nav > q, body > main > nav > ol, body > main > nav > h1:not(:first-child), body > main > nav > h2, body > main > nav > h3, body > main > nav > h4, body > main > nav > h5, body > main > nav > h6, body > main > nav > hr, body > main > nav > blockquote, body > main > address > ul, body > main > address > ol, body > main > address > form, body > main > address > p, body > main > address > q, body > main > address > ol, body > main > address > h1:not(:first-child), body > main > address > h2, body > main > address > h3, body > main > address > h4, body > main > address > h5, body > main > address > h6, body > main > address > hr, body > main > address > blockquote {
+          margin-left: calc(0% + 0.75rem);
+          margin-right: calc(0% + 0.75rem);
+          padding-left: 0;
+          padding-right: 0;
+          width: calc(100% - 1.5rem); } }
+@media screen and (min-width: 768px) {
+  body {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap; }
+    body > * {
+      margin-left: calc(8.3335% + 0rem);
+      margin-right: calc(8.3335% + 0rem);
+      padding-left: 0;
+      padding-right: 0;
+      width: calc(83.333% - 0rem); }
+      body > * * {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%; }
+    body > figure, body > img {
+      margin-left: calc(8.3335% + 0rem);
+      margin-right: calc(8.3335% + 0rem);
+      padding-left: 0;
+      padding-right: 0;
+      width: calc(83.333% - 0rem); }
+    body > ul, body > ol, body > form, body > p, body > q, body > ol, body > h1:not(:first-child), body > h2, body > h3, body > h4, body > h5, body > h6, body > hr, body > blockquote {
+      margin-left: calc(36.11117% + 0.5rem);
+      margin-right: calc(8.3335% + 0rem);
+      padding-left: 0;
+      padding-right: 0;
+      width: calc(55.55533% - 0.5rem); }
+    body > header, body > footer, body > address, body > nav, body > section {
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: calc(8.3335% - 0.75rem);
+      padding-right: calc(8.3335% - 0.75rem);
+      width: 100%;
+      align-items: flex-start;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      flex-wrap: wrap; }
+      body > header > *, body > footer > *, body > address > *, body > nav > *, body > section > * {
+        margin-left: calc(0% + 0.75rem);
+        margin-right: calc(0% + 0.75rem);
+        padding-left: 0;
+        padding-right: 0;
+        width: calc(100% - 1.5rem); }
+        body > header > *.s2_0, body > footer > *.s2_0, body > address > *.s2_0, body > nav > *.s2_0, body > section > *.s2_0 {
+          display: none; }
+        body > header > *.s2_1, body > footer > *.s2_1, body > address > *.s2_1, body > nav > *.s2_1, body > section > *.s2_1 {
+          width: calc(16.66667% - 1.5rem);
+          margin-left: 0.75rem;
+          margin-right: 0.75rem;
+          display: block; }
+        body > header > *.s2_2, body > footer > *.s2_2, body > address > *.s2_2, body > nav > *.s2_2, body > section > *.s2_2 {
+          width: calc(33.33333% - 1.5rem);
+          margin-left: 0.75rem;
+          margin-right: 0.75rem;
+          display: block; }
+        body > header > *.s2_3, body > footer > *.s2_3, body > address > *.s2_3, body > nav > *.s2_3, body > section > *.s2_3 {
+          width: calc(50.0% - 1.5rem);
+          margin-left: 0.75rem;
+          margin-right: 0.75rem;
+          display: block; }
+        body > header > *.s2_4, body > footer > *.s2_4, body > address > *.s2_4, body > nav > *.s2_4, body > section > *.s2_4 {
+          width: calc(66.66667% - 1.5rem);
+          margin-left: 0.75rem;
+          margin-right: 0.75rem;
+          display: block; }
+        body > header > *.s2_5, body > footer > *.s2_5, body > address > *.s2_5, body > nav > *.s2_5, body > section > *.s2_5 {
+          width: calc(83.33333% - 1.5rem);
+          margin-left: 0.75rem;
+          margin-right: 0.75rem;
+          display: block; }
+        body > header > *.s2_6, body > footer > *.s2_6, body > address > *.s2_6, body > nav > *.s2_6, body > section > *.s2_6 {
+          width: calc(100.0% - 1.5rem);
+          margin-left: 0.75rem;
+          margin-right: 0.75rem;
+          display: block; }
+        body > header > * *, body > footer > * *, body > address > * *, body > nav > * *, body > section > * * {
+          margin-left: 0;
+          margin-right: 0;
+          padding-left: 0;
+          padding-right: 0;
+          width: 100%; }
+      body > header > figure, body > header > img, body > footer > figure, body > footer > img, body > address > figure, body > address > img, body > nav > figure, body > nav > img, body > section > figure, body > section > img {
+        margin-left: calc(0% + 0.75rem);
+        margin-right: calc(0% + 0.75rem);
+        padding-left: 0;
+        padding-right: 0;
+        width: calc(100% - 1.5rem); }
+      body > header > ul, body > header > ol, body > header > form, body > header > p, body > header > q, body > header > ol, body > header > h1:not(:first-child), body > header > h2, body > header > h3, body > header > h4, body > header > h5, body > header > h6, body > header > hr, body > header > blockquote, body > footer > ul, body > footer > ol, body > footer > form, body > footer > p, body > footer > q, body > footer > ol, body > footer > h1:not(:first-child), body > footer > h2, body > footer > h3, body > footer > h4, body > footer > h5, body > footer > h6, body > footer > hr, body > footer > blockquote, body > address > ul, body > address > ol, body > address > form, body > address > p, body > address > q, body > address > ol, body > address > h1:not(:first-child), body > address > h2, body > address > h3, body > address > h4, body > address > h5, body > address > h6, body > address > hr, body > address > blockquote, body > nav > ul, body > nav > ol, body > nav > form, body > nav > p, body > nav > q, body > nav > ol, body > nav > h1:not(:first-child), body > nav > h2, body > nav > h3, body > nav > h4, body > nav > h5, body > nav > h6, body > nav > hr, body > nav > blockquote, body > section > ul, body > section > ol, body > section > form, body > section > p, body > section > q, body > section > ol, body > section > h1:not(:first-child), body > section > h2, body > section > h3, body > section > h4, body > section > h5, body > section > h6, body > section > hr, body > section > blockquote {
+        margin-left: calc(33.33333% + 0.75rem);
+        margin-right: calc(0% + 0.75rem);
+        padding-left: 0;
+        padding-right: 0;
+        width: calc(66.66667% - 1.5rem); }
+    body > main {
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 0;
+      padding-right: 0;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      flex-wrap: wrap; }
+      body > main > * {
+        margin-left: calc(8.3335% + 0rem);
+        margin-right: calc(8.3335% + 0rem);
+        padding-left: 0;
+        padding-right: 0;
+        width: calc(83.333% - 0rem); }
+        body > main > * * {
+          margin-left: 0;
+          margin-right: 0;
+          padding-left: 0;
+          padding-right: 0;
+          width: 100%; }
+      body > main > figure, body > main > img {
+        margin-left: calc(8.3335% + 0rem);
+        margin-right: calc(8.3335% + 0rem);
+        padding-left: 0;
+        padding-right: 0;
+        width: calc(83.333% - 0rem); }
+      body > main > ul, body > main > ol, body > main > form, body > main > p, body > main > q, body > main > ol, body > main > h1:not(:first-child), body > main > h2, body > main > h3, body > main > h4, body > main > h5, body > main > h6, body > main > hr, body > main > blockquote {
+        margin-left: calc(36.11117% + 0.5rem);
+        margin-right: calc(8.3335% + 0rem);
+        padding-left: 0;
+        padding-right: 0;
+        width: calc(55.55533% - 0.5rem); }
+      body > main > main, body > main > section, body > main > nav, body > main > address {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: calc(8.3335% - 0.75rem);
+        padding-right: calc(8.3335% - 0.75rem);
+        width: 100%;
+        align-items: flex-start;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap; }
+        body > main > main > *, body > main > section > *, body > main > nav > *, body > main > address > * {
+          margin-left: calc(0% + 0.75rem);
+          margin-right: calc(0% + 0.75rem);
+          padding-left: 0;
+          padding-right: 0;
+          width: calc(100% - 1.5rem); }
+          body > main > main > *.s2_0, body > main > section > *.s2_0, body > main > nav > *.s2_0, body > main > address > *.s2_0 {
+            display: none; }
+          body > main > main > *.s2_1, body > main > section > *.s2_1, body > main > nav > *.s2_1, body > main > address > *.s2_1 {
+            width: calc(16.66667% - 1.5rem);
+            margin-left: 0.75rem;
+            margin-right: 0.75rem;
+            display: block; }
+          body > main > main > *.s2_2, body > main > section > *.s2_2, body > main > nav > *.s2_2, body > main > address > *.s2_2 {
+            width: calc(33.33333% - 1.5rem);
+            margin-left: 0.75rem;
+            margin-right: 0.75rem;
+            display: block; }
+          body > main > main > *.s2_3, body > main > section > *.s2_3, body > main > nav > *.s2_3, body > main > address > *.s2_3 {
+            width: calc(50.0% - 1.5rem);
+            margin-left: 0.75rem;
+            margin-right: 0.75rem;
+            display: block; }
+          body > main > main > *.s2_4, body > main > section > *.s2_4, body > main > nav > *.s2_4, body > main > address > *.s2_4 {
+            width: calc(66.66667% - 1.5rem);
+            margin-left: 0.75rem;
+            margin-right: 0.75rem;
+            display: block; }
+          body > main > main > *.s2_5, body > main > section > *.s2_5, body > main > nav > *.s2_5, body > main > address > *.s2_5 {
+            width: calc(83.33333% - 1.5rem);
+            margin-left: 0.75rem;
+            margin-right: 0.75rem;
+            display: block; }
+          body > main > main > *.s2_6, body > main > section > *.s2_6, body > main > nav > *.s2_6, body > main > address > *.s2_6 {
+            width: calc(100.0% - 1.5rem);
+            margin-left: 0.75rem;
+            margin-right: 0.75rem;
+            display: block; }
+          body > main > main > * *, body > main > section > * *, body > main > nav > * *, body > main > address > * * {
+            margin-left: 0;
+            margin-right: 0;
+            padding-left: 0;
+            padding-right: 0;
+            width: 100%; }
+        body > main > main > figure, body > main > main > img, body > main > section > figure, body > main > section > img, body > main > nav > figure, body > main > nav > img, body > main > address > figure, body > main > address > img {
+          margin-left: calc(0% + 0.75rem);
+          margin-right: calc(0% + 0.75rem);
+          padding-left: 0;
+          padding-right: 0;
+          width: calc(100% - 1.5rem); }
+        body > main > main > ul, body > main > main > ol, body > main > main > form, body > main > main > p, body > main > main > q, body > main > main > ol, body > main > main > h1:not(:first-child), body > main > main > h2, body > main > main > h3, body > main > main > h4, body > main > main > h5, body > main > main > h6, body > main > main > hr, body > main > main > blockquote, body > main > section > ul, body > main > section > ol, body > main > section > form, body > main > section > p, body > main > section > q, body > main > section > ol, body > main > section > h1:not(:first-child), body > main > section > h2, body > main > section > h3, body > main > section > h4, body > main > section > h5, body > main > section > h6, body > main > section > hr, body > main > section > blockquote, body > main > nav > ul, body > main > nav > ol, body > main > nav > form, body > main > nav > p, body > main > nav > q, body > main > nav > ol, body > main > nav > h1:not(:first-child), body > main > nav > h2, body > main > nav > h3, body > main > nav > h4, body > main > nav > h5, body > main > nav > h6, body > main > nav > hr, body > main > nav > blockquote, body > main > address > ul, body > main > address > ol, body > main > address > form, body > main > address > p, body > main > address > q, body > main > address > ol, body > main > address > h1:not(:first-child), body > main > address > h2, body > main > address > h3, body > main > address > h4, body > main > address > h5, body > main > address > h6, body > main > address > hr, body > main > address > blockquote {
+          margin-left: calc(33.33333% + 0.75rem);
+          margin-right: calc(0% + 0.75rem);
+          padding-left: 0;
+          padding-right: 0;
+          width: calc(66.66667% - 1.5rem); } }
+@media screen and (min-width: 992px) {
+  body {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap; }
+    body > * {
+      margin-left: calc(8.3335% + 0rem);
+      margin-right: calc(8.3335% + 0rem);
+      padding-left: 0;
+      padding-right: 0;
+      width: calc(83.333% - 0rem); }
+      body > * * {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%; }
+    body > figure, body > img {
+      margin-left: calc(15.27792% + 0.125rem);
+      margin-right: calc(15.27792% + 0.125rem);
+      padding-left: 0;
+      padding-right: 0;
+      width: calc(69.44417% - 0.25rem); }
+    body > ul, body > ol, body > form, body > p, body > q, body > ol, body > h1:not(:first-child), body > h2, body > h3, body > h4, body > h5, body > h6, body > hr, body > blockquote {
+      margin-left: calc(29.16675% + 0.375rem);
+      margin-right: calc(15.27792% + 0.125rem);
+      padding-left: 0;
+      padding-right: 0;
+      width: calc(55.55533% - 0.5rem); }
+    body > header, body > footer, body > address, body > nav, body > section {
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: calc(8.3335% - 0.75rem);
+      padding-right: calc(8.3335% - 0.75rem);
+      width: 100%;
+      align-items: flex-start;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      flex-wrap: wrap; }
+      body > header > *, body > footer > *, body > address > *, body > nav > *, body > section > * {
+        margin-left: calc(0% + 0.75rem);
+        margin-right: calc(0% + 0.75rem);
+        padding-left: 0;
+        padding-right: 0;
+        width: calc(100% - 1.5rem); }
+        body > header > *.s3_0, body > footer > *.s3_0, body > address > *.s3_0, body > nav > *.s3_0, body > section > *.s3_0 {
+          display: none; }
+        body > header > *.s3_1, body > footer > *.s3_1, body > address > *.s3_1, body > nav > *.s3_1, body > section > *.s3_1 {
+          width: calc(8.33333% - 1.5rem);
+          margin-left: 0.75rem;
+          margin-right: 0.75rem;
+          display: block; }
+        body > header > *.s3_2, body > footer > *.s3_2, body > address > *.s3_2, body > nav > *.s3_2, body > section > *.s3_2 {
+          width: calc(16.66667% - 1.5rem);
+          margin-left: 0.75rem;
+          margin-right: 0.75rem;
+          display: block; }
+        body > header > *.s3_3, body > footer > *.s3_3, body > address > *.s3_3, body > nav > *.s3_3, body > section > *.s3_3 {
+          width: calc(25.0% - 1.5rem);
+          margin-left: 0.75rem;
+          margin-right: 0.75rem;
+          display: block; }
+        body > header > *.s3_4, body > footer > *.s3_4, body > address > *.s3_4, body > nav > *.s3_4, body > section > *.s3_4 {
+          width: calc(33.33333% - 1.5rem);
+          margin-left: 0.75rem;
+          margin-right: 0.75rem;
+          display: block; }
+        body > header > *.s3_5, body > footer > *.s3_5, body > address > *.s3_5, body > nav > *.s3_5, body > section > *.s3_5 {
+          width: calc(41.66667% - 1.5rem);
+          margin-left: 0.75rem;
+          margin-right: 0.75rem;
+          display: block; }
+        body > header > *.s3_6, body > footer > *.s3_6, body > address > *.s3_6, body > nav > *.s3_6, body > section > *.s3_6 {
+          width: calc(50.0% - 1.5rem);
+          margin-left: 0.75rem;
+          margin-right: 0.75rem;
+          display: block; }
+        body > header > *.s3_7, body > footer > *.s3_7, body > address > *.s3_7, body > nav > *.s3_7, body > section > *.s3_7 {
+          width: calc(58.33333% - 1.5rem);
+          margin-left: 0.75rem;
+          margin-right: 0.75rem;
+          display: block; }
+        body > header > *.s3_8, body > footer > *.s3_8, body > address > *.s3_8, body > nav > *.s3_8, body > section > *.s3_8 {
+          width: calc(66.66667% - 1.5rem);
+          margin-left: 0.75rem;
+          margin-right: 0.75rem;
+          display: block; }
+        body > header > *.s3_9, body > footer > *.s3_9, body > address > *.s3_9, body > nav > *.s3_9, body > section > *.s3_9 {
+          width: calc(75.0% - 1.5rem);
+          margin-left: 0.75rem;
+          margin-right: 0.75rem;
+          display: block; }
+        body > header > *.s3_10, body > footer > *.s3_10, body > address > *.s3_10, body > nav > *.s3_10, body > section > *.s3_10 {
+          width: calc(83.33333% - 1.5rem);
+          margin-left: 0.75rem;
+          margin-right: 0.75rem;
+          display: block; }
+        body > header > *.s3_11, body > footer > *.s3_11, body > address > *.s3_11, body > nav > *.s3_11, body > section > *.s3_11 {
+          width: calc(91.66667% - 1.5rem);
+          margin-left: 0.75rem;
+          margin-right: 0.75rem;
+          display: block; }
+        body > header > *.s3_12, body > footer > *.s3_12, body > address > *.s3_12, body > nav > *.s3_12, body > section > *.s3_12 {
+          width: calc(100.0% - 1.5rem);
+          margin-left: 0.75rem;
+          margin-right: 0.75rem;
+          display: block; }
+        body > header > * *, body > footer > * *, body > address > * *, body > nav > * *, body > section > * * {
+          margin-left: 0;
+          margin-right: 0;
+          padding-left: 0;
+          padding-right: 0;
+          width: 100%; }
+      body > header > figure, body > header > img, body > footer > figure, body > footer > img, body > address > figure, body > address > img, body > nav > figure, body > nav > img, body > section > figure, body > section > img {
+        margin-left: calc(8.33333% + 0.75rem);
+        margin-right: calc(8.33333% + 0.75rem);
+        padding-left: 0;
+        padding-right: 0;
+        width: calc(100% - 1.5rem); }
+      body > header > ul, body > header > ol, body > header > form, body > header > p, body > header > q, body > header > ol, body > header > h1:not(:first-child), body > header > h2, body > header > h3, body > header > h4, body > header > h5, body > header > h6, body > header > hr, body > header > blockquote, body > footer > ul, body > footer > ol, body > footer > form, body > footer > p, body > footer > q, body > footer > ol, body > footer > h1:not(:first-child), body > footer > h2, body > footer > h3, body > footer > h4, body > footer > h5, body > footer > h6, body > footer > hr, body > footer > blockquote, body > address > ul, body > address > ol, body > address > form, body > address > p, body > address > q, body > address > ol, body > address > h1:not(:first-child), body > address > h2, body > address > h3, body > address > h4, body > address > h5, body > address > h6, body > address > hr, body > address > blockquote, body > nav > ul, body > nav > ol, body > nav > form, body > nav > p, body > nav > q, body > nav > ol, body > nav > h1:not(:first-child), body > nav > h2, body > nav > h3, body > nav > h4, body > nav > h5, body > nav > h6, body > nav > hr, body > nav > blockquote, body > section > ul, body > section > ol, body > section > form, body > section > p, body > section > q, body > section > ol, body > section > h1:not(:first-child), body > section > h2, body > section > h3, body > section > h4, body > section > h5, body > section > h6, body > section > hr, body > section > blockquote {
+        margin-left: calc(25% + 0.75rem);
+        margin-right: calc(8.33333% + 0.75rem);
+        padding-left: 0;
+        padding-right: 0;
+        width: calc(83.33333% - 1.5rem); }
+    body > main {
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 0;
+      padding-right: 0;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      flex-wrap: wrap; }
+      body > main > * {
+        margin-left: calc(8.3335% + 0rem);
+        margin-right: calc(8.3335% + 0rem);
+        padding-left: 0;
+        padding-right: 0;
+        width: calc(83.333% - 0rem); }
+        body > main > * * {
+          margin-left: 0;
+          margin-right: 0;
+          padding-left: 0;
+          padding-right: 0;
+          width: 100%; }
+      body > main > figure, body > main > img {
+        margin-left: calc(15.27792% + 0.125rem);
+        margin-right: calc(15.27792% + 0.125rem);
+        padding-left: 0;
+        padding-right: 0;
+        width: calc(69.44417% - 0.25rem); }
+      body > main > ul, body > main > ol, body > main > form, body > main > p, body > main > q, body > main > ol, body > main > h1:not(:first-child), body > main > h2, body > main > h3, body > main > h4, body > main > h5, body > main > h6, body > main > hr, body > main > blockquote {
+        margin-left: calc(29.16675% + 0.375rem);
+        margin-right: calc(15.27792% + 0.125rem);
+        padding-left: 0;
+        padding-right: 0;
+        width: calc(55.55533% - 0.5rem); }
+      body > main > main, body > main > section, body > main > nav, body > main > address {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: calc(8.3335% - 0.75rem);
+        padding-right: calc(8.3335% - 0.75rem);
+        width: 100%;
+        align-items: flex-start;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap; }
+        body > main > main > *, body > main > section > *, body > main > nav > *, body > main > address > * {
+          margin-left: calc(0% + 0.75rem);
+          margin-right: calc(0% + 0.75rem);
+          padding-left: 0;
+          padding-right: 0;
+          width: calc(100% - 1.5rem); }
+          body > main > main > *.s3_0, body > main > section > *.s3_0, body > main > nav > *.s3_0, body > main > address > *.s3_0 {
+            display: none; }
+          body > main > main > *.s3_1, body > main > section > *.s3_1, body > main > nav > *.s3_1, body > main > address > *.s3_1 {
+            width: calc(8.33333% - 1.5rem);
+            margin-left: 0.75rem;
+            margin-right: 0.75rem;
+            display: block; }
+          body > main > main > *.s3_2, body > main > section > *.s3_2, body > main > nav > *.s3_2, body > main > address > *.s3_2 {
+            width: calc(16.66667% - 1.5rem);
+            margin-left: 0.75rem;
+            margin-right: 0.75rem;
+            display: block; }
+          body > main > main > *.s3_3, body > main > section > *.s3_3, body > main > nav > *.s3_3, body > main > address > *.s3_3 {
+            width: calc(25.0% - 1.5rem);
+            margin-left: 0.75rem;
+            margin-right: 0.75rem;
+            display: block; }
+          body > main > main > *.s3_4, body > main > section > *.s3_4, body > main > nav > *.s3_4, body > main > address > *.s3_4 {
+            width: calc(33.33333% - 1.5rem);
+            margin-left: 0.75rem;
+            margin-right: 0.75rem;
+            display: block; }
+          body > main > main > *.s3_5, body > main > section > *.s3_5, body > main > nav > *.s3_5, body > main > address > *.s3_5 {
+            width: calc(41.66667% - 1.5rem);
+            margin-left: 0.75rem;
+            margin-right: 0.75rem;
+            display: block; }
+          body > main > main > *.s3_6, body > main > section > *.s3_6, body > main > nav > *.s3_6, body > main > address > *.s3_6 {
+            width: calc(50.0% - 1.5rem);
+            margin-left: 0.75rem;
+            margin-right: 0.75rem;
+            display: block; }
+          body > main > main > *.s3_7, body > main > section > *.s3_7, body > main > nav > *.s3_7, body > main > address > *.s3_7 {
+            width: calc(58.33333% - 1.5rem);
+            margin-left: 0.75rem;
+            margin-right: 0.75rem;
+            display: block; }
+          body > main > main > *.s3_8, body > main > section > *.s3_8, body > main > nav > *.s3_8, body > main > address > *.s3_8 {
+            width: calc(66.66667% - 1.5rem);
+            margin-left: 0.75rem;
+            margin-right: 0.75rem;
+            display: block; }
+          body > main > main > *.s3_9, body > main > section > *.s3_9, body > main > nav > *.s3_9, body > main > address > *.s3_9 {
+            width: calc(75.0% - 1.5rem);
+            margin-left: 0.75rem;
+            margin-right: 0.75rem;
+            display: block; }
+          body > main > main > *.s3_10, body > main > section > *.s3_10, body > main > nav > *.s3_10, body > main > address > *.s3_10 {
+            width: calc(83.33333% - 1.5rem);
+            margin-left: 0.75rem;
+            margin-right: 0.75rem;
+            display: block; }
+          body > main > main > *.s3_11, body > main > section > *.s3_11, body > main > nav > *.s3_11, body > main > address > *.s3_11 {
+            width: calc(91.66667% - 1.5rem);
+            margin-left: 0.75rem;
+            margin-right: 0.75rem;
+            display: block; }
+          body > main > main > *.s3_12, body > main > section > *.s3_12, body > main > nav > *.s3_12, body > main > address > *.s3_12 {
+            width: calc(100.0% - 1.5rem);
+            margin-left: 0.75rem;
+            margin-right: 0.75rem;
+            display: block; }
+          body > main > main > * *, body > main > section > * *, body > main > nav > * *, body > main > address > * * {
+            margin-left: 0;
+            margin-right: 0;
+            padding-left: 0;
+            padding-right: 0;
+            width: 100%; }
+        body > main > main > figure, body > main > main > img, body > main > section > figure, body > main > section > img, body > main > nav > figure, body > main > nav > img, body > main > address > figure, body > main > address > img {
+          margin-left: calc(8.33333% + 0.75rem);
+          margin-right: calc(8.33333% + 0.75rem);
+          padding-left: 0;
+          padding-right: 0;
+          width: calc(100% - 1.5rem); }
+        body > main > main > ul, body > main > main > ol, body > main > main > form, body > main > main > p, body > main > main > q, body > main > main > ol, body > main > main > h1:not(:first-child), body > main > main > h2, body > main > main > h3, body > main > main > h4, body > main > main > h5, body > main > main > h6, body > main > main > hr, body > main > main > blockquote, body > main > section > ul, body > main > section > ol, body > main > section > form, body > main > section > p, body > main > section > q, body > main > section > ol, body > main > section > h1:not(:first-child), body > main > section > h2, body > main > section > h3, body > main > section > h4, body > main > section > h5, body > main > section > h6, body > main > section > hr, body > main > section > blockquote, body > main > nav > ul, body > main > nav > ol, body > main > nav > form, body > main > nav > p, body > main > nav > q, body > main > nav > ol, body > main > nav > h1:not(:first-child), body > main > nav > h2, body > main > nav > h3, body > main > nav > h4, body > main > nav > h5, body > main > nav > h6, body > main > nav > hr, body > main > nav > blockquote, body > main > address > ul, body > main > address > ol, body > main > address > form, body > main > address > p, body > main > address > q, body > main > address > ol, body > main > address > h1:not(:first-child), body > main > address > h2, body > main > address > h3, body > main > address > h4, body > main > address > h5, body > main > address > h6, body > main > address > hr, body > main > address > blockquote {
+          margin-left: calc(25% + 0.75rem);
+          margin-right: calc(8.33333% + 0.75rem);
+          padding-left: 0;
+          padding-right: 0;
+          width: calc(83.33333% - 1.5rem); } }
+@media screen and (min-width: 1200px) {
+  body {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap; }
+    body > * {
+      margin-left: calc(8.3335% + 0rem);
+      margin-right: calc(8.3335% + 0rem);
+      padding-left: 0;
+      padding-right: 0;
+      width: calc(83.333% - 0rem); }
+      body > * * {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%; }
+    body > figure, body > img {
+      margin-left: calc(22.22233% + 0.25rem);
+      margin-right: calc(15.27792% + 0.125rem);
+      padding-left: 0;
+      padding-right: 0;
+      width: calc(62.49975% - 0.375rem); }
+    body > ul, body > ol, body > form, body > p, body > q, body > ol, body > h1:not(:first-child), body > h2, body > h3, body > h4, body > h5, body > h6, body > hr, body > blockquote {
+      margin-left: calc(36.11117% + 0.5rem);
+      margin-right: calc(22.22233% + 0.25rem);
+      padding-left: 0;
+      padding-right: 0;
+      width: calc(41.6665% - 0.75rem); }
+    body > header, body > footer, body > address, body > nav, body > section {
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: calc(8.3335% - 0.75rem);
+      padding-right: calc(8.3335% - 0.75rem);
+      width: 100%;
+      align-items: flex-start;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      flex-wrap: wrap; }
+      body > header > *, body > footer > *, body > address > *, body > nav > *, body > section > * {
+        margin-left: calc(0% + 0.75rem);
+        margin-right: calc(0% + 0.75rem);
+        padding-left: 0;
+        padding-right: 0;
+        width: calc(100% - 1.5rem); }
+        body > header > *.s4_0, body > footer > *.s4_0, body > address > *.s4_0, body > nav > *.s4_0, body > section > *.s4_0 {
+          display: none; }
+        body > header > *.s4_1, body > footer > *.s4_1, body > address > *.s4_1, body > nav > *.s4_1, body > section > *.s4_1 {
+          width: calc(8.33333% - 1.5rem);
+          margin-left: 0.75rem;
+          margin-right: 0.75rem;
+          display: block; }
+        body > header > *.s4_2, body > footer > *.s4_2, body > address > *.s4_2, body > nav > *.s4_2, body > section > *.s4_2 {
+          width: calc(16.66667% - 1.5rem);
+          margin-left: 0.75rem;
+          margin-right: 0.75rem;
+          display: block; }
+        body > header > *.s4_3, body > footer > *.s4_3, body > address > *.s4_3, body > nav > *.s4_3, body > section > *.s4_3 {
+          width: calc(25.0% - 1.5rem);
+          margin-left: 0.75rem;
+          margin-right: 0.75rem;
+          display: block; }
+        body > header > *.s4_4, body > footer > *.s4_4, body > address > *.s4_4, body > nav > *.s4_4, body > section > *.s4_4 {
+          width: calc(33.33333% - 1.5rem);
+          margin-left: 0.75rem;
+          margin-right: 0.75rem;
+          display: block; }
+        body > header > *.s4_5, body > footer > *.s4_5, body > address > *.s4_5, body > nav > *.s4_5, body > section > *.s4_5 {
+          width: calc(41.66667% - 1.5rem);
+          margin-left: 0.75rem;
+          margin-right: 0.75rem;
+          display: block; }
+        body > header > *.s4_6, body > footer > *.s4_6, body > address > *.s4_6, body > nav > *.s4_6, body > section > *.s4_6 {
+          width: calc(50.0% - 1.5rem);
+          margin-left: 0.75rem;
+          margin-right: 0.75rem;
+          display: block; }
+        body > header > *.s4_7, body > footer > *.s4_7, body > address > *.s4_7, body > nav > *.s4_7, body > section > *.s4_7 {
+          width: calc(58.33333% - 1.5rem);
+          margin-left: 0.75rem;
+          margin-right: 0.75rem;
+          display: block; }
+        body > header > *.s4_8, body > footer > *.s4_8, body > address > *.s4_8, body > nav > *.s4_8, body > section > *.s4_8 {
+          width: calc(66.66667% - 1.5rem);
+          margin-left: 0.75rem;
+          margin-right: 0.75rem;
+          display: block; }
+        body > header > *.s4_9, body > footer > *.s4_9, body > address > *.s4_9, body > nav > *.s4_9, body > section > *.s4_9 {
+          width: calc(75.0% - 1.5rem);
+          margin-left: 0.75rem;
+          margin-right: 0.75rem;
+          display: block; }
+        body > header > *.s4_10, body > footer > *.s4_10, body > address > *.s4_10, body > nav > *.s4_10, body > section > *.s4_10 {
+          width: calc(83.33333% - 1.5rem);
+          margin-left: 0.75rem;
+          margin-right: 0.75rem;
+          display: block; }
+        body > header > *.s4_11, body > footer > *.s4_11, body > address > *.s4_11, body > nav > *.s4_11, body > section > *.s4_11 {
+          width: calc(91.66667% - 1.5rem);
+          margin-left: 0.75rem;
+          margin-right: 0.75rem;
+          display: block; }
+        body > header > *.s4_12, body > footer > *.s4_12, body > address > *.s4_12, body > nav > *.s4_12, body > section > *.s4_12 {
+          width: calc(100.0% - 1.5rem);
+          margin-left: 0.75rem;
+          margin-right: 0.75rem;
+          display: block; }
+        body > header > * *, body > footer > * *, body > address > * *, body > nav > * *, body > section > * * {
+          margin-left: 0;
+          margin-right: 0;
+          padding-left: 0;
+          padding-right: 0;
+          width: 100%; }
+      body > header > figure, body > header > img, body > footer > figure, body > footer > img, body > address > figure, body > address > img, body > nav > figure, body > nav > img, body > section > figure, body > section > img {
+        margin-left: calc(16.66667% + 0.75rem);
+        margin-right: calc(8.33333% + 0.75rem);
+        padding-left: 0;
+        padding-right: 0;
+        width: calc(91.66667% - 1.5rem); }
+      body > header > ul, body > header > ol, body > header > form, body > header > p, body > header > q, body > header > ol, body > header > h1:not(:first-child), body > header > h2, body > header > h3, body > header > h4, body > header > h5, body > header > h6, body > header > hr, body > header > blockquote, body > footer > ul, body > footer > ol, body > footer > form, body > footer > p, body > footer > q, body > footer > ol, body > footer > h1:not(:first-child), body > footer > h2, body > footer > h3, body > footer > h4, body > footer > h5, body > footer > h6, body > footer > hr, body > footer > blockquote, body > address > ul, body > address > ol, body > address > form, body > address > p, body > address > q, body > address > ol, body > address > h1:not(:first-child), body > address > h2, body > address > h3, body > address > h4, body > address > h5, body > address > h6, body > address > hr, body > address > blockquote, body > nav > ul, body > nav > ol, body > nav > form, body > nav > p, body > nav > q, body > nav > ol, body > nav > h1:not(:first-child), body > nav > h2, body > nav > h3, body > nav > h4, body > nav > h5, body > nav > h6, body > nav > hr, body > nav > blockquote, body > section > ul, body > section > ol, body > section > form, body > section > p, body > section > q, body > section > ol, body > section > h1:not(:first-child), body > section > h2, body > section > h3, body > section > h4, body > section > h5, body > section > h6, body > section > hr, body > section > blockquote {
+        margin-left: calc(33.33333% + 0.75rem);
+        margin-right: calc(16.66667% + 0.75rem);
+        padding-left: 0;
+        padding-right: 0;
+        width: calc(83.33333% - 1.5rem); }
+    body > main {
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 0;
+      padding-right: 0;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      flex-wrap: wrap; }
+      body > main > * {
+        margin-left: calc(8.3335% + 0rem);
+        margin-right: calc(8.3335% + 0rem);
+        padding-left: 0;
+        padding-right: 0;
+        width: calc(83.333% - 0rem); }
+        body > main > * * {
+          margin-left: 0;
+          margin-right: 0;
+          padding-left: 0;
+          padding-right: 0;
+          width: 100%; }
+      body > main > figure, body > main > img {
+        margin-left: calc(22.22233% + 0.25rem);
+        margin-right: calc(15.27792% + 0.125rem);
+        padding-left: 0;
+        padding-right: 0;
+        width: calc(62.49975% - 0.375rem); }
+      body > main > ul, body > main > ol, body > main > form, body > main > p, body > main > q, body > main > ol, body > main > h1:not(:first-child), body > main > h2, body > main > h3, body > main > h4, body > main > h5, body > main > h6, body > main > hr, body > main > blockquote {
+        margin-left: calc(36.11117% + 0.5rem);
+        margin-right: calc(22.22233% + 0.25rem);
+        padding-left: 0;
+        padding-right: 0;
+        width: calc(41.6665% - 0.75rem); }
+      body > main > main, body > main > section, body > main > nav, body > main > address {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: calc(8.3335% - 0.75rem);
+        padding-right: calc(8.3335% - 0.75rem);
+        width: 100%;
+        align-items: flex-start;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap; }
+        body > main > main > *, body > main > section > *, body > main > nav > *, body > main > address > * {
+          margin-left: calc(0% + 0.75rem);
+          margin-right: calc(0% + 0.75rem);
+          padding-left: 0;
+          padding-right: 0;
+          width: calc(100% - 1.5rem); }
+          body > main > main > *.s4_0, body > main > section > *.s4_0, body > main > nav > *.s4_0, body > main > address > *.s4_0 {
+            display: none; }
+          body > main > main > *.s4_1, body > main > section > *.s4_1, body > main > nav > *.s4_1, body > main > address > *.s4_1 {
+            width: calc(8.33333% - 1.5rem);
+            margin-left: 0.75rem;
+            margin-right: 0.75rem;
+            display: block; }
+          body > main > main > *.s4_2, body > main > section > *.s4_2, body > main > nav > *.s4_2, body > main > address > *.s4_2 {
+            width: calc(16.66667% - 1.5rem);
+            margin-left: 0.75rem;
+            margin-right: 0.75rem;
+            display: block; }
+          body > main > main > *.s4_3, body > main > section > *.s4_3, body > main > nav > *.s4_3, body > main > address > *.s4_3 {
+            width: calc(25.0% - 1.5rem);
+            margin-left: 0.75rem;
+            margin-right: 0.75rem;
+            display: block; }
+          body > main > main > *.s4_4, body > main > section > *.s4_4, body > main > nav > *.s4_4, body > main > address > *.s4_4 {
+            width: calc(33.33333% - 1.5rem);
+            margin-left: 0.75rem;
+            margin-right: 0.75rem;
+            display: block; }
+          body > main > main > *.s4_5, body > main > section > *.s4_5, body > main > nav > *.s4_5, body > main > address > *.s4_5 {
+            width: calc(41.66667% - 1.5rem);
+            margin-left: 0.75rem;
+            margin-right: 0.75rem;
+            display: block; }
+          body > main > main > *.s4_6, body > main > section > *.s4_6, body > main > nav > *.s4_6, body > main > address > *.s4_6 {
+            width: calc(50.0% - 1.5rem);
+            margin-left: 0.75rem;
+            margin-right: 0.75rem;
+            display: block; }
+          body > main > main > *.s4_7, body > main > section > *.s4_7, body > main > nav > *.s4_7, body > main > address > *.s4_7 {
+            width: calc(58.33333% - 1.5rem);
+            margin-left: 0.75rem;
+            margin-right: 0.75rem;
+            display: block; }
+          body > main > main > *.s4_8, body > main > section > *.s4_8, body > main > nav > *.s4_8, body > main > address > *.s4_8 {
+            width: calc(66.66667% - 1.5rem);
+            margin-left: 0.75rem;
+            margin-right: 0.75rem;
+            display: block; }
+          body > main > main > *.s4_9, body > main > section > *.s4_9, body > main > nav > *.s4_9, body > main > address > *.s4_9 {
+            width: calc(75.0% - 1.5rem);
+            margin-left: 0.75rem;
+            margin-right: 0.75rem;
+            display: block; }
+          body > main > main > *.s4_10, body > main > section > *.s4_10, body > main > nav > *.s4_10, body > main > address > *.s4_10 {
+            width: calc(83.33333% - 1.5rem);
+            margin-left: 0.75rem;
+            margin-right: 0.75rem;
+            display: block; }
+          body > main > main > *.s4_11, body > main > section > *.s4_11, body > main > nav > *.s4_11, body > main > address > *.s4_11 {
+            width: calc(91.66667% - 1.5rem);
+            margin-left: 0.75rem;
+            margin-right: 0.75rem;
+            display: block; }
+          body > main > main > *.s4_12, body > main > section > *.s4_12, body > main > nav > *.s4_12, body > main > address > *.s4_12 {
+            width: calc(100.0% - 1.5rem);
+            margin-left: 0.75rem;
+            margin-right: 0.75rem;
+            display: block; }
+          body > main > main > * *, body > main > section > * *, body > main > nav > * *, body > main > address > * * {
+            margin-left: 0;
+            margin-right: 0;
+            padding-left: 0;
+            padding-right: 0;
+            width: 100%; }
+        body > main > main > figure, body > main > main > img, body > main > section > figure, body > main > section > img, body > main > nav > figure, body > main > nav > img, body > main > address > figure, body > main > address > img {
+          margin-left: calc(16.66667% + 0.75rem);
+          margin-right: calc(8.33333% + 0.75rem);
+          padding-left: 0;
+          padding-right: 0;
+          width: calc(91.66667% - 1.5rem); }
+        body > main > main > ul, body > main > main > ol, body > main > main > form, body > main > main > p, body > main > main > q, body > main > main > ol, body > main > main > h1:not(:first-child), body > main > main > h2, body > main > main > h3, body > main > main > h4, body > main > main > h5, body > main > main > h6, body > main > main > hr, body > main > main > blockquote, body > main > section > ul, body > main > section > ol, body > main > section > form, body > main > section > p, body > main > section > q, body > main > section > ol, body > main > section > h1:not(:first-child), body > main > section > h2, body > main > section > h3, body > main > section > h4, body > main > section > h5, body > main > section > h6, body > main > section > hr, body > main > section > blockquote, body > main > nav > ul, body > main > nav > ol, body > main > nav > form, body > main > nav > p, body > main > nav > q, body > main > nav > ol, body > main > nav > h1:not(:first-child), body > main > nav > h2, body > main > nav > h3, body > main > nav > h4, body > main > nav > h5, body > main > nav > h6, body > main > nav > hr, body > main > nav > blockquote, body > main > address > ul, body > main > address > ol, body > main > address > form, body > main > address > p, body > main > address > q, body > main > address > ol, body > main > address > h1:not(:first-child), body > main > address > h2, body > main > address > h3, body > main > address > h4, body > main > address > h5, body > main > address > h6, body > main > address > hr, body > main > address > blockquote {
+          margin-left: calc(33.33333% + 0.75rem);
+          margin-right: calc(16.66667% + 0.75rem);
+          padding-left: 0;
+          padding-right: 0;
+          width: calc(83.33333% - 1.5rem); } }
+@media screen and (max-width: 991px) {
+  main > *:first-child {
+    margin-top: 48px; } }
+@media screen and (min-width: 992px) {
+  main > *:first-child {
+    margin-top: 72px; } }
+@media screen and (max-width: 1199px) {
+  main {
+    padding-top: calc(7.5rem + 64px); } }
+@media screen and (min-width: 1200px) {
+  main {
+    padding-top: calc(9rem + 64px); } }
+main figure, main img, main p, main ul, main ol, main form, main blockquote, main address, main .video {
+  margin-bottom: 3rem; }
+main p:last-of-type {
+  margin-bottom: 1.5rem; }
+  @media screen and (min-width: 768px) {
+    main p:last-of-type {
+      margin-bottom: 3rem; } }
+  @media screen and (min-width: 992px) {
+    main p:last-of-type {
+      margin-bottom: 6rem; } }
+@media screen and (min-width: 1200px) {
+  main section + p {
+    margin-top: -1.5rem; } }
+main figure > *, main figure > .video, main blockquote > p {
+  margin-bottom: 0; }
+main p + form, main p + p, main h2 + p, main h3 + p, main p + ul, main p + ol, main ul + ol, main ol + ul, main * + hr {
+  margin-top: -1.5rem; }
+main p + ol, main p + ul, main p + form {
+  margin-top: 0; }
+  @media screen and (min-width: 768px) {
+    main p + ol, main p + ul, main p + form {
+      margin-top: -1.5rem; } }
+  @media screen and (min-width: 992px) {
+    main p + ol, main p + ul, main p + form {
+      margin-top: -3rem; } }
+  @media screen and (min-width: 992px) {
+    main p + ol, main p + ul, main p + form {
+      margin-top: -4.5rem; } }
+
+main section > * {
+  z-index: 1; }
+
+h1, h2, h3, h4, h5, h6, q {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-stretch: normal;
+  -webkit-transition: font .25s ease;
+  -moz-transition: font .25s ease;
+  -o-transition: font .25s ease;
+  transition: font .25s ease;
+  color: #4a4a4a; }
+
+p, figcaption, ul, ol, form, input, textarea, address {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  color: #4a4a4a; }
+
+h5 {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  text-transform: lowercase; }
+  @media screen and (max-width: 1199px) {
+    h5 {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      margin-bottom: 1.5rem; } }
+  @media screen and (min-width: 1200px) {
+    h5 {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      margin-bottom: 1.5rem; } }
+
+@media screen and (max-width: 1199px) {
+  h6 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem; } }
+@media screen and (min-width: 1200px) {
+  h6 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem; } }
+
+q {
+  font-style: italic;
+  font-weight: 500; }
+  @media screen and (max-width: 1199px) {
+    q {
+      font-size: 1.5rem;
+      line-height: 2.25rem;
+      margin-bottom: 2.25rem; } }
+  @media screen and (min-width: 1200px) {
+    q {
+      font-size: 1.625rem;
+      line-height: 2.25rem;
+      margin-bottom: 2.25rem; } }
+
+ul {
+  list-style-type: none; }
+
+ol {
+  list-style-position: inside; }
+
+address {
+  font-style: italic; }
+
+.titulo-pagina, h1 {
+  font-weight: 700; }
+  @media screen and (max-width: 1199px) {
+    .titulo-pagina, h1 {
+      font-size: 2rem;
+      line-height: 3rem;
+      margin-bottom: 3rem; } }
+  @media screen and (min-width: 1200px) {
+    .titulo-pagina, h1 {
+      font-size: 3rem;
+      line-height: 3rem;
+      margin-bottom: 4.5rem; } }
+
+.titulo-secao-pagina, h2 {
+  font-weight: 700; }
+  @media screen and (max-width: 1199px) {
+    .titulo-secao-pagina, h2 {
+      font-size: 1.625rem;
+      line-height: 2.25rem;
+      margin-bottom: 2.25rem; } }
+  @media screen and (min-width: 1200px) {
+    .titulo-secao-pagina, h2 {
+      font-size: 2.25rem;
+      line-height: 2.25rem;
+      margin-bottom: 3.75rem; } }
+
+.titulo-projeto {
+  font-weight: 700;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  text-transform: lowercase; }
+  @media screen and (max-width: 1199px) {
+    .titulo-projeto {
+      font-size: 1.625rem;
+      line-height: 2.25rem;
+      margin-bottom: 2.25rem; } }
+  @media screen and (min-width: 1200px) {
+    .titulo-projeto {
+      font-size: 2.25rem;
+      line-height: 2.25rem;
+      margin-bottom: 3.75rem; } }
+
+.titulo-secao-projeto {
+  font-weight: 700;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  text-transform: lowercase; }
+  @media screen and (max-width: 1199px) {
+    .titulo-secao-projeto {
+      font-size: 1.5rem;
+      line-height: 2.25rem;
+      margin-bottom: 2.25rem; } }
+  @media screen and (min-width: 1200px) {
+    .titulo-secao-projeto {
+      font-size: 1.625rem;
+      line-height: 2.25rem;
+      margin-bottom: 2.25rem; } }
+
+.subtitulo, h3 {
+  font-weight: 700;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  text-transform: lowercase; }
+  @media screen and (max-width: 1199px) {
+    .subtitulo, h3 {
+      font-size: 1.5rem;
+      line-height: 2.25rem;
+      margin-bottom: 2.25rem; } }
+  @media screen and (min-width: 1200px) {
+    .subtitulo, h3 {
+      font-size: 1.625rem;
+      line-height: 2.25rem;
+      margin-bottom: 2.25rem; } }
+
+.subtitulo-2, h4 {
+  font-weight: 700; }
+  @media screen and (max-width: 1199px) {
+    .subtitulo-2, h4 {
+      font-size: 1.125rem;
+      line-height: 1.5rem;
+      margin-bottom: 1.5rem; } }
+  @media screen and (min-width: 1200px) {
+    .subtitulo-2, h4 {
+      font-size: 1.375rem;
+      line-height: 2.25rem;
+      margin-bottom: 0.75rem; } }
+
+.fixed {
+  overflow: hidden; }
+
+body {
+  position: absolute;
+  min-height: 100%;
+  background-color: white; }
+  body main {
+    transform: translateY(-7.5rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    body main section {
+      position: relative; }
+    body main article {
+      position: relative;
+      width: 100%; }
+    body main .destaque, body main blockquote * {
+      padding-left: 1.5rem;
+      border-left: solid #d8d8d8 1px; }
+    body main a:hover {
+      color: orange; }
+    body main p > a {
+      font-style: italic; }
+      body main p > a:hover {
+        color: orange; }
+    body main blockquote * {
+      font-style: italic; }
+    body main figure {
+      margin-bottom: 1.5rem; }
+      @media screen and (min-width: 768px) {
+        body main figure {
+          margin-bottom: 3rem; } }
+      @media screen and (min-width: 992px) {
+        body main figure {
+          margin-bottom: 6rem; } }
+      @media screen and (min-width: 1200px) {
+        body main figure {
+          margin-bottom: 7.5rem; } }
+    body main img {
+      height: auto; }
+    body main hr {
+      border-top: dotted #d8d8d8 1px;
+      height: 1.5rem; }
+    body main ul {
+      padding-left: 0.75rem; }
+      body main ul li::before {
+        content: "›";
+        position: absolute;
+        left: 0;
+        color: #4a4a4a; }
+    body main form * {
+      display: block;
+      outline: 0;
+      margin-bottom: 1.5rem;
+      -webkit-transition: all .1s ease-in-out;
+      -moz-transition: all .1s ease-in-out;
+      -o-transition: all .1s ease-in-out;
+      transition: all .05s ease-in-out;
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem; }
+    body main form input[type*="submit"] {
+      background-color: #9b9b9b;
+      color: white;
+      font-family: 'Lato';
+      font-size: 0.9rem;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      font-weight: 300; }
+      body main form input[type*="submit"]:hover {
+        background-color: orange; }
+      body main form input[type*="submit"]:focus {
+        background-color: orange; }
+    body main form > textarea, body main form > input[type*="text"], body main form > input[type*="email"] {
+      background-color: white;
+      text-decoration: none;
+      cursor: pointer;
+      line-height: 1.5rem;
+      resize: none;
+      padding-left: 0.75rem;
+      border: solid #e6e6e6 1px;
+      padding-top: calc(0.75rem - 1px);
+      padding-bottom: calc(0.75rem - 1px); }
+      body main form > textarea:focus, body main form > input[type*="text"]:focus, body main form > input[type*="email"]:focus {
+        border: solid orange 1px;
+        padding-left: 1.125rem; }
+    body main form ::-webkit-input-placeholder, body main form :-moz-placeholder, body main form ::-moz-placeholder, body main form :-ms-input-placeholder {
+      font-style: italic; }
+    body main .minhoca {
+      width: 3rem;
+      position: absolute;
+      right: -2.25rem;
+      top: 4.5rem; }
+    body main #minhoca {
+      fill: orange; }
+    body main .intro-projeto figure {
+      margin-bottom: 3rem; }
+      @media screen and (max-width: 767px) {
+        body main .intro-projeto figure {
+          margin-left: calc(0% + 0.75rem);
+          margin-right: calc(0% + 0.75rem);
+          width: calc(100% - 1.5rem);
+          display: block; } }
+      @media screen and (min-width: 768px) {
+        body main .intro-projeto figure {
+          margin-left: calc(0% + 0.75rem);
+          margin-right: calc(0% + 0.75rem);
+          width: calc(50.0% - 1.5rem);
+          display: block; } }
+      @media screen and (min-width: 992px) {
+        body main .intro-projeto figure {
+          margin-left: calc(0% + 0.75rem);
+          margin-right: calc(0% + 0.75rem);
+          width: calc(50.0% - 1.5rem);
+          display: block; } }
+      @media screen and (min-width: 1200px) {
+        body main .intro-projeto figure {
+          margin-left: calc(0% + 0.75rem);
+          margin-right: calc(0% + 0.75rem);
+          width: calc(58.33333% - 1.5rem);
+          display: block; } }
+    @media screen and (max-width: 767px) {
+      body main .intro-projeto article {
+        margin-left: calc(0% + 0.75rem);
+        margin-right: calc(0% + 0.75rem);
+        width: calc(100% - 1.5rem);
+        display: block; } }
+    @media screen and (min-width: 768px) {
+      body main .intro-projeto article {
+        margin-left: calc(0% + 0.75rem);
+        margin-right: calc(0% + 0.75rem);
+        width: calc(50.0% - 1.5rem);
+        display: block; } }
+    @media screen and (min-width: 992px) {
+      body main .intro-projeto article {
+        margin-left: calc(0% + 0.75rem);
+        margin-right: calc(0% + 0.75rem);
+        width: calc(50.0% - 1.5rem);
+        display: block; } }
+    @media screen and (min-width: 1200px) {
+      body main .intro-projeto article {
+        margin-left: calc(8.33333% + 0.75rem);
+        margin-right: calc(0% + 0.75rem);
+        width: calc(33.33333% - 1.5rem);
+        display: block; } }
+    body main .intro-projeto hr {
+      margin-top: 1.5rem;
+      margin-bottom: calc(1.5rem - 1px); }
+      @media screen and (max-width: 767px) {
+        body main .intro-projeto hr {
+          margin-left: calc(0% + 0.75rem);
+          margin-right: calc(0% + 0.75rem);
+          width: calc(100% - 1.5rem);
+          display: block; } }
+      @media screen and (min-width: 768px) {
+        body main .intro-projeto hr {
+          margin-left: calc(0% + 0.75rem);
+          margin-right: calc(0% + 0.75rem);
+          width: calc(100.0% - 1.5rem);
+          display: block; } }
+      @media screen and (min-width: 992px) {
+        body main .intro-projeto hr {
+          margin-left: calc(0% + 0.75rem);
+          margin-right: calc(0% + 0.75rem);
+          width: calc(100.0% - 1.5rem);
+          display: block; } }
+      @media screen and (min-width: 1200px) {
+        body main .intro-projeto hr {
+          margin-left: calc(0% + 0.75rem);
+          margin-right: calc(0% + 0.75rem);
+          width: calc(100.0% - 1.5rem);
+          display: block; } }
+      @media screen and (min-width: 992px) {
+        body main .intro-projeto hr {
+          margin-bottom: calc(3rem - 1px); } }
+    body main .projeto-thumb {
+      margin-bottom: 1.5rem; }
+      @media screen and (max-width: 767px) {
+        body main .projeto-thumb {
+          margin-left: calc(0% + 0.75rem);
+          margin-right: calc(0% + 0.75rem);
+          width: calc(50% - 1.5rem);
+          display: block; } }
+      @media screen and (min-width: 768px) {
+        body main .projeto-thumb {
+          margin-left: calc(0% + 0.75rem);
+          margin-right: calc(0% + 0.75rem);
+          width: calc(33.33333% - 1.5rem);
+          display: block; } }
+      @media screen and (min-width: 992px) {
+        body main .projeto-thumb {
+          margin-left: calc(8.33333% + 0.75rem);
+          margin-right: calc(0% + 0.75rem);
+          width: calc(25.0% - 1.5rem);
+          display: block; } }
+      @media screen and (min-width: 1200px) {
+        body main .projeto-thumb {
+          margin-left: calc(8.33333% + 0.75rem);
+          margin-right: calc(0% + 0.75rem);
+          width: calc(25.0% - 1.5rem);
+          display: block; } }
+      @media screen and (min-width: 768px) {
+        body main .projeto-thumb {
+          margin-bottom: 3rem; } }
+      body main .projeto-thumb .thumb-img {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat; }
+        body main .projeto-thumb .thumb-img::after {
+          content: "";
+          display: block;
+          padding-bottom: 100%; }
+      body main .projeto-thumb .thumb-titulo {
+        text-align: left;
+        margin-top: 1.5rem;
+        font-weight: 300;
+        font-family: 'Alegreya Sans SC', sans-serif;
+        text-transform: lowercase; }
+        @media screen and (max-width: 1199px) {
+          body main .projeto-thumb .thumb-titulo {
+            font-size: 1.125rem;
+            line-height: 1.5rem;
+            margin-bottom: 1.5rem; } }
+        @media screen and (min-width: 1200px) {
+          body main .projeto-thumb .thumb-titulo {
+            font-size: 1.375rem;
+            line-height: 2.25rem;
+            margin-bottom: 0.75rem; } }
+      body main .projeto-thumb:hover .thumb-img::after {
+        background-color: orange;
+        mix-blend-mode: soft-light; }
+      body main .projeto-thumb:hover .thumb-titulo {
+        color: orange; }
+      body main .projeto-thumb:active .thumb-img::after {
+        background-color: orange;
+        mix-blend-mode: overlay; }
+    body main .mais-projetos > h1, body main .mais-projetos > h2, body main .mais-projetos > h3, body main .mais-projetos > h4, body main .mais-projetos > h5, body main .mais-projetos > h6 {
+      margin-bottom: 1.5rem; }
+      @media screen and (max-width: 767px) {
+        body main .mais-projetos > h1, body main .mais-projetos > h2, body main .mais-projetos > h3, body main .mais-projetos > h4, body main .mais-projetos > h5, body main .mais-projetos > h6 {
+          margin-left: calc(0% + 0.75rem);
+          margin-right: calc(0% + 0.75rem);
+          width: calc(100% - 1.5rem);
+          display: block; } }
+      @media screen and (min-width: 768px) {
+        body main .mais-projetos > h1, body main .mais-projetos > h2, body main .mais-projetos > h3, body main .mais-projetos > h4, body main .mais-projetos > h5, body main .mais-projetos > h6 {
+          margin-left: calc(0% + 0.75rem);
+          margin-right: calc(0% + 0.75rem);
+          width: calc(100.0% - 1.5rem);
+          display: block; } }
+      @media screen and (min-width: 992px) {
+        body main .mais-projetos > h1, body main .mais-projetos > h2, body main .mais-projetos > h3, body main .mais-projetos > h4, body main .mais-projetos > h5, body main .mais-projetos > h6 {
+          margin-left: calc(0% + 0.75rem);
+          margin-right: calc(0% + 0.75rem);
+          width: calc(100.0% - 1.5rem);
+          display: block; } }
+      @media screen and (min-width: 1200px) {
+        body main .mais-projetos > h1, body main .mais-projetos > h2, body main .mais-projetos > h3, body main .mais-projetos > h4, body main .mais-projetos > h5, body main .mais-projetos > h6 {
+          margin-left: calc(0% + 0.75rem);
+          margin-right: calc(0% + 0.75rem);
+          width: calc(100.0% - 1.5rem);
+          display: block; } }
+      @media screen and (min-width: 768px) {
+        body main .mais-projetos > h1, body main .mais-projetos > h2, body main .mais-projetos > h3, body main .mais-projetos > h4, body main .mais-projetos > h5, body main .mais-projetos > h6 {
+          margin-bottom: 3rem; } }
+      @media screen and (min-width: 992px) {
+        body main .mais-projetos > h1, body main .mais-projetos > h2, body main .mais-projetos > h3, body main .mais-projetos > h4, body main .mais-projetos > h5, body main .mais-projetos > h6 {
+          margin-bottom: 4.5rem; } }
+    body main .mais-projetos figure {
+      margin-bottom: 1.5rem; }
+      @media screen and (min-width: 768px) {
+        body main .mais-projetos figure {
+          margin-bottom: 3rem; } }
+    body main .mais-projetos::before {
+      content: "";
+      border-top: solid #d8d8d8 1px;
+      padding-top: calc(1.5rem - 1px);
+      width: calc(100% - 1.5rem);
+      margin-left: auto;
+      margin-right: auto; }
+      @media screen and (min-width: 992px) {
+        body main .mais-projetos::before {
+          margin-bottom: 3rem; } }
+    body main .lista-dupla::before {
+      content: "";
+      border-top: solid #d8d8d8 1px;
+      padding-top: calc(3rem - 1px);
+      width: calc(100% - 1.5rem);
+      margin-left: auto;
+      margin-right: auto; }
+    body main .lista-dupla h2 {
+      margin-bottom: 3.75rem; }
+      @media screen and (max-width: 767px) {
+        body main .lista-dupla h2 {
+          margin-left: calc(0% + 0.75rem);
+          margin-right: calc(0% + 0.75rem);
+          width: calc(100% - 1.5rem);
+          display: block; } }
+      @media screen and (min-width: 768px) {
+        body main .lista-dupla h2 {
+          margin-left: calc(0% + 0.75rem);
+          margin-right: calc(0% + 0.75rem);
+          width: calc(100.0% - 1.5rem);
+          display: block; } }
+      @media screen and (min-width: 992px) {
+        body main .lista-dupla h2 {
+          margin-left: calc(0% + 0.75rem);
+          margin-right: calc(0% + 0.75rem);
+          width: calc(100.0% - 1.5rem);
+          display: block; } }
+      @media screen and (min-width: 1200px) {
+        body main .lista-dupla h2 {
+          margin-left: calc(0% + 0.75rem);
+          margin-right: calc(0% + 0.75rem);
+          width: calc(100.0% - 1.5rem);
+          display: block; } }
+      body main .lista-dupla h2::after {
+        content: url(/img/minhoca.svg);
+        top: 6rem;
+        height: 1.5rem;
+        display: block;
+        overflow: visible;
+        position: absolute; }
+        @media screen and (min-width: 992px) {
+          body main .lista-dupla h2::after {
+            top: 7.5rem; } }
+    @media screen and (max-width: 767px) {
+      body main .lista-dupla article {
+        margin-left: calc(0% + 0.75rem);
+        margin-right: calc(0% + 0.75rem);
+        width: calc(100% - 1.5rem);
+        display: block; } }
+    @media screen and (min-width: 768px) {
+      body main .lista-dupla article {
+        margin-left: calc(0% + 0.75rem);
+        margin-right: calc(0% + 0.75rem);
+        width: calc(50.0% - 1.5rem);
+        display: block; } }
+    @media screen and (min-width: 992px) {
+      body main .lista-dupla article {
+        margin-left: calc(8.33333% + 0.75rem);
+        margin-right: calc(0% + 0.75rem);
+        width: calc(33.33333% - 1.5rem);
+        display: block; } }
+    @media screen and (min-width: 1200px) {
+      body main .lista-dupla article {
+        margin-left: calc(8.33333% + 0.75rem);
+        margin-right: calc(0% + 0.75rem);
+        width: calc(33.33333% - 1.5rem);
+        display: block; } }
+    body main .lista-dupla article ul + h4, body main .lista-dupla article ol + h4 {
+      margin-top: -1.5rem; }
+    @media screen and (max-width: 767px) {
+      body main .lista-dupla article h3 {
+        border-top: dotted #d8d8d8 1px;
+        padding-top: calc(1.5rem - 1px); } }
+    @media screen and (min-width: 992px) {
+      body main .lista-dupla article:first-of-type {
+        margin-left: calc(25% + 0.75rem);
+        margin-right: calc(0% + 0.75rem);
+        width: calc(33.33333% - 1.5rem);
+        display: block; } }
+    @media screen and (min-width: 1200px) {
+      body main .lista-dupla article:first-of-type {
+        margin-left: calc(16.66667% + 0.75rem);
+        margin-right: calc(0% + 0.75rem);
+        width: calc(33.33333% - 1.5rem);
+        display: block; } }
+    body main .lista-dupla article:first-of-type h3 {
+      border-top: none;
+      padding-top: 0; }
+    @media screen and (max-width: 767px) {
+      body main .img-solo-largo figure {
+        margin-left: calc(0% + 0.75rem);
+        margin-right: calc(0% + 0.75rem);
+        width: calc(100% - 1.5rem);
+        display: block; } }
+    @media screen and (min-width: 768px) {
+      body main .img-solo-largo figure {
+        margin-left: calc(16.66667% + 0.75rem);
+        margin-right: calc(0% + 0.75rem);
+        width: calc(83.33333% - 1.5rem);
+        display: block; } }
+    @media screen and (min-width: 992px) {
+      body main .img-solo-largo figure {
+        margin-left: calc(8.33333% + 0.75rem);
+        margin-right: calc(8.33333% + 0.75rem);
+        width: calc(83.33333% - 1.5rem);
+        display: block; } }
+    @media screen and (min-width: 1200px) {
+      body main .img-solo-largo figure {
+        margin-left: calc(16.66667% + 0.75rem);
+        margin-right: calc(8.33333% + 0.75rem);
+        width: calc(75.0% - 1.5rem);
+        display: block; } }
+    @media screen and (max-width: 767px) {
+      body main .img-solo-cheio figure {
+        margin-left: calc(0% + 0.75rem);
+        margin-right: calc(0% + 0.75rem);
+        width: calc(100% - 1.5rem);
+        display: block; } }
+    @media screen and (min-width: 768px) {
+      body main .img-solo-cheio figure {
+        margin-left: calc(0% + 0.75rem);
+        margin-right: calc(0% + 0.75rem);
+        width: calc(100.0% - 1.5rem);
+        display: block; } }
+    @media screen and (min-width: 992px) {
+      body main .img-solo-cheio figure {
+        margin-left: calc(0% + 0.75rem);
+        margin-right: calc(0% + 0.75rem);
+        width: calc(100.0% - 1.5rem);
+        display: block; } }
+    @media screen and (max-width: 767px) {
+      body main .img-duo-largo figure {
+        margin-left: calc(0% + 0.75rem);
+        margin-right: calc(0% + 0.75rem);
+        width: calc(100% - 1.5rem);
+        display: block; } }
+    @media screen and (min-width: 768px) {
+      body main .img-duo-largo figure {
+        margin-left: calc(0% + 0.75rem);
+        margin-right: calc(0% + 0.75rem);
+        width: calc(50.0% - 1.5rem);
+        display: block; } }
+    @media screen and (min-width: 992px) {
+      body main .img-duo-largo figure {
+        margin-left: calc(0% + 0.75rem);
+        margin-right: calc(8.33333% + 0.75rem);
+        width: calc(41.66667% - 1.5rem);
+        display: block; } }
+    @media screen and (min-width: 1200px) {
+      body main .img-duo-largo figure {
+        margin-left: calc(0% + 0.75rem);
+        margin-right: calc(8.33333% + 0.75rem);
+        width: calc(41.66667% - 1.5rem);
+        display: block; } }
+    @media screen and (min-width: 992px) {
+      body main .img-duo-largo figure:first-of-type {
+        margin-left: calc(8.33333% + 0.75rem);
+        margin-right: calc(0% + 0.75rem);
+        width: calc(41.66667% - 1.5rem);
+        display: block; } }
+    @media screen and (min-width: 1200px) {
+      body main .img-duo-largo figure:first-of-type {
+        margin-left: calc(8.33333% + 0.75rem);
+        margin-right: calc(0% + 0.75rem);
+        width: calc(41.66667% - 1.5rem);
+        display: block; } }
+    @media screen and (max-width: 767px) {
+      body main .img-duo-cheio figure {
+        margin-left: calc(0% + 0.75rem);
+        margin-right: calc(0% + 0.75rem);
+        width: calc(100% - 1.5rem);
+        display: block; } }
+    @media screen and (min-width: 768px) {
+      body main .img-duo-cheio figure {
+        margin-left: calc(0% + 0.75rem);
+        margin-right: calc(0% + 0.75rem);
+        width: calc(50.0% - 1.5rem);
+        display: block; } }
+    @media screen and (min-width: 992px) {
+      body main .img-duo-cheio figure {
+        margin-left: calc(0% + 0.75rem);
+        margin-right: calc(0% + 0.75rem);
+        width: calc(50.0% - 1.5rem);
+        display: block; } }
+    @media screen and (max-width: 767px) {
+      body main .img-duo-colunas figure {
+        margin-left: calc(0% + 0.75rem);
+        margin-right: calc(0% + 0.75rem);
+        width: calc(100% - 1.5rem);
+        display: block; } }
+    @media screen and (min-width: 768px) {
+      body main .img-duo-colunas figure {
+        margin-left: calc(0% + 0.75rem);
+        margin-right: calc(0% + 0.75rem);
+        width: calc(50.0% - 1.5rem);
+        display: block; } }
+    @media screen and (min-width: 992px) {
+      body main .img-duo-colunas figure {
+        margin-left: calc(0% + 0.75rem);
+        margin-right: calc(0% + 0.75rem);
+        width: calc(50.0% - 1.5rem);
+        display: block; } }
+    @media screen and (min-width: 992px) {
+      body main .img-duo-colunas figure {
+        margin-left: calc(8.33333% + 0.75rem);
+        margin-right: calc(0% + 0.75rem);
+        width: calc(41.66667% - 1.5rem);
+        display: block; } }
+    body main .img-duo-colunas figure img {
+      margin-bottom: 1.5rem; }
+      body main .img-duo-colunas figure img:last-child {
+        margin-bottom: 0; }
+      @media screen and (min-width: 992px) {
+        body main .img-duo-colunas figure img {
+          margin-bottom: 6rem; }
+          body main .img-duo-colunas figure img:last-child {
+            margin-bottom: 0; } }
+      @media screen and (min-width: 1200px) {
+        body main .img-duo-colunas figure img {
+          margin-bottom: 7.5rem; } }
+    @media screen and (max-width: 767px) {
+      body main .img-trio-largo figure {
+        margin-left: calc(0% + 0.75rem);
+        margin-right: calc(0% + 0.75rem);
+        width: calc(100% - 1.5rem);
+        display: block; } }
+    @media screen and (min-width: 768px) {
+      body main .img-trio-largo figure {
+        margin-left: calc(0% + 0.75rem);
+        margin-right: calc(0% + 0.75rem);
+        width: calc(33.33333% - 1.5rem);
+        display: block; } }
+    @media screen and (min-width: 992px) {
+      body main .img-trio-largo figure {
+        margin-left: calc(0% + 0.75rem);
+        margin-right: calc(0% + 0.75rem);
+        width: calc(25.0% - 1.5rem);
+        display: block; } }
+    @media screen and (min-width: 992px) {
+      body main .img-trio-largo figure:first-of-type {
+        margin-left: calc(16.66667% + 0.75rem);
+        margin-right: calc(0% + 0.75rem);
+        width: calc(25.0% - 1.5rem);
+        display: block; } }
+    @media screen and (min-width: 992px) {
+      body main .img-trio-largo figure:last-of-type {
+        margin-left: calc(0% + 0.75rem);
+        margin-right: calc(8.33333% + 0.75rem);
+        width: calc(25.0% - 1.5rem);
+        display: block; } }
+    @media screen and (max-width: 767px) {
+      body main .img-trio-cheio figure {
+        margin-left: calc(0% + 0.75rem);
+        margin-right: calc(0% + 0.75rem);
+        width: calc(100% - 1.5rem);
+        display: block; } }
+    @media screen and (min-width: 768px) {
+      body main .img-trio-cheio figure {
+        margin-left: calc(0% + 0.75rem);
+        margin-right: calc(0% + 0.75rem);
+        width: calc(33.33333% - 1.5rem);
+        display: block; } }
+    @media screen and (min-width: 992px) {
+      body main .img-trio-cheio figure {
+        margin-left: calc(0% + 0.75rem);
+        margin-right: calc(0% + 0.75rem);
+        width: calc(33.33333% - 1.5rem);
+        display: block; } }
+    @media screen and (max-width: 767px) {
+      body main .video-largo figure {
+        margin-left: calc(0% + 0.75rem);
+        margin-right: calc(0% + 0.75rem);
+        width: calc(100% - 1.5rem);
+        display: block; } }
+    @media screen and (min-width: 768px) {
+      body main .video-largo figure {
+        margin-left: calc(0% + 0.75rem);
+        margin-right: calc(0% + 0.75rem);
+        width: calc(100.0% - 1.5rem);
+        display: block; } }
+    @media screen and (min-width: 992px) {
+      body main .video-largo figure {
+        margin-left: calc(8.33333% + 0.75rem);
+        margin-right: calc(8.33333% + 0.75rem);
+        width: calc(83.33333% - 1.5rem);
+        display: block; } }
+    @media screen and (min-width: 1200px) {
+      body main .video-largo figure {
+        margin-left: calc(8.33333% + 0.75rem);
+        margin-right: calc(8.33333% + 0.75rem);
+        width: calc(83.33333% - 1.5rem);
+        display: block; } }
+    @media screen and (max-width: 767px) {
+      body main .video-cheio figure {
+        margin-left: calc(0% + 0.75rem);
+        margin-right: calc(0% + 0.75rem);
+        width: calc(100% - 1.5rem);
+        display: block; } }
+    @media screen and (min-width: 768px) {
+      body main .video-cheio figure {
+        margin-left: calc(0% + 0.75rem);
+        margin-right: calc(0% + 0.75rem);
+        width: calc(100.0% - 1.5rem);
+        display: block; } }
+    @media screen and (min-width: 992px) {
+      body main .video-cheio figure {
+        margin-left: calc(0% + 0.75rem);
+        margin-right: calc(0% + 0.75rem);
+        width: calc(100.0% - 1.5rem);
+        display: block; } }
+    @media screen and (min-width: 1200px) {
+      body main .video-cheio figure {
+        margin-left: calc(0% + 0.75rem);
+        margin-right: calc(0% + 0.75rem);
+        width: calc(100.0% - 1.5rem);
+        display: block; } }
+    body main .video-completo::before {
+      content: "";
+      border-top: solid #d8d8d8 1px;
+      padding-top: calc(3rem - 1px);
+      width: calc(100% - 1.5rem);
+      margin-left: auto;
+      margin-right: auto; }
+    body main .video-completo:first-child::before {
+      content: "";
+      border-top: none;
+      padding-top: 0;
+      width: 0;
+      margin-left: 0;
+      margin-right: 0; }
+    body main .video-completo figure {
+      background-color: white;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 3rem; }
+      @media screen and (max-width: 767px) {
+        body main .video-completo figure {
+          margin-left: calc(0% + 0.75rem);
+          margin-right: calc(0% + 0.75rem);
+          width: calc(100% - 1.5rem);
+          display: block; } }
+      @media screen and (min-width: 768px) {
+        body main .video-completo figure {
+          margin-left: calc(0% + 0.75rem);
+          margin-right: calc(0% + 0.75rem);
+          width: calc(66.66667% - 1.5rem);
+          display: block; } }
+      @media screen and (min-width: 992px) {
+        body main .video-completo figure {
+          margin-left: calc(0% + 0.75rem);
+          margin-right: calc(0% + 0.75rem);
+          width: calc(66.66667% - 1.5rem);
+          display: block; } }
+      @media screen and (min-width: 1200px) {
+        body main .video-completo figure {
+          margin-left: calc(0% + 0.75rem);
+          margin-right: calc(0% + 0.75rem);
+          width: calc(66.66667% - 1.5rem);
+          display: block; } }
+    @media screen and (max-width: 767px) {
+      body main .video-completo article {
+        margin-left: calc(0% + 0.75rem);
+        margin-right: calc(0% + 0.75rem);
+        width: calc(100% - 1.5rem);
+        display: block; } }
+    @media screen and (min-width: 768px) {
+      body main .video-completo article {
+        margin-left: calc(0% + 0.75rem);
+        margin-right: calc(0% + 0.75rem);
+        width: calc(33.33333% - 1.5rem);
+        display: block; } }
+    @media screen and (min-width: 992px) {
+      body main .video-completo article {
+        margin-left: calc(8.33333% + 0.75rem);
+        margin-right: calc(0% + 0.75rem);
+        width: calc(25.0% - 1.5rem);
+        display: block; } }
+    @media screen and (min-width: 1200px) {
+      body main .video-completo article {
+        margin-left: calc(8.33333% + 0.75rem);
+        margin-right: calc(0% + 0.75rem);
+        width: calc(25.0% - 1.5rem);
+        display: block; } }
+    @media screen and (max-width: 767px) {
+      body main .video-completo article .info {
+        margin-top: -1.5rem; } }
+    body main .video {
+      display: flex; }
+
+.soon {
+  color: #d8d8d8; }
+
+header {
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 0 0.75rem 0 rgba(0, 0, 0, 0.1); }
+  header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    header nav * {
+      width: auto; }
+    header nav #logo .letra-logo {
+      fill: none;
+      stroke: #9b9b9b;
+      stroke-width: 2.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10; }
+    header nav #logo .ponto-logo {
+      fill: #9b9b9b;
+      stroke: none; }
+    header nav #logo:hover .letra-logo {
+      stroke: orange; }
+    header nav #logo:hover .ponto-logo {
+      fill: orange; }
+    header nav #nav-icon {
+      padding: 0;
+      z-index: 5;
+      width: 24px;
+      height: 18px;
+      position: relative;
+      cursor: pointer;
+      margin: 0; }
+      header nav #nav-icon span {
+        display: block;
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        background: #9b9b9b;
+        border-radius: 1px;
+        opacity: 1;
+        left: 0;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .25s ease-in-out .1s;
+        -moz-transition: .25s ease-in-out .1s;
+        -o-transition: .25s ease-in-out .1s;
+        transition: .25s ease-in-out .1s; }
+        header nav #nav-icon span:nth-child(1) {
+          top: 0px;
+          -webkit-transform-origin: left center;
+          -moz-transform-origin: left center;
+          -o-transform-origin: left center;
+          transform-origin: left center; }
+        header nav #nav-icon span:nth-child(2) {
+          top: 8px;
+          -webkit-transform-origin: left center;
+          -moz-transform-origin: left center;
+          -o-transform-origin: left center;
+          transform-origin: left center; }
+        header nav #nav-icon span:nth-child(3) {
+          top: 16px;
+          -webkit-transform-origin: left center;
+          -moz-transform-origin: left center;
+          -o-transform-origin: left center;
+          transform-origin: left center; }
+      header nav #nav-icon.xis span:nth-child(1) {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        top: -1px;
+        left: 3px; }
+      header nav #nav-icon.xis span:nth-child(2) {
+        width: 0%;
+        opacity: 0; }
+      header nav #nav-icon.xis span:nth-child(3) {
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        top: 16px;
+        left: 3px; }
+
+@media screen and (min-width: 768px) {
+  #menu-mobile ul {
+    margin-left: calc(0% + 0.75rem);
+    margin-right: calc(0% + 0.75rem);
+    width: calc(100.0% - 1.5rem);
+    display: block; } }
+
+@media screen and (max-width: 991px) {
+  body header {
+    height: auto;
+    padding-left: 0;
+    padding-right: 0; }
+    body header nav {
+      margin-left: 15px;
+      margin-right: 15px; }
+      body header nav .logo {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        left: 1rem;
+        top: 0; }
+        body header nav .logo svg {
+          height: unset;
+          width: unset; }
+          body header nav .logo svg path {
+            stroke-width: 3; }
+      body header nav #menu-desktop {
+        display: none;
+        margin-top: 15px;
+        margin-bottom: 15px; }
+  body #menu-mobile-bg {
+    background-color: rgba(255, 255, 255, 0);
+    z-index: -1;
+    -webkit-transition: background-color .1s linear, z-index 0s linear .1s;
+    -moz-transition: background-color .1s linear, z-index 0s linear .1s;
+    -o-transition: background-color .1s linear, z-index 0s linear .1s;
+    transition: background-color .1s linear, z-index 0s linear .1s;
+    height: 100vh;
+    width: 100vw;
+    left: 0;
+    top: 64px;
+    position: fixed; }
+    body #menu-mobile-bg.open {
+      background-color: rgba(255, 255, 255, 0.95);
+      -webkit-transition: background-color .1s linear, z-index 0s linear;
+      -moz-transition: background-color .1s linear, z-index 0s linear;
+      -o-transition: background-color .1s linear, z-index 0s linear;
+      transition: background-color .1s linear, z-index 0s linear;
+      z-index: 4; }
+  body #menu-mobile {
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
+    left: 0;
+    top: 64px;
+    position: fixed;
+    opacity: 0;
+    -webkit-transition: opacity .1s linear, z-index 0s linear .1s;
+    -moz-transition: opacity .1s linear, z-index 0s linear .1s;
+    -o-transition: opacity .1s linear, z-index 0s linear .1s;
+    transition: opacity .1s linear, z-index 0s linear .1s; }
+    body #menu-mobile .current-page {
+      font-weight: 700; }
+    body #menu-mobile ul, body #menu-mobile ol {
+      margin-top: 4.5rem;
+      font-weight: 300;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: 'Alegreya Sans SC', sans-serif;
+      text-transform: lowercase; } }
+    @media screen and (max-width: 991px) and (max-width: 1199px) {
+      body #menu-mobile ul, body #menu-mobile ol {
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+        margin-bottom: 2.25rem; } }
+    @media screen and (max-width: 991px) and (min-width: 1200px) {
+      body #menu-mobile ul, body #menu-mobile ol {
+        font-size: 1.625rem;
+        line-height: 2.25rem;
+        margin-bottom: 2.25rem; } }
+@media screen and (max-width: 991px) {
+      body #menu-mobile ul li, body #menu-mobile ol li {
+        width: auto; }
+    body #menu-mobile.open {
+      opacity: 1;
+      z-index: 4;
+      -webkit-transition: opacity .1s linear .1s, z-index 0s linear;
+      -moz-transition: opacity .1s linear .1s, z-index 0s linear;
+      -o-transition: opacity .1s linear .1s, z-index 0s linear;
+      transition: opacity .1s linear .1s, z-index 0s linear; } }
+@media screen and (min-width: 992px) {
+  header {
+    height: auto; }
+    header nav .logo {
+      line-height: 0;
+      margin-top: 21px;
+      margin-bottom: 21px;
+      top: 0; }
+      header nav .logo svg {
+        overflow: visible;
+        height: auto;
+        width: auto; }
+        header nav .logo svg path {
+          stroke-width: 2.5; }
+    header nav #menu-desktop {
+      display: flex;
+      flex-wrap: nowrap;
+      margin-top: 21px;
+      margin-bottom: 21px; }
+      header nav #menu-desktop li {
+        font-family: 'Alegreya Sans SC';
+        font-weight: 300;
+        font-size: 1rem;
+        text-transform: lowercase;
+        margin-left: 1.5rem;
+        margin-right: 0; }
+        header nav #menu-desktop li:first-child {
+          margin-left: 0; }
+      header nav #menu-desktop .current-page {
+        font-weight: 700; }
+      header nav #menu-desktop .link:hover {
+        color: orange; }
+
+  #menu-mobile-bg {
+    display: none; }
+
+  #menu-mobile {
+    display: none; }
+
+  #nav-icon {
+    display: none; } }
+body footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  z-index: 2; }
+  body footer address {
+    border-top: solid #d8d8d8 1px;
+    padding-top: calc(3rem - 1px);
+    padding-bottom: 3rem;
+    text-align: center; }

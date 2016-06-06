@@ -1,0 +1,94 @@
+h1 {
+  font-style: normal; }
+
+h5 {
+  margin-bottom: 3rem; }
+  @media screen and (min-width: 992px) {
+    h5 {
+      margin-bottom: 0; } }
+
+main {
+  padding-top: 7.5rem; }
+  main .capa-home {
+    height: 100vh;
+    margin-top: 0;
+    padding-top: 72px;
+    padding-bottom: 144px;
+    padding-right: 0;
+    padding-left: 0;
+    margin: 0;
+    background-image: url(/img/home.jpg);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    box-shadow: inset 0 -72px 72px 0 rgba(0, 0, 0, 0.07);
+    transition: background-position .25s ease-in-out;
+    background-position: 50% top; }
+    @media screen and (max-width: 991px) {
+      main .capa-home {
+        padding-top: 48px;
+        padding-bottom: 48px;
+        background-size: auto 100%; } }
+  main #proximo {
+    transform: translateY(-72px);
+    background-color: white;
+    z-index: 1; }
+    main #proximo nav {
+      width: 100%;
+      height: 72px;
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+      main #proximo nav svg {
+        display: block;
+        width: 3rem;
+        height: 0.6rem;
+        margin: auto;
+        fill: none;
+        stroke: #d8d8d8;
+        overflow: visible;
+        stroke-linecap: round;
+        stroke-width: 4;
+        transition: stroke .1s linear, transform .1s ease-in-out; }
+    main #proximo:hover {
+      cursor: pointer; }
+      main #proximo:hover nav svg {
+        stroke: orange;
+        -webkit-transform: translateY(2px);
+        -moz-transform: translateY(2px);
+        -o-transform: translateY(2px);
+        transform: translateY(2px); }
+    @media screen and (max-width: 991px) {
+      main #proximo {
+        transform: translateY(-48px); }
+        main #proximo nav {
+          height: 48px; }
+          main #proximo nav svg {
+            width: auto;
+            height: 8px;
+            stroke-width: 5.5; } }
+  main .video-largo {
+    transform: translateY(-72px);
+    margin-bottom: -72px;
+    padding-top: 72px;
+    background-color: white;
+    z-index: 3; }
+    @media screen and (max-width: 991px) {
+      main .video-largo {
+        transform: translateY(-48px);
+        margin-bottom: -48px;
+        padding-top: 48px; } }
+  main #proximo-2 {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(7.5rem); }
+    @media screen and (min-aspect-ratio: 5 / 4) and (max-width: 991px) {
+      main #proximo-2 {
+        height: calc(100% + 48px);
+        transform: translateY(0); } }
+    @media screen and (min-aspect-ratio: 5 / 4) and (min-width: 992px) {
+      main #proximo-2 {
+        height: calc(100% + 72px);
+        transform: translateY(0); } }

@@ -1,0 +1,106 @@
+.projeto-nav {
+  width: 100%;
+  height: 3rem;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  position: fixed;
+  box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.1);
+  background-color: white; }
+  @media screen and (min-width: 768px) {
+    .projeto-nav {
+      display: none; } }
+
+.proximo-projeto, .projeto-anterior {
+  width: 8.3335%;
+  height: 100vh;
+  top: 0;
+  position: fixed;
+  z-index: 1;
+  background-color: white;
+  transition: all .1s ease-in-out;
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+  .proximo-projeto a, .projeto-anterior a {
+    position: absolute;
+    width: 100%;
+    height: 100%; }
+  @media screen and (max-width: 767px) {
+    .proximo-projeto, .projeto-anterior {
+      width: 50%;
+      height: 3rem;
+      top: unset;
+      bottom: 0; } }
+  @media screen and (min-width: 992px) {
+    .proximo-projeto, .projeto-anterior {
+      width: calc(8.3335% - 1.5rem); } }
+  .proximo-projeto:hover, .projeto-anterior:hover {
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.02);
+    cursor: pointer; }
+    .proximo-projeto:hover svg, .projeto-anterior:hover svg {
+      stroke: #d8d8d8; }
+  .proximo-projeto svg, .projeto-anterior svg {
+    position: absolute;
+    width: 0.6rem;
+    height: 3rem;
+    top: 50%;
+    fill: none;
+    stroke: #d8d8d8;
+    overflow: visible;
+    stroke-linecap: round;
+    stroke-width: 4;
+    transition: all .1s ease-in-out; }
+    @media screen and (max-width: 767px) {
+      .proximo-projeto svg, .projeto-anterior svg {
+        width: 4px;
+        height: 20px;
+        stroke-width: 8;
+        stroke: #d8d8d8; } }
+
+.proximo-projeto {
+  right: 0; }
+  @media screen and (max-width: 767px) {
+    .proximo-projeto svg {
+      right: 1rem;
+      transform: translate(0, -50%); } }
+  @media screen and (min-width: 768px) {
+    .proximo-projeto svg {
+      right: calc(1rem + 12px);
+      transform: translate(50%, -50%); } }
+  @media screen and (min-width: 992px) {
+    .proximo-projeto svg {
+      right: 50%; } }
+  @media screen and (max-width: 767px) {
+    .proximo-projeto:hover svg {
+      right: calc(1rem - 2px); } }
+  @media screen and (min-width: 768px) {
+    .proximo-projeto:hover svg {
+      right: calc(1rem + 10px); } }
+  @media screen and (min-width: 992px) {
+    .proximo-projeto:hover svg {
+      right: calc(50% - 2px); } }
+
+.projeto-anterior {
+  left: 0; }
+  @media screen and (max-width: 767px) {
+    .projeto-anterior svg {
+      left: 1rem;
+      transform: translate(0, -50%) rotate(180deg); } }
+  @media screen and (min-width: 768px) {
+    .projeto-anterior svg {
+      left: calc(1rem + 12px);
+      transform: translate(-50%, -50%) rotate(180deg); } }
+  @media screen and (min-width: 992px) {
+    .projeto-anterior svg {
+      left: 50%; } }
+  @media screen and (max-width: 767px) {
+    .projeto-anterior:hover svg {
+      left: calc(1rem - 2px); } }
+  @media screen and (min-width: 768px) {
+    .projeto-anterior:hover svg {
+      left: calc(1rem + 10px); } }
+  @media screen and (min-width: 992px) {
+    .projeto-anterior:hover svg {
+      left: calc(50% - 2px); } }
