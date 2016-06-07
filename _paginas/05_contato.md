@@ -29,8 +29,8 @@ permalink: contato/
 		<a href="https://www.instagram.com/pomb_/">Instagram</a>
 	</address>
 	<h4>Newsletter</h4>
-	<p>Inscreva-se para<br>receber atualizações:</p>
 	<form action="//vitormarques.us13.list-manage.com/subscribe/post?u=ceb23cebb676c1254d4c9a4b2&amp;id=3c1adba233" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+		<p>Inscreva-se para<br>receber atualizações:</p>
 		<input type="email" value="" name="EMAIL" placeholder='Seu email' id="mce-EMAIL" required>
   		<input type="submit" value="Inscrever" name="subscribe" id="mc-embedded-subscribe" class="button">
 	</form>

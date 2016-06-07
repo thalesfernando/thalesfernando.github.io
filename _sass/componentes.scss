@@ -1,0 +1,358 @@
+@import
+	"variaveis-responsividade",
+	"variaveis-cor",
+	"mixins-tipografia",
+	"mixins-diagrama"
+;
+
+.intro-projeto {
+	figure {
+		@include margin-col-1(0, 2, 0);
+		@include margin-col-2(0, 3, 0);
+		@include margin-col-3(0, 6, 0);
+		@include margin-col-4(0, 7, 0);
+		margin-bottom: 2*$leading;
+	}
+	article {
+		@include margin-col-1(0, 2, 0);
+		@include margin-col-2(0, 3, 0);
+		@include margin-col-3(0, 6, 0);
+		@include margin-col-4(1, 4, 0);
+	}
+	hr {
+		@include margin-col-1(0, 2, 0);
+		@include margin-col-2(0, 6, 0);
+		@include margin-col-3(0, 12, 0);
+		@include margin-col-4(0, 12, 0);
+		margin-top: 0;
+		margin-bottom: calc(#{$leading} - 1px);
+		@media screen and (min-width: nth($breakpoints, 2)) {
+			margin-bottom: calc(#{2*$leading} - 1px);
+		}
+	}
+}
+
+.projeto-thumb {
+	@include margin-col-1(0, 1, 0);
+	@include margin-col-2(0, 2, 0);
+	@include margin-col-3(1, 3, 0);
+	@include margin-col-4(1, 3, 0);
+	margin-bottom: $leading;
+	@media screen and (min-width: nth($breakpoints, 1)) {
+		margin-bottom: 2*$leading;
+	}
+	.thumb-img {
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		&::after {
+			content: "";
+			display: block;
+			padding-bottom: 100%;
+		}
+	}
+	.thumb-titulo {
+		text-align: left;
+		margin-top: $leading;
+		@include t5;
+		@include light;
+		@include versalete;
+	}
+	&:hover {
+		.thumb-img {
+			&::after {
+			    background-color: $laranja;
+				mix-blend-mode: soft-light;
+			}
+		}
+		.thumb-titulo {
+			color: $laranja;
+		}
+	}
+	&:active {
+		.thumb-img {
+			&::after {
+			    background-color: $laranja;
+				mix-blend-mode: overlay;
+			}
+		}
+	}
+}
+
+.mais-projetos {
+	& > h1, & > h2, & > h3, & > h4, & > h5, & > h6 {
+		@include margin-col-1(0, 2, 0);
+		@include margin-col-2(0, 6, 0);
+		@include margin-col-3(0, 12, 0);
+		@include margin-col-4(0, 12, 0);
+		margin-bottom: $leading;
+		@media screen and (min-width: nth($breakpoints, 1)) {
+			margin-bottom: 2*$leading;
+		}
+		@media screen and (min-width: nth($breakpoints, 2)) {
+			margin-bottom: 3*$leading;
+		}
+	}
+	figure {
+		margin-bottom: $leading;
+		@media screen and (min-width: nth($breakpoints, 1)) {
+			margin-bottom: 2*$leading;
+		}
+	}
+	&::before {
+		content: "";
+		border-top: solid $cinza-claro 1px;
+		padding-top: calc(#{$leading} - 1px);
+		width: calc(100% - #{$gutter});
+		margin-left: auto;
+		margin-right: auto;
+		@media screen and (min-width: nth($breakpoints, 2)) {
+			margin-bottom: 2*$leading;
+		}
+	}
+}
+
+.lista-dupla {
+	&::before {
+		content: "";
+		border-top: solid $cinza-claro 1px;
+		padding-top: calc(#{2*$leading} - 1px);
+		width: calc(100% - #{$gutter});
+		margin-left: auto;
+		margin-right: auto;
+	}
+	h2 {
+		@include margin-col-1(0, 2, 0);
+		@include margin-col-2(0, 6, 0);
+		@include margin-col-3(0, 12, 0);
+		@include margin-col-4(0, 12, 0);
+		margin-bottom: 2.5*$leading;
+		&::after {
+			content: url(/img/minhoca.svg);
+			top: 4*$leading;
+			height: $leading;
+			display: block;
+			overflow: visible;
+			position: absolute;
+			@media screen and (min-width: nth($breakpoints, 2)) {
+				top: 5*$leading;
+			}
+		}
+	}
+	article {
+		@include margin-col-1(0, 2, 0);
+		@include margin-col-2(0, 3, 0);
+		@include margin-col-3(1, 4, 0);
+		@include margin-col-4(1, 4, 0);
+		ul + h4, ol + h4 {
+			margin-top: -$leading;
+		}
+		@media screen and (max-width: nth($breakpoints, 1) - 1px) {
+			h3 {
+				border-top: dotted $cinza-claro 1px;
+				padding-top: calc(#{$leading} - 1px);
+			}
+		}
+		&:first-of-type {
+			@include margin-col-3(3, 4, 0);
+			@include margin-col-4(2, 4, 0);
+			h3 {
+				border-top: none;
+				padding-top: 0;
+			}
+		}
+	}
+}
+
+.img-solo-largo {
+	figure {
+		@include margin-col-1(0, 2, 0);
+		@include margin-col-2(1, 5, 0);
+		@include margin-col-3(1, 10, 1);
+		@include margin-col-4(2, 9, 1);
+	}
+	@media screen and (max-width: nth($breakpoints, 1) - 1px) {
+		padding-left: 0;
+		padding-right: 0;
+		figure {
+			margin-left: 0;
+			margin-right: 0;
+			width: 100%;
+		}
+	}
+}
+
+.img-solo-cheio {
+	figure {
+		@include margin-col-1(0, 2, 0);
+		@include margin-col-2(0, 6, 0);
+		@include margin-col-3(0, 12, 0);
+	}
+	@media screen and (max-width: nth($breakpoints, 1) - 1px) {
+		padding-left: 0;
+		padding-right: 0;
+		figure {
+			margin-left: 0;
+			margin-right: 0;
+			width: 100%;
+		}
+	}
+}
+
+.img-duo-largo {
+	figure {
+		@include margin-col-1(0, 2, 0);
+		@include margin-col-2(0, 3, 0);
+		@include margin-col-3(0, 5, 1);
+		@include margin-col-4(0, 5, 1);
+	}
+	figure:first-of-type {
+		@include margin-col-3(1, 5, 0);
+		@include margin-col-4(1, 5, 0);
+	}
+}
+
+.img-duo-cheio {
+	figure {
+		@include margin-col-1(0, 2, 0);
+		@include margin-col-2(0, 3, 0);
+		@include margin-col-3(0, 6, 0);
+	}
+	@media screen and (max-width: nth($breakpoints, 1) - 1px) {
+		padding-left: 0;
+		padding-right: 0;
+		figure {
+			margin-left: 0;
+			margin-right: 0;
+			width: 100%;
+		}
+	}
+}
+
+.img-duo-colunas {
+	figure {
+		@include margin-col-1(0, 2, 0);
+		@include margin-col-2(0, 3, 0);
+		@include margin-col-3(0, 6, 0);
+		@include margin-col-3(1, 5, 0);
+		img {
+			margin-bottom: 2*$leading;
+			&:last-child {
+				margin-bottom: 0;
+			}
+			@media screen and (min-width: nth($breakpoints, 2)) {
+				margin-bottom: 4*$leading;
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+			@media screen and (min-width: nth($breakpoints, 3)) {
+				margin-bottom: 5*$leading;
+			}
+		}
+	}
+}
+
+.img-trio-largo {
+	figure {
+		@include margin-col-1(0, 2, 0);
+		@include margin-col-2(0, 2, 0);
+		@include margin-col-3(0, 3, 0);
+		&:first-of-type {
+			@include margin-col-3(2, 3, 0);
+		}
+		&:last-of-type {
+			@include margin-col-3(0, 3, 1);
+		}
+	}
+}
+
+.img-trio-cheio {
+	figure {
+		@include margin-col-1(0, 2, 0);
+		@include margin-col-2(0, 2, 0);
+		@include margin-col-3(0, 4, 0);
+	}
+}
+
+.video-largo {
+	figure {
+		@include margin-col-1(0, 2, 0);
+		@include margin-col-2(0, 6, 0);
+		@include margin-col-3(1, 10, 1);
+		@include margin-col-4(1, 10, 1);
+	}
+	@media screen and (max-width: nth($breakpoints, 1) - 1px) {
+		padding-left: 0;
+		padding-right: 0;
+		figure {
+			margin-left: 0;
+			margin-right: 0;
+			width: 100%;
+		}
+	}
+}
+
+.video-cheio {
+	figure {
+		@include margin-col-1(0, 2, 0);
+		@include margin-col-2(0, 6, 0);
+		@include margin-col-3(0, 12, 0);
+		@include margin-col-4(0, 12, 0);
+	}
+	@media screen and (max-width: nth($breakpoints, 1) - 1px) {
+		padding-left: 0;
+		padding-right: 0;
+		figure {
+			margin-left: 0;
+			margin-right: 0;
+			width: 100%;
+		}
+	}
+}
+
+.video-completo {
+	&::before {
+		content: "";
+		border-top: solid $cinza-claro 1px;
+		padding-top: calc(#{2*$leading} - 1px);
+		width: calc(100% - #{$gutter});
+		margin-left: auto;
+		margin-right: auto;
+	}
+	&:first-child {
+		&::before {
+			content: "";
+			border-top: none;
+			padding-top: 0;
+			width: 0;
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+	figure {
+		@include margin-col-1(0, 2, 0);
+		@include margin-col-2(0, 4, 0);
+		@include margin-col-3(0, 8, 0);
+		@include margin-col-4(0, 8, 0);
+		background-color: $branco;
+		@include v-align-center;
+		margin-bottom: 2*$leading;
+	}
+	article {
+		@include margin-col-1(0, 2, 0);
+		@include margin-col-2(0, 2, 0);
+		@include margin-col-3(1, 3, 0);
+		@include margin-col-4(1, 3, 0);
+		@media screen and (max-width: nth($breakpoints, 1) - 1px) {
+			margin-top: -$leading;
+			.info {
+				margin-top: -$leading;
+			}
+		}
+	}
+}
+
+.video {
+	display: flex;
+}

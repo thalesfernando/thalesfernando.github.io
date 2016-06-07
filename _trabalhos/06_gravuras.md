@@ -4,7 +4,7 @@ title: Gravuras
 permalink: trabalhos/gravuras
 ---
 
-{% include img-duo-largo.html
+{% include img-duo-cheio.html
 	img-1="/img/trabalhos/gravuras/gravuras-2.jpg"
 	img-2="/img/trabalhos/gravuras/gravuras-1.jpg"
 %}

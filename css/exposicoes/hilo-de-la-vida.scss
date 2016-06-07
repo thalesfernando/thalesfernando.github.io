@@ -1,0 +1,19 @@
+---
+---
+
+@import 
+	"variaveis-responsividade",
+	"variaveis-cor",
+	"mixins-diagrama"
+;
+
+body {
+	main {
+		.intro-projeto {
+			figure {
+				@include margin-col-3(0, 5, 1);
+				@include margin-col-4(0, 6, 0);
+			}
+		}
+	}
+}

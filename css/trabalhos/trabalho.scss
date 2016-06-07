@@ -1,0 +1,22 @@
+---
+---
+
+@import 
+	"variaveis-responsividade",
+	"variaveis-cor"
+;
+
+body {
+	main {
+		.projeto-thumb {
+			.thumb-img{
+				padding-left: $gutter;
+				padding-right: $gutter;
+				background-size: auto 100%;
+			}
+			.thumb-titulo {
+				text-align: center;
+			}
+		}
+	}
+}

@@ -23,7 +23,7 @@ permalink: trabalhos/pinturas
 	img-2="/img/trabalhos/pinturas/pinturas-7.jpg"
 %}
 
-{% include img-duo-largo.html
+{% include img-duo-cheio.html
 	img-1="/img/trabalhos/pinturas/pinturas-8.jpg"
 	img-2="/img/trabalhos/pinturas/pinturas-9.jpg"
 %}

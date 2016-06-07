@@ -1,0 +1,19 @@
+$breakpoints: 768px, 992px, 1200px;
+
+// ritmo vertical
+$leading: 1.5rem;
+$base-font-size: 1rem;
+
+// ritmo horizontal
+$col: 2, 6, 12, 12;
+$grid_variety: length($col);
+$gutter: $leading;
+$area: 83.333%; // vai se tornar uma lista, com os diferentes valores da área útil para cada resolução
+
+$logo-m-height: 18px;
+$logo-m-margin: 15px;
+$logo-d-height: 30px;
+$logo-d-margin: 21px;
+
+$footnote-padding: 2 * $leading;
+$footer-height: $leading + 2 * $footnote-padding;

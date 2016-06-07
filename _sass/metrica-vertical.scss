@@ -1,0 +1,64 @@
+@import 
+	"variaveis-responsividade",
+	"variaveis-cor"
+;
+
+main {
+	@media screen and (max-width: nth($breakpoints, 2) - 1px) {
+		>*:first-child {
+			margin-top: $logo-m-height + 2*$logo-m-margin;
+		}
+	}
+	@media screen and (min-width: nth($breakpoints, 2)) {
+		>*:first-child {
+			margin-top: $logo-d-height + 2*$logo-d-margin;
+		}
+	}
+	@media screen and (max-width: nth($breakpoints, 3) - 1px) {
+		padding-top: calc(#{5*$leading} + 64px);
+	}
+	@media screen and (min-width: nth($breakpoints, 2)) {
+		padding-top: calc(#{5*$leading} + 72px);
+	}
+	@media screen and (min-width: nth($breakpoints, 3)) {
+		padding-top: calc(#{6*$leading} + 72px);
+	}
+
+	figure, img, p, ul, ol, form, blockquote, address, .video {
+		margin-bottom: 2 * $leading;
+	}
+
+	p {
+		@media screen and (min-width: nth($breakpoints, 2)) {
+			margin-bottom: 4*$leading;
+		}
+	}
+
+	section + p {
+		@media screen and (min-width: nth($breakpoints, 3)) {
+			margin-top: -$leading;
+		}
+	}
+
+	figure > *, figure > .video, blockquote > p  {
+		margin-bottom: 0;
+	}
+
+	h2 + p, h3 + p, ul + ol, ol + ul, * + hr {
+		margin-top: - $leading;
+	}
+
+	p + p {
+		@media screen and (min-width: nth($breakpoints, 2)) {
+			margin-top: -2* $leading;
+		}
+	}
+
+	p + ol, p + ul, p + form {
+		margin-top: -$leading;
+		@media screen and (min-width: nth($breakpoints, 2)) {
+			margin-top: -2* $leading;
+		}
+	}
+
+}
