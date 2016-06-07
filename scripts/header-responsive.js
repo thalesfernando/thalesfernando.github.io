@@ -62,7 +62,7 @@ $(window).scroll(function() {
 	        if (hiddenHeader == false) {
 	        	$('header').css("top", "0px");
 	        }
-	    }, 24));
+	    }, 48));
 
 	    if (scrolling == false ) { //it means: if scrolling was false right before current scroll event check
 		   	refPoint = window.pageYOffset;
