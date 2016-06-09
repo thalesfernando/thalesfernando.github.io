@@ -1,6 +1,7 @@
 ---
 layout: pagina
-permalink: contato/
+permalink: teste-2/
+published: true
 ---
 
 ## A New Post
