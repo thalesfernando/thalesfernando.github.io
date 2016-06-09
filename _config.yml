@@ -35,6 +35,7 @@ prose:
     - index.html
     - _config.yml
     - CNAME
+    - .gitignore
   media: "img"
   siteurl: "http://pomb.com.br"
   metadata:
