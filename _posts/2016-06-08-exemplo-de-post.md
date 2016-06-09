@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: Exemplo de Post
 ---
 ## A New Post
