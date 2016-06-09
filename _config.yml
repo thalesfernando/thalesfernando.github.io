@@ -35,19 +35,24 @@ prose:
     - index.html
     - _config.yml
     - CNAME
+  media: "img"
   siteurl: "http://pomb.com.br"
   metadata:
     _posts:
       - name: "layout"
         field:
           label: "layout"
-          element: "text"
+          element: hidden
           value: "post"
       - name: "date"
         field:
           label: "data"
           element: "text"
           value: "CURRENT_DATETIME"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Título"
       - name: "author"
         field:
           label: "autor"
@@ -57,14 +62,14 @@ prose:
         field:
           label: "categorias"
           element: "text"
-          placeholder: "Designe categorias"
+          placeholder: "Categorias"
       - name: "excerpt"
         field:
           label: "excerto"
           element: "text"
-          placeholder: "Coloque um resumo"
+          placeholder: "Excerto"
       - name: "meta"
         field:
           label: "metadados"
           element: "text"
-          placeholder: "Coloque os metadados"
+          placeholder: "Metadados"
