@@ -1,6 +1,7 @@
 ---
 published: true
 title: Exemplo de Post
+layout: post
 ---
 ## A New Post
 
