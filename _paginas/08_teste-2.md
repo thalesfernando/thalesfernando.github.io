@@ -2,6 +2,7 @@
 layout: pagina
 permalink: teste-2/
 published: true
+title: Teste 2
 ---
 
 ## A New Post
