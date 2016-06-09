@@ -1,5 +1,8 @@
 ---
 title: Teste 2
+published: true
+permalink: teste-2/
+layout: pagina
 ---
 
 ## A New Post
