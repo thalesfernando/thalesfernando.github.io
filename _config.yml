@@ -21,7 +21,6 @@ collections:
     output: true
   drafts:
     output: false
-
 prose:
   rooturl: ''
   siteurl: 'http://www.hywel.me'
