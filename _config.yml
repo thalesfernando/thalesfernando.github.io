@@ -22,6 +22,12 @@ collections:
   drafts:
     output: false
 prose:
+  ignore:
+    - index.html
+    - _config.yml
+    - /_layouts
+    - /_includes
+  siteurl: "http://pomb.com.br"
   metadata:
     _posts:
       - name: "layout"
