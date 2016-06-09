@@ -32,6 +32,7 @@ prose:
           label: "layout"
           element: "text"
           value: "post"
+          disabled
       - name: "date"
         field:
           label: "data"
