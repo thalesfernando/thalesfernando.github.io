@@ -23,10 +23,18 @@ collections:
     output: false
 prose:
   ignore:
+    - /_exhibitions
+    - /_includes
+    - /_layouts
+    - /_main-pages
+    - /_paginas
+    - /_sass
+    - /_works
+    - /css
+    - /scripts
     - index.html
     - _config.yml
-    - /_layouts
-    - /_includes
+    - CNAME
   siteurl: "http://pomb.com.br"
   metadata:
     _posts:

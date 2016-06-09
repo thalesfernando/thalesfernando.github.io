@@ -131,7 +131,7 @@ body {
 			    line-height: $leading;
 			    resize: none;
 				padding-left: $gutter/2;
-				border: solid #e6e6e6 1px;
+				border: solid $cinza-claro 1px;
 				padding-top: calc(#{$leading/2} - 1px);
 			    padding-bottom: calc(#{$leading/2} - 1px);
 			    &:focus {

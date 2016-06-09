@@ -49,8 +49,18 @@ main {
 	}
 
 	p + p {
+		margin-top: -$leading;
 		@media screen and (min-width: nth($breakpoints, 2)) {
-			margin-top: -2* $leading;
+			margin-top: -3* $leading;
+		}
+	}
+
+	.destaque {
+		margin-top: 0;
+		@media screen and (min-width: nth($breakpoints, 2)) {
+			&:not(:first-child) {
+				margin-top: -2* $leading;
+			}
 		}
 	}
 

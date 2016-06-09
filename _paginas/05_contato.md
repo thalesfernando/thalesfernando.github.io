@@ -17,7 +17,7 @@ permalink: contato/
 		<input type='text' name='nome' placeholder='Seu nome' autofocus />
 		<input type='text' name='email' placeholder='Seu email'/>
 		<input type='text' name='assunto' placeholder='Assunto'/>
-			<textarea rows="3" name='test' placeholder='Sua mensagem'></textarea> 
+			<textarea rows="4" name='test' placeholder='Sua mensagem'></textarea> 
 			<input type='submit' value='Enviar' />
 	</form>
 </article>
