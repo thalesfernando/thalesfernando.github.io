@@ -22,9 +22,6 @@ collections:
   drafts:
     output: false
 prose:
-  rooturl: ''
-  siteurl: 'http://www.hywel.me'
-  media: 'assets'
   metadata:
     _posts:
       - name: "layout"
@@ -32,7 +29,6 @@ prose:
           label: "layout"
           element: "text"
           value: "post"
-          disabled:
       - name: "date"
         field:
           label: "data"
@@ -50,7 +46,7 @@ prose:
           placeholder: "Designe categorias"
       - name: "excerpt"
         field:
-          label: "excerpt"
+          label: "excerto"
           element: "text"
           placeholder: "Coloque um resumo"
       - name: "meta"
