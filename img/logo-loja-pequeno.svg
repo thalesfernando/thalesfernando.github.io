@@ -3,16 +3,16 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="194.009px" height="30px" viewBox="0 0 194.009 30" enable-background="new 0 0 194.009 30" xml:space="preserve">
-<path id="p" fill="none" stroke="#9B9B9B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+<path id="p" fill="none" stroke="#9B9B9B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
 	M1,23.741V6.131c11.109-0.608,16.851,0.824,16.851,5.825c0,4.426-5.189,6.537-16.851,4.947"/>
-<path id="o" fill="none" stroke="#9B9B9B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+<path id="o" fill="none" stroke="#9B9B9B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
 	M38.979,14.998c0,5.16-3.915,8.998-8.743,8.998c-5.08,0-8.743-4.029-8.743-8.998C21.492,9.461,25.017,6,30.235,6
 	C35.064,6,38.979,9.775,38.979,14.998z"/>
 <ellipse id="ponto" fill="#9B9B9B" cx="30.235" cy="14.998" rx="2" ry="2"/>
-<path id="m" fill="none" stroke="#9B9B9B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+<path id="m" fill="none" stroke="#9B9B9B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
 	M62.669,23.741V6.131c-7.197,0-11.607,4.445-11.607,7.065c0,1.327,0.817,2.313,2.192,2.313c1.079,0,1.949-1.041,1.949-2.313
 	c0-2.741-5.513-7.065-11.365-7.065v17.61"/>
-<path id="b" fill="none" stroke="#9B9B9B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+<path id="b" fill="none" stroke="#9B9B9B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
 	M68.597,6.304v17.437C76.544,24.627,83,23.327,83,18.407c0-4.405-4.061-5.631-14.403-5.375c6.881-0.289,9.071-1.72,9.071-3.759
 	C77.669,6.087,73.207,5.556,68.597,6.304z"/>
 <path id="p_1_" fill="none" stroke="#9B9B9B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
