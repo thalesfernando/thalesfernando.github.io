@@ -100,6 +100,16 @@ prose:
           label: "Descrição"
           element: "textarea"
           placeholder: "Um resumo da exposição"
+      - name: "exhibition_date"
+        field:
+          label: "Data da exposição"
+          element: "text"
+          placeholder: "Ex.: 12/12/2014 a 15/01/2015"
+      - name: "exhibition_location"
+        field:
+          label: "Local da exposição"
+          element: "text"
+          placeholder: "Ex.: Sesc 504 Sul – Brasília"
   ignore:
     - /_exhibitions
     - /_includes
