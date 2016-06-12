@@ -16,9 +16,9 @@ collections:
   main-pages:
     output: true
   works:
-    output: true
+    output: false
   exhibitions:
-    output: true
+    output: false
   drafts:
     output: false
 prose:
@@ -28,12 +28,12 @@ prose:
     _posts:
       - name: "layout"
         field:
-          label: "layout"
+          label: "Layout"
           element: hidden
           value: "post"
       - name: "date"
         field:
-          label: "data"
+          label: "Data"
           element: "text"
           value: "CURRENT_DATETIME"
       - name: "title"
@@ -42,24 +42,54 @@ prose:
           label: "Título"
       - name: "author"
         field:
-          label: "autor"
+          label: "Autor"
           element: "text"
           value: "POMB"
       - name: "categories"
         field:
-          label: "categorias"
+          label: "Categorias"
           element: "text"
           placeholder: "Categorias"
       - name: "excerpt"
         field:
-          label: "excerto"
+          label: "Excerto"
           element: "text"
           placeholder: "Excerto"
       - name: "meta"
         field:
-          label: "metadados"
+          label: "Metadados"
           element: "text"
           placeholder: "Metadados"
+    _trabalhos:
+      - name: "layout"
+        field:
+          label: "Layout"
+          element: hidden
+          value: "projeto"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Título"
+      - name: "description"
+        field:
+          label: "Descrição"
+          element: "textarea"
+          placeholder: "Descrição do projeto"
+    _exposicoes:
+      - name: "layout"
+        field:
+          label: "Layout"
+          element: hidden
+          value: "projeto"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Título"
+      - name: "description"
+        field:
+          label: "Descrição"
+          element: "textarea"
+          placeholder: "Um resumo da exposição"
   ignore:
     - /_exhibitions
     - /_includes
