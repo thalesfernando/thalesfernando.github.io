@@ -70,6 +70,11 @@ prose:
         field:
           element: "text"
           label: "Título"
+      - name: "permalink"
+        field:
+          element: "text"
+          label: "Permalink"
+          placeholder: "Ex.: trabalhos/novo-projeto"
       - name: "description"
         field:
           label: "Descrição"
@@ -85,6 +90,11 @@ prose:
         field:
           element: "text"
           label: "Título"
+      - name: "permalink"
+        field:
+          element: "text"
+          label: "Permalink"
+          placeholder: "Ex.: exposicoes/novo-projeto"
       - name: "description"
         field:
           label: "Descrição"
