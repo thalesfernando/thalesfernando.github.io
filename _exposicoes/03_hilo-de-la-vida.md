@@ -6,15 +6,16 @@ published: true
 exhibition_description: >-
   Empregar o dom de fiar e tecer em associação com o destino faz todo o sentido;
   trabalho minucioso nas bases, a paciência do desenvolvimento e a
-  imprevisibilidade do fim.
+  imprevisibilidade do fim. Na mitologia grega as responsáveis pelo tecer do
+  destino eram as Moiras. Três irmãs que determinavam os acontecimentos e o
+  futuro tanto dos deuses, quanto dos seres humanos.
 
-  Na mitologia grega as responsáveis pelo tecer do destino eram as Moiras. Três
-  irmãs que determinavam os acontecimentos e o futuro tanto dos deuses, quanto
-  dos seres humanos. Três mulheres lúgubres, responsáveis por fabricar, tecer e
-  cortar aquilo que seria o fio da vida de todos os indivíduos. A Roda da
-  Fortuna, onde o fio da vida é tecido, representa o ciclo de felicidade,
-  deleite, tristeza e má sorte, colocando em foco a ideia de que nao há mal que
-  sempre dure nem bem que não se acabe.
+
+  Três mulheres lúgubres, responsáveis por fabricar, tecer e cortar aquilo que
+  seria o fio da vida de todos os indivíduos. A Roda da Fortuna, onde o fio da
+  vida é tecido, representa o ciclo de felicidade, deleite, tristeza e má sorte,
+  colocando em foco a ideia de que nao há mal que sempre dure nem bem que não se
+  acabe.
 exhibition_date: Novembro de 2014
 exhibition_location: Collage Bar - Barcelona / Espanha
 ---
