@@ -11,6 +11,7 @@ exhibition_description: >-
   é a divinização do dia e da noite, tendo as obras retratadas em deuses e
   animais.
 
+
   As obras também fazem alusão à Tábua de Esmeralda, texto de Hermes
   Trismegisto, que remete a eterna aspiração humana à alquimia divina, entendida
   como regeneração da alma. Simultaneamente diz respeito ao micro e macrocosmos,
