@@ -5,6 +5,17 @@ permalink: exposicoes/sobre-o-infinito
 published: true
 exhibition_date: 08/06/2015 a 30/06/2015
 exhibition_location: Sesc 504 Sul – Brasília
+exhibition_description: >-
+  Seja enquanto conceito, adjetivo ou própria substância, pode-se considerar o
+  infinito também infindável dentro de sua própria gama de significados&colon;
+  incontável, imensurável, impreciso ou apenas perdido em distância e
+  vagueidade.
+
+  Infinito é também o enredo de características animais que encontramos em nós
+  mesmos, ainda que sobrepostas pela tentativa constante de ocultarmos tudo
+  aquilo que guardamos de selvagem. A escolha dos animais retratando condições
+  tipicamente humanas busca, justamente, resgatar esses instintos ainda
+  latentes.
 ---
 
 {% include img-trio-largo.html
