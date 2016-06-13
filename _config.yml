@@ -85,7 +85,7 @@ prose:
         field:
           label: "Layout"
           element: hidden
-          value: "projeto"
+          value: "exposicao"
       - name: "title"
         field:
           element: "text"
@@ -95,7 +95,7 @@ prose:
           element: "text"
           label: "Permalink"
           placeholder: "Ex.: exposicoes/novo-projeto"
-      - name: "description"
+      - name: "exhibition_description"
         field:
           label: "Descrição"
           element: "textarea"

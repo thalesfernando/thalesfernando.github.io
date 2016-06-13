@@ -1,17 +1,8 @@
 ---
-layout: projeto
+layout: exposicao
 title: Sobre o Infinito & Outras Coisas
 permalink: exposicoes/sobre-o-infinito
 ---
-
-{% include intro-projeto.html
-	img="/img/exposicoes/sobre-o-infinito/sobre-o-infinito-1.jpg"
-	txt="Seja enquanto conceito, adjetivo ou própria substância, pode­se considerar o infinito também infindável dentro de sua própria gama de significados: incontável, imensurável, impreciso ou apenas perdido em distância e vagueidade.<br/>
-	Infinito é também o enredo de características animais que encontramos em nós mesmos, ainda que sobrepostas pela tentativa constante de ocultarmos tudo aquilo que guardamos de selvagem. A escolha dos animais retratando condições tipicamente humanas busca, justamente, resgatar esses instintos ainda latentes."
-	dados="Sobre o Infinito e outras coisas
-	08.06.2015 à 30.06.2015
-	Sesc 504 Sul – Brasília"
-%}
 
 {% include img-trio-largo.html
 	img-1="/img/exposicoes/sobre-o-infinito/sobre-o-infinito-2.jpg"

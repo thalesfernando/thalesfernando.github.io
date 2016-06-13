@@ -1,13 +1,14 @@
 <section class="intro-projeto">
 	<figure>
-		<img src="{{ include.img }}">
+		<img src="/img/{{ page.permalink }}/intro.jpg">
 	</figure>
 	<article>
 		<p class="txt">
-			{{ include.txt | newline_to_br}}
+			{{ page.exhibition_description | newline_to_br}}
 		</p>
 		<p class="destaque dados">
-			{{ include.dados | newline_to_br}}
+			{{ page.exhibition_date }}<br>
+			{{ page.exhibition_location }}
 		</p>
 	</article>
 	<hr>
