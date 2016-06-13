@@ -11,6 +11,7 @@ exhibition_description: >-
   incontável, imensurável, impreciso ou apenas perdido em distância e
   vagueidade.
 
+
   Infinito é também o enredo de características animais que encontramos em nós
   mesmos, ainda que sobrepostas pela tentativa constante de ocultarmos tudo
   aquilo que guardamos de selvagem. A escolha dos animais retratando condições
