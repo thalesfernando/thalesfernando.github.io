@@ -2,6 +2,9 @@
 layout: exposicao
 title: Sobre o Infinito & Outras Coisas
 permalink: exposicoes/sobre-o-infinito
+published: true
+exhibition_date: 08/06/2015 a 30/06/2015
+exhibition_location: Sesc 504 Sul – Brasília
 ---
 
 {% include img-trio-largo.html
@@ -10,7 +13,7 @@ permalink: exposicoes/sobre-o-infinito
 	img-3="/img/exposicoes/sobre-o-infinito/sobre-o-infinito-4.jpg" 
 %}
 
-A obra encontra na madeira seu suporte ideal: à medida em que o tempo passa, deixa suas marcas impressas em casca e carne. Acumulam­se cicatrizes e rachaduras, que interferem, assim como o próprio tempo, direta e imprevisivelmente em cada uma das pinturas. Na mostra são apresentados trabalhos desenvolvidos em técnica mista sobre suporte de madeira.
+A obra encontra na madeira seu suporte ideal: à medida em que o tempo passa, deixa suas marcas impressas em casca e carne. Acumulam-se cicatrizes e rachaduras, que interferem, assim como o próprio tempo, direta e imprevisivelmente em cada uma das pinturas. Na mostra são apresentados trabalhos desenvolvidos em técnica mista sobre suporte de madeira.
 
 {% include img-duo-largo.html
 	img-1="/img/exposicoes/sobre-o-infinito/sobre-o-infinito-6.jpeg"
