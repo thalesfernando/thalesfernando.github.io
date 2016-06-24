@@ -2,7 +2,12 @@
 layout: projeto
 title: Murais
 permalink: trabalhos/murais
+published: true
 ---
+
+{% include img-solo-cheio.html
+	img="/img/trabalhos/murais/murais-10.jpg"
+%}
 
 {% include img-solo-cheio.html
 	img="/img/trabalhos/murais/murais-1.jpg"
