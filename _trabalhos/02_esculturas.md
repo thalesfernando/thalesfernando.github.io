@@ -3,7 +3,13 @@ layout: projeto
 title: Esculturas
 permalink: trabalhos/esculturas
 published: true
+description: ''
 ---
+
+{% include img-duo-cheio.html
+	img-1="/img/trabalhos/esculturas/esculturas-12.jpg"
+	img-2="/img/trabalhos/esculturas/esculturas-13.jpg"
+%}
 
 {% include img-solo-largo.html
 	img="/img/trabalhos/esculturas/esculturas-1.jpg" 
