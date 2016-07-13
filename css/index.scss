@@ -97,6 +97,9 @@ main section {
 		margin-bottom: 0;
 		&:first-of-type {
 			transform: translateX(-#{$gutter/2});
+			@media screen and (max-width: nth($breakpoints, 1) - 1px) {
+				transform: translateX(0) translateY(#{$leading/2});
+			}
 		}
 		&:last-of-type {
 			transform: translateX(#{$gutter/2});
