@@ -9,10 +9,15 @@ body {
 		left:0;
 		background-color: $branco;
 		z-index: 2;
+		padding-left: 0;
+		padding-right: 0;
 		address {
 			border-top: solid $cinza-claro 1px;
 			padding-top: calc(#{2*$leading} - 1px);
 			padding-bottom: 2 * $leading;
+			margin-left: 0;
+			margin-right: 0;
+			width: 100%;
 			text-align: center;
 		}
 	}
