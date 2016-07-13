@@ -48,10 +48,7 @@ main section {
 		padding: $leading;
 		background-color: $branco;
 		transform: translateY(0);
-		margin-top: 4*$leading;
-		@media screen and (max-width: nth($breakpoints, 2) - 1px) {
-			margin-top: 2*$leading;
-		}
+		margin-top: 2*$leading;
 		box-shadow: 0 0 $leading/2 0 transparentize($preto, 0.9);
 	}
 }
