@@ -18,26 +18,58 @@ h5 {
 		margin-bottom: 0;
 	}
 }
-
-main section {
-	width: 100%;
-	margin-top: 0 !important;
-	figure {
-		opacity: 0;
-		transform: translateY(#{$leading/2});
-		transition: opacity .5s ease-in-out, transform .25s ease-in-out;
-		img {
+body {
+	main {
+		padding-top: 0;
+		transform: translateY(0);
+		section {
 			width: 100%;
-			height: auto;
-			margin-top: 0;
+			margin-top: 0 !important;
+			figure {
+				opacity: 0;
+				transform: translateY(#{$leading/2});
+				transition: opacity .5s ease-in-out, transform .25s ease-in-out;
+				img {
+					width: 100%;
+					height: auto;
+					margin-top: 0;
+				}
+			}
+			&.foco {
+				figure {
+					opacity: 1;
+					transform: translateY(0);
+				}
+			}
 		}
 	}
-	&.foco {
-		figure {
-			opacity: 1;
-			transform: translateY(0);
-		}
+	footer {
+		position: relative;
 	}
+}
+
+#home-cover {
+	background-image: url(/img/home.jpg);
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100vh;
+}
+
+#easter-egg {
+	padding-top: 2*$leading;
+	padding-bottom: 2*$leading;
+}
+
+#easter-worm {
+	fill: none;
+    stroke-width: 2.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+    &:hover{
+    	cursor: pointer;
+    }
 }
 
 #section-1 {
