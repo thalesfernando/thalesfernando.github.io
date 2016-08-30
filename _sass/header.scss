@@ -131,7 +131,50 @@ header {
 	}
 }
 
+.easter-egg, .easter-egg_m {
+	width: 44px;
+	box-sizing: content-box;
+}
 
+.easter-egg {
+	position: absolute;
+	right: (100% - $area)/4;
+	transform: translateX(50%);
+}
+
+.easter-egg_m {
+	height: $leading;
+	margin-top: $leading;
+	margin-bottom: 2*$leading;
+	@media screen and (min-width: nth($breakpoints, 2)) {
+		display: none;
+		* {
+			display: none;
+		}
+	}
+}
+
+#easter-worm, #easter-worm_m {
+	fill: none;
+	margin: 0;
+	width: 44px;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+#easter-worm {
+	stroke: $cinza-claro;
+	&:hover{
+    	cursor: pointer;
+    	stroke: $laranja;
+    }
+}
+
+#easter-worm_m {
+	stroke: $laranja;
+}
 
 @media screen and (max-width: nth($breakpoints, 2) - 1px) {
 	body {

@@ -9,8 +9,8 @@ permalink: /
 	</figure>
 </section> -->
 <section id="home-cover"></section>
-<section id="easter-egg">
-	<svg id="easter-worm"></svg>
+<section class="easter-egg_m">
+	<svg id="easter-worm_m"></svg>
 </section>
 <!-- <section id="section-2">
 	<article class="s1_0 s2_0 s3_1 s4_1"></article>
@@ -42,64 +42,91 @@ permalink: /
 
 <script type="text/javascript">
 
-	s = Snap("#easter-worm");
+	var s = Snap.select("#easter-worm"),
+		s_m = Snap.select("#easter-worm_m");
+	// var s_m = Snap("#easter-worm_m");
+
+	var minhoca = s.path("M1.521,1.549c1.162,0,2.115,0.416,3.033,0.92C5.434,2.952,6.327,3.44,7.372,3.44c1.104,0,2.001-0.49,2.887-0.955c0.902-0.473,1.817-0.937,2.964-0.937c1.162,0,2.115,0.418,3.033,0.921c0.88,0.483,1.774,0.971,2.818,0.971c1.104,0,1.998-0.488,2.887-0.955c0.902-0.474,1.818-0.937,2.964-0.937c1.162,0,2.114,0.419,3.033,0.921c0.881,0.482,1.774,0.971,2.818,0.971c1.104,0,2.177-0.581,2.887-0.955c0.902-0.474,1.818-0.937,2.964-0.937c1.162,0,2.111,0.465,3.033,0.921c0.9,0.445,1.774,0.97,2.819,0.97");
+
+	var minhoca_m = s_m.path("M1.521,1.549c1.162,0,2.115,0.416,3.033,0.92C5.434,2.952,6.327,3.44,7.372,3.44c1.104,0,2.001-0.49,2.887-0.955c0.902-0.473,1.817-0.937,2.964-0.937c1.162,0,2.115,0.418,3.033,0.921c0.88,0.483,1.774,0.971,2.818,0.971c1.104,0,1.998-0.488,2.887-0.955c0.902-0.474,1.818-0.937,2.964-0.937c1.162,0,2.114,0.419,3.033,0.921c0.881,0.482,1.774,0.971,2.818,0.971c1.104,0,2.177-0.581,2.887-0.955c0.902-0.474,1.818-0.937,2.964-0.937c1.162,0,2.111,0.465,3.033,0.921c0.9,0.445,1.774,0.97,2.819,0.97");
 
 	s.attr({width: "44", height: "5"});
-	s.attr({viewBox:"0 0 44 5", stroke: "rgba(216, 216, 216, 1)"});
-	s.path("M1.521,3.44 c1.162,0,2.104-0.488,3.033-0.971c0.881-0.457,1.774-0.92,2.819-0.92c1.104,0,2.002,0.471,2.887,0.936 c0.902,0.474,1.817,0.954,2.964,0.954c1.162,0,2.103-0.488,3.033-0.97c0.88-0.457,1.774-0.92,2.818-0.92 c1.104,0,2.002,0.471,2.887,0.936C22.864,2.96,23.78,3.44,24.925,3.44c1.162,0,2.103-0.488,3.033-0.97 c0.881-0.457,1.774-0.92,2.818-0.92c1.104,0,2.002,0.471,2.887,0.936c0.902,0.474,1.818,0.954,2.964,0.954 c1.162,0,2.103-0.488,3.033-0.97c0.881-0.457,1.774-0.92,2.819-0.92");
+	s.attr({viewBox:"0 0 44 5"});
+	s_m.attr({width: "44", height: "5"});
+	s_m.attr({viewBox:"0 0 44 5"});
 
-	$('#easter-worm').mouseenter(function(){
-		console.log('hey');
-		$("#easter-worm").toggleClass('hover');
-		s.attr({stroke: "rgba(255, 165, 0, 1)"})
-		s.animate({ d: "M42.479,3.44 c-1.162,0-2.104-0.488-3.033-0.971c-0.881-0.457-1.774-0.92-2.819-0.92c-1.104,0-2.002,0.471-2.887,0.936 c-0.902,0.474-1.817,0.954-2.964,0.954c-1.162,0-2.103-0.488-3.033-0.97c-0.88-0.457-1.774-0.92-2.818-0.92 c-1.104,0-2.002,0.471-2.887,0.936C21.136,2.96,20.22,3.44,19.075,3.44c-1.162,0-2.103-0.488-3.033-0.97 c-0.881-0.457-1.774-0.92-2.818-0.92c-1.104,0-2.002,0.471-2.887,0.936C9.434,2.96,8.518,3.44,7.372,3.44 c-1.162,0-2.103-0.488-3.033-0.97C3.459,2.013,2.566,1.55,1.521,1.55"
-		}, 500, mina.easeinout);
-	});
+	var animating = true;
+	var animating_m = true;
 
-	$('#easter-worm').mouseleave(function(){
-		console.log('hey');
-		$("#easter-worm").toggleClass('hover');
-		s.attr({stroke: "rgba(216, 216, 216, 1)"});
-		s.animate({ d: "M1.521,3.44 c1.162,0,2.104-0.488,3.033-0.971c0.881-0.457,1.774-0.92,2.819-0.92c1.104,0,2.002,0.471,2.887,0.936 c0.902,0.474,1.817,0.954,2.964,0.954c1.162,0,2.103-0.488,3.033-0.97c0.88-0.457,1.774-0.92,2.818-0.92 c1.104,0,2.002,0.471,2.887,0.936C22.864,2.96,23.78,3.44,24.925,3.44c1.162,0,2.103-0.488,3.033-0.97 c0.881-0.457,1.774-0.92,2.818-0.92c1.104,0,2.002,0.471,2.887,0.936c0.902,0.474,1.818,0.954,2.964,0.954 c1.162,0,2.103-0.488,3.033-0.97c0.881-0.457,1.774-0.92,2.819-0.92"
-		}, 500, mina.easeinout);
-	});
+	//animation
+	function animOn(){
+	    if( animating ) {
+				minhoca.animate({ d: "M1.521,3.44c1.162,0,2.103-0.489,3.033-0.971c0.881-0.458,1.774-0.92,2.819-0.92c1.104,0,1.999,0.477,2.887,0.936c0.902,0.467,1.817,0.954,2.964,0.954c1.162,0,2.104-0.487,3.033-0.97c0.88-0.458,1.774-0.92,2.818-0.92c1.104,0,2.002,0.463,2.887,0.936c0.896,0.479,1.818,0.954,2.964,0.954c1.162,0,2.103-0.488,3.033-0.97c0.881-0.457,1.774-0.92,2.818-0.92c1.104,0,2.174,0.568,2.887,0.936c0.902,0.466,1.818,0.954,2.964,0.954c1.162,0,2.104-0.487,3.033-0.97c0.881-0.458,1.774-0.92,2.819-0.92" }, 80, mina.easeinout, animOut);
+	    };
+	}
+	function animOn_m(){
+	     minhoca_m.animate({ d: "M1.521,3.44c1.162,0,2.103-0.489,3.033-0.971c0.881-0.458,1.774-0.92,2.819-0.92c1.104,0,1.999,0.477,2.887,0.936c0.902,0.467,1.817,0.954,2.964,0.954c1.162,0,2.104-0.487,3.033-0.97c0.88-0.458,1.774-0.92,2.818-0.92c1.104,0,2.002,0.463,2.887,0.936c0.896,0.479,1.818,0.954,2.964,0.954c1.162,0,2.103-0.488,3.033-0.97c0.881-0.457,1.774-0.92,2.818-0.92c1.104,0,2.174,0.568,2.887,0.936c0.902,0.466,1.818,0.954,2.964,0.954c1.162,0,2.104-0.487,3.033-0.97c0.881-0.458,1.774-0.92,2.819-0.92" }, 80, mina.easeinout, animOut_m);
+	}
+
+	function animOut() {
+			minhoca.animate({ d: "M1.521,1.549c1.162,0,2.115,0.416,3.033,0.92C5.434,2.952,6.327,3.44,7.372,3.44c1.104,0,2.001-0.49,2.887-0.955c0.902-0.473,1.817-0.937,2.964-0.937c1.162,0,2.115,0.418,3.033,0.921c0.88,0.483,1.774,0.971,2.818,0.971c1.104,0,1.998-0.488,2.887-0.955c0.902-0.474,1.818-0.937,2.964-0.937c1.162,0,2.114,0.419,3.033,0.921c0.881,0.482,1.774,0.971,2.818,0.971c1.104,0,2.177-0.581,2.887-0.955c0.902-0.474,1.818-0.937,2.964-0.937c1.162,0,2.111,0.465,3.033,0.921c0.9,0.445,1.774,0.97,2.819,0.97" }, 80, mina.easeinout, animOn);
+	};
+
+	function animOut_m() {
+			minhoca_m.animate({ d: "M1.521,1.549c1.162,0,2.115,0.416,3.033,0.92C5.434,2.952,6.327,3.44,7.372,3.44c1.104,0,2.001-0.49,2.887-0.955c0.902-0.473,1.817-0.937,2.964-0.937c1.162,0,2.115,0.418,3.033,0.921c0.88,0.483,1.774,0.971,2.818,0.971c1.104,0,1.998-0.488,2.887-0.955c0.902-0.474,1.818-0.937,2.964-0.937c1.162,0,2.114,0.419,3.033,0.921c0.881,0.482,1.774,0.971,2.818,0.971c1.104,0,2.177-0.581,2.887-0.955c0.902-0.474,1.818-0.937,2.964-0.937c1.162,0,2.111,0.465,3.033,0.921c0.9,0.445,1.774,0.97,2.819,0.97" }, 80, mina.easeinout, animOn_m);
+	};
+
+	$("#easter-worm").hover(
+		function() { animating=true; animOn() }, 
+		function() { animating=false}
+	);
+
+	$("#easter-worm, #easter-worm_m, #easter-egg_gif").click(
+		function() {
+			$("#easter-egg_gif").toggleClass("active");
+		}
+	);
+
+	$(document).ready(
+		function() { animating_m=true; animOn_m() }, 
+		function() { animating_m=false }
+	);
 
 	var elementOffset;
 	var scrollTop;
 	var distanceTop;
 	var windowHeight = $(window).height();
 
-	$('section').each(function(){
-		elementOffset = $(this).offset().top;
-		scrollTop = $(window).scrollTop();
-		distanceTop = (elementOffset - scrollTop);
-		if (distanceTop < (2*windowHeight/3)) {
-	        $(this).addClass('foco');
-	    } else if (distanceTop >= windowHeight) {
-	    	$(this).removeClass('foco');
-	    };
-	});
+	// $('section').each(function(){
+	// 	elementOffset = $(this).offset().top;
+	// 	scrollTop = $(window).scrollTop();
+	// 	distanceTop = (elementOffset - scrollTop);
+	// 	if (distanceTop < (2*windowHeight/3)) {
+	//         $(this).addClass('foco');
+	//     } else if (distanceTop >= windowHeight) {
+	//     	$(this).removeClass('foco');
+	//     };
+	// });
 
-	$(window).resize(function() {
-		windowHeight = $(window).height();
-	});
+	// $(window).resize(function() {
+	// 	windowHeight = $(window).height();
+	// });
 
-	$(window).scroll(function() {
-		$('section').each(function(){
-			elementOffset = $(this).offset().top;
-			scrollTop = $(window).scrollTop();
-			distanceTop = (elementOffset - scrollTop);
-			if (distanceTop < (2*windowHeight/3)) {
-		        $(this).addClass('foco');
-		    } else if (distanceTop >= windowHeight) {
-		    	$(this).removeClass('foco');
-		    };
-		});
-	});
-
-	$(window).scroll(function() {
-	   if($(window).scrollTop() + $(window).height() == $(document).height()) {
-	       $('#section-4').addClass('foco');
-	   }
-	});
+	// $(window).scroll(function() {
+	// 	$('section').each(function(){
+	// 		elementOffset = $(this).offset().top;
+	// 		scrollTop = $(window).scrollTop();
+	// 		distanceTop = (elementOffset - scrollTop);
+	// 		if (distanceTop < (2*windowHeight/3)) {
+	// 	        $(this).addClass('foco');
+	// 	    } else if (distanceTop >= windowHeight) {
+	// 	    	$(this).removeClass('foco');
+	// 	    };
+	// 	});
+	// });
+	// $(window).scroll(function() {
+	//    if($(window).scrollTop() + $(window).height() == $(document).height()) {
+	//        $('#section-4').addClass('foco');
+	//    }
+	// });
 </script>
