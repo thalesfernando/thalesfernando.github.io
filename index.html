@@ -81,7 +81,13 @@ permalink: /
 		function() { animating=false}
 	);
 
-	$("#easter-worm, #easter-worm_m, #easter-egg_gif").click(
+	$("#easter-worm").hover(
+		function(){
+			$("#easter-egg_gif").toggleClass("active");
+		}
+	);
+
+	$("#easter-worm_m, #easter-egg_gif").click(
 		function() {
 			$("#easter-egg_gif").toggleClass("active");
 		}
