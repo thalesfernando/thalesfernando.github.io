@@ -4,6 +4,10 @@ title: Pinturas
 permalink: trabalhos/pinturas
 ---
 
+{% include img-solo-cheio.html
+	img="pinturas-10.jpg"
+%}
+
 {% include img-solo-largo.html
 	img="pinturas-1.jpg"
 %}

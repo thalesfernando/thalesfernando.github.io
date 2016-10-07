@@ -4,17 +4,26 @@ title: Técnica Mista
 permalink: trabalhos/tecnica-mista
 ---
 
+{% include img-duo-cheio.html
+	img-1="mista-20.jpg"
+	img-2="mista-21.jpg"
+%}
+
+{% include img-solo-largo.html
+	img="mista-22.jpg"
+%}
+
 {% include img-duo-largo.html
 	img-1="mista-1.jpg"
 	img-2="mista-0.jpg"
 %}
 
 {% include img-solo-cheio.html
-	img="mista-3.jpg"
+	img="mista-4.jpg"
 %}
 
 {% include img-solo-cheio.html
-	img="mista-4.jpg"
+	img="mista-3.jpg"
 %}
 
 {% include img-solo-largo.html

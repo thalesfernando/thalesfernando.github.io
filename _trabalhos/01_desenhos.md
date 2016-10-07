@@ -1,11 +1,16 @@
 ---
 layout: projeto
-title: Desenhos
-permalink: trabalhos/desenhos
+title: Ilustrações
+permalink: trabalhos/ilustracoes
 ---
 
 {% include img-solo-largo.html
 	img="desenhos-1.png"
+%}
+
+{% include img-duo-cheio.html
+	img-1="desenhos-13.jpg"
+	img-2="desenhos-10.jpg"
 %}
 
 {% include img-duo-cheio.html
@@ -28,7 +33,7 @@ permalink: trabalhos/desenhos
 	img-2="desenhos-9.jpg"
 %}
 
-{% include img-duo-cheio.html
-	img-1="desenhos-10.png"
+{% include img-duo-largo.html
+	img-1="desenhos-12.jpg"
 	img-2="desenhos-11.jpg"
 %}

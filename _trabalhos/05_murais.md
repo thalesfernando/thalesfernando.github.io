@@ -5,6 +5,10 @@ permalink: trabalhos/murais
 ---
 
 {% include img-solo-cheio.html
+	img="murais-12.jpg"
+%}
+
+{% include img-solo-cheio.html
 	img="murais-10.jpg"
 %}
 
@@ -21,8 +25,9 @@ permalink: trabalhos/murais
 	img-2="murais-4.png"
 %}
 
-{% include img-solo-largo.html
-	img="murais-5.jpg"
+{% include img-duo-cheio.html
+	img-1="murais-5.jpg"
+	img-2="murais-11.jpg"
 %}
 
 {% include img-solo-cheio.html
