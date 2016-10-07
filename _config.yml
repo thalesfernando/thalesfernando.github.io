@@ -1,6 +1,5 @@
 title: POMB
-email: hello@pomb.com.br
-# baseurl: "http://pomb.com.br/dev"
+email: hellopomb@gmail.com
 
 markdown: kramdown
 
@@ -14,7 +13,7 @@ collections:
   rascunhos:
     output: false
   main-pages:
-    output: true
+    output: false
   works:
     output: false
   exhibitions:

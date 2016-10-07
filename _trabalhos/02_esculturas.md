@@ -2,46 +2,44 @@
 layout: projeto
 title: Esculturas
 permalink: trabalhos/esculturas
-published: true
-description: ''
 ---
 
 {% include img-duo-cheio.html
-	img-1="/img/trabalhos/esculturas/esculturas-12.jpg"
-	img-2="/img/trabalhos/esculturas/esculturas-13.jpg"
+	img-1="esculturas-12.jpg"
+	img-2="esculturas-13.jpg"
 %}
 
 {% include img-solo-largo.html
-	img="/img/trabalhos/esculturas/esculturas-1.jpg" 
+	img="esculturas-1.jpg" 
 %}
 
 {% include img-duo-cheio.html
-	img-1="/img/trabalhos/esculturas/esculturas-2.jpg"
-	img-2="/img/trabalhos/esculturas/esculturas-3.jpg"
+	img-1="esculturas-2.jpg"
+	img-2="esculturas-3.jpg"
 %}
 
 {% include img-trio-cheio.html
-	img-1="/img/trabalhos/esculturas/esculturas-4.jpg"
-	img-2="/img/trabalhos/esculturas/esculturas-5.jpg"
-	img-3="/img/trabalhos/esculturas/esculturas-6.jpg"
+	img-1="esculturas-4.jpg"
+	img-2="esculturas-5.jpg"
+	img-3="esculturas-6.jpg"
 %}
 
 {% include img-solo-cheio.html
-	img="/img/trabalhos/esculturas/esculturas-7.jpg" 
+	img="esculturas-7.jpg" 
 %}
 
 {% include img-solo-cheio.html
-	img="/img/trabalhos/esculturas/esculturas-8.jpg" 
+	img="esculturas-8.jpg" 
 %}
 
 {% include img-solo-cheio.html
-	img="/img/trabalhos/esculturas/esculturas-9.jpg"
+	img="esculturas-9.jpg"
 %}
 
 {% include img-solo-cheio.html
-	img="/img/trabalhos/esculturas/esculturas-10.jpg"
+	img="esculturas-10.jpg"
 %}
 
 {% include img-solo-largo.html
-	img="/img/trabalhos/esculturas/esculturas-11.jpg"
+	img="esculturas-11.jpg"
 %}

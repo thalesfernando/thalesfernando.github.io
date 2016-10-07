@@ -8,38 +8,12 @@
     "mixins-diagrama"
 ;
 
-h1 {
-	@include normal;
-}
-
-h5 {
-	margin-bottom: 2*$leading;
-	@media screen and (min-width: nth($breakpoints, 2)) {
-		margin-bottom: 0;
-	}
-}
 body {
 	main {
 		padding-top: 0;
 		transform: translateY(0);
 		section {
 			width: 100%;
-			figure {
-				opacity: 0;
-				transform: translateY(#{$leading/2});
-				transition: opacity .5s ease-in-out, transform .25s ease-in-out;
-				img {
-					width: 100%;
-					height: auto;
-					margin-top: 0;
-				}
-			}
-			&.foco {
-				figure {
-					opacity: 1;
-					transform: translateY(0);
-				}
-			}
 		}
 	}
 	footer {
@@ -54,117 +28,4 @@ body {
 	background-position: center;
 	height: 100vh;
 	margin-top: 0;
-}
-
-#section-1 {
-	padding-top: 0;
-	box-sizing: border-box;
-	z-index: 2;
-	figure {
-		padding: $leading;
-		background-color: $branco;
-		transform: translateY(0);
-		margin-top: 2*$leading;
-		box-shadow: 0 0 $leading/2 0 transparentize($preto, 0.9);
-	}
-}
-
-#section-2 {
-	figure {
-		transform: translateY(-#{$leading});
-		margin-bottom: 0;
-	}
-	&.foco {
-		figure {
-			transform: translateY(0);
-		}
-	}
-	.shadow {
-		height: 2*$leading;
-		width: $area;
-		margin-left: (100% - $area)/2;
-		margin-right: (100% - $area)/2;
-		position: absolute;
-		top: 0;
-		box-shadow: 0 0 $leading/2 0 transparentize($preto, 0.9);
-		background-color: white;
-		left: 0;
-		transform: translateY(-#{2*$leading});
-	}
-	.pocket {
-		height: 4*$leading;
-		width: 100%;
-		margin-left: 0;
-		margin-right: 0;
-		position: absolute;
-		top: 0;
-		left: 0;
-		transform: translateY(-#{4*$leading});
-		background-color: white;
-	}
-}
-
-#section-3 {
-	align-content: flex-start;
-	figure {
-		margin-bottom: 0;
-		&:first-of-type {
-			transform: translateX(-#{$gutter/2});
-			@media screen and (max-width: nth($breakpoints, 1) - 1px) {
-				transform: translateX(0) translateY(#{$leading/2});
-			}
-		}
-		&:last-of-type {
-			transform: translateX(#{$gutter/2});
-			@media screen and (max-width: nth($breakpoints, 1) - 1px) {
-				display: none;
-			}
-		}
-	}
-	&.foco {
-		figure {
-			transform: translateX(0);
-		}
-	}
-	.shadow {
-		height: $leading/2;
-		width: 100%;
-		box-shadow: 0 0 $leading/2 0 transparentize($preto, 0.9);
-		background-color: white;
-	}
-	.pocket {
-		height: 1.5*$leading;
-		transform: translateY(-#{$leading/2});
-		width: 100vw;
-		margin: 0;
-		background-color: white;
-	}
-}
-
-#section-4 {
-	.loading {
-		width: 80px;
-		height: 80px;
-		margin-left: auto;
-		margin-right: auto;
-		background-image: url(/img/loading.svg);
-		background-repeat: no-repeat;
-		background-size: cover;
-		&:hover {
-			background-image: url(/img/loading-hover.svg);
-			cursor: pointer;
-		}
-	}
-}
-
-.video-largo {
-	padding-top: $leading;
-	@media screen and (max-width: nth($breakpoints, 1) - 1px) {
-		padding-top: 0;
-	}
-	figure {
-		padding: $leading;
-		background-color: $branco;
-		box-shadow: 0 0 $leading/2 0 transparentize($preto, 0.9);
-	}
 }
