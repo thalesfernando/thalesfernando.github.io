@@ -13,7 +13,7 @@ permalink: contato/
 </address>
 
 <article class="mensagem">
-	<form action="https://getsimpleform.com/messages?form_api_token=71434cbc86389666c68ffd46cecd6534" method="post">
+	<form action="https://getsimpleform.com/messages?form_api_token=8f0bdcca0e7519458df5d9b157661667" method="post">
 		<input type='text' name='nome' placeholder='Seu nome' autofocus />
 		<input type='text' name='email' placeholder='Seu email'/>
 		<input type='text' name='assunto' placeholder='Assunto'/>
