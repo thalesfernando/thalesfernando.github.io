@@ -21,13 +21,13 @@ exhibition_location: Tigers Saloon – Brasília
 ---
 
 {% include img-duo-colunas.html
-	col-1=
+	coluna-1=
 	"
 	apoteose-2.jpg;
 	apoteose-3.jpg;
 	apoteose-6.jpg
 	"
-	col-2=
+	coluna-2=
 	"
 	apoteose-5.jpg;
 	apoteose-7.jpg;
