@@ -61,18 +61,18 @@
 	&:hover {
 		.thumb-img {
 			&::after {
-			    background-color: $laranja;
+			    background-color: $cor-base;
 				mix-blend-mode: soft-light;
 			}
 		}
 		.thumb-titulo {
-			color: $laranja;
+			color: $cor-base;
 		}
 	}
 	&:active {
 		.thumb-img {
 			&::after {
-			    background-color: $laranja;
+			    background-color: $cor-base;
 				mix-blend-mode: overlay;
 			}
 		}

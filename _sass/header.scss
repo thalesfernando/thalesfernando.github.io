@@ -37,10 +37,10 @@ header {
             }
 			&:hover {
 				.letra-logo {
-	                stroke: $laranja;
+	                stroke: $cor-base;
 	            }
 	            .ponto-logo {
-	                fill: $laranja;
+	                fill: $cor-base;
 	            }
 			}
 		}
@@ -163,12 +163,12 @@ header {
 	stroke: $cinza-claro;
 	&:hover{
     	cursor: pointer;
-    	stroke: $laranja;
+    	stroke: $cor-base;
     }
 }
 
 #easter-worm_m {
-	stroke: $laranja;
+	stroke: $cor-base;
 }
 
 @media screen and (max-width: nth($breakpoints, 2) - 1px) {
@@ -301,7 +301,7 @@ header {
 				}
 				.link {
 					&:hover {
-						color: $laranja;
+						color: $cor-base;
 					}				
 				}
 			}

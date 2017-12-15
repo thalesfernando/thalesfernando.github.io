@@ -42,14 +42,14 @@ body {
 		
 		a {
 			&:hover {
-				color: $laranja;
+				color: $cor-base;
 			}
 		}
 		
 		p > a {
 			@include italic;
 			&:hover{
-				color: $laranja;
+				color: $cor-base;
 			}
 		}
 		
@@ -114,10 +114,10 @@ body {
 			    border:none;
 			    font-weight: 300;
 			    &:hover {
-				    background-color: $laranja;
+				    background-color: $cor-base;
 				}
 				&:focus {
-				    background-color: $laranja;
+				    background-color: $cor-base;
 				}
 			}
 			> textarea, > input[type*="text"], > input[type*="email"] {
@@ -131,7 +131,7 @@ body {
 				padding-top: calc(#{$leading/2} - 1px);
 			    padding-bottom: calc(#{$leading/2} - 1px);
 			    &:focus {
-			    	border: solid $laranja 1px;
+			    	border: solid $cor-base 1px;
 				    padding-left: 3/4*$gutter;
 				}
 			}
@@ -148,7 +148,7 @@ body {
 		}
 
 		#minhoca {
-			fill: $laranja;
+			fill: $cor-base;
 		}
 
 		@import "componentes";
